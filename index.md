@@ -6,6 +6,6 @@ Aquí documentamos nuestras **visitas técnicas** y los **módulos de Formación
 Explora las secciones para conocer más sobre nuestras actividades:
 
 - [Visitas Técnicas](./visitas/)
-- Pasantías
+- [Pasantias](./pasantias/)
 - Archivo Anual
 - Galería Fotográfica
