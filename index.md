@@ -8,4 +8,4 @@ Explora las secciones para conocer más sobre nuestras actividades:
 - [Visitas Técnicas](./visitas/)
 - [Pasantías](./pasantias/)
 - [Archivo Anual](./archivo/)
-- Galería Fotográfica
+- [Galería Fotográfica](./galeria/)
