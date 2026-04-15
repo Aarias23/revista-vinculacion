@@ -1,0 +1,77 @@
+/* Fuente base */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado principal */
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #003366; /* Azul institucional */
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+/* Navegación en portada */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5em 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #ff6600; /* Resaltado al pasar el mouse */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003366; /* Azul institucional */
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+footer nav a {
+  color: #ffcc00; /* Amarillo dorado para contraste */
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
