@@ -16,6 +16,7 @@ h3 {
   color: #003366; /* Azul institucional */
   margin-top: 1.2em;
   margin-bottom: 0.6em;
+  transition: color 0.3s ease; /* transición para hover en títulos */
 }
 
 /* Header institucional */
@@ -169,12 +170,37 @@ button:hover,
   animation: fadeIn 0.5s ease; /* animación de entrada */
 }
 
+/* Captions mejorados y responsivos */
 .lightbox-caption {
-  margin: 20px auto;
+  margin: 15px auto;
+  max-width: 90%; /* que no se salga del viewport */
   text-align: center;
-  color: #ffcc00; /* Amarillo dorado */
-  font-size: 1em;
-  animation: fadeIn 0.8s ease; /* animación más lenta para el caption */
+  color: #ffcc00; /* Amarillo dorado institucional */
+  font-size: 1.2em; /* más grande para mejor lectura */
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.6); /* fondo semitransparente para contraste */
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-block;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Responsividad captions */
+@media (max-width: 768px) {
+  .lightbox-caption {
+    font-size: 1em;
+    padding: 8px 12px;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lightbox-caption {
+    font-size: 0.9em;
+    line-height: 1.3;
+    padding: 6px 10px;
+    max-width: 95%;
+  }
 }
 
 .lightbox-close {
@@ -280,7 +306,11 @@ h1 .fa-camera {
   transition: color 0.3s ease;
 }
 
-/* Hover aplicado al título completo */
+/* Hover aplicado al título completo: ícono y texto */
+h1:hover {
+  color: #ff6600; /* Naranja de acento para el texto */
+}
+
 h1:hover .fa-camera {
-  color: #ffcc00; /* Amarillo dorado al pasar el mouse */
+  color: #ffcc00; /* Amarillo dorado para el ícono */
 }
