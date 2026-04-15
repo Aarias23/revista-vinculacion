@@ -14,8 +14,9 @@ Motivar a nuestras estudiantes a elegir carreras relacionadas con la ciencia, la
 
 ### Desarrollo de la actividad
 
-La visita fue coordinada con la ingeniera **Julissa Terrero**, quien facilitó el encuentro y acompañó a nuestras estudiantes durante toda la jornada.  
-Las ingenieras **Dorkiana Casilla** y **Laura Portuondo** impartieron una charla motivadora y guiaron al grupo en un recorrido por las instalaciones del Eaton Design Center.
+La visita fue coordinada con la ingeniera **Julissa Terrero**, quien gestionó y apoyó cada detalle de la actividad. Aunque por compromisos laborales no pudo acompañarnos durante la jornada, estuvo pendiente de la organización y brindó todo el respaldo necesario para que la experiencia se desarrollara con éxito.
+
+Las ingenieras **Dorkiana Casilla** y **Laura Portuondo** impartieron una charla motivadora y guiaron al grupo en un recorrido por las instalaciones del Eaton Design Center, compartiendo sus conocimientos y experiencias de manera cercana y enriquecedora.
 
 El mensaje de motivar a nuestras jóvenes a atreverse a elegir carreras STEM fue claro, cercano y transformador. Escuchar testimonios, conocer experiencias reales y ver ejemplos concretos dentro de un entorno profesional como el de Eaton tuvo un impacto muy significativo.
 
