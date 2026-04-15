@@ -7,7 +7,11 @@ La galería no solo busca documentar actividades, sino también poner en valor e
 
 De esta manera, las imágenes se convierten en un archivo institucional vivo, que refleja la identidad del Instituto y la trascendencia de las experiencias formativas más allá del aula, proyectando la misión educativa hacia la comunidad y el futuro profesional de nuestros estudiantes.
 
+---
+
 ## Visitas Técnicas
+
+### Visita Técnica – Eaton Design Center (26 de febrero de 2026)
 
 <div class="gallery">
   <figure>
@@ -24,7 +28,11 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
   </figure>
 </div>
 
+---
+
 ## Pasantías
+
+### Pasantía – Empresa XYZ (Febrero 2026)
 
 <div class="gallery">
   <figure>
@@ -32,6 +40,8 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
     <figcaption>Foto de pasantía</figcaption>
   </figure>
 </div>
+
+---
 
 <!-- Lightbox container -->
 <div id="lightbox" class="lightbox">
