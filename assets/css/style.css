@@ -280,6 +280,7 @@ h1 .fa-camera {
   transition: color 0.3s ease;
 }
 
-h1 .fa-camera:hover {
+/* Hover aplicado al título completo */
+h1:hover .fa-camera {
   color: #ffcc00; /* Amarillo dorado al pasar el mouse */
 }
