@@ -1,4 +1,4 @@
-# Galería Fotográfica
+<h1><i class="fa-solid fa-camera"></i> Galería Fotográfica</h1>
 
 <div class="index-actividades">
   <h2>Índice de Actividades</h2>

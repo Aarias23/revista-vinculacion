@@ -270,3 +270,16 @@ button:hover,
   background: #ff6600; /* Naranja de acento */
   transform: translateX(5px); /* efecto dinámico */
 }
+
+/* Ícono de cámara en el título principal con Font Awesome */
+h1 .fa-camera {
+  color: #003366; /* Azul institucional */
+  margin-right: 12px;
+  font-size: 1.2em;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+h1 .fa-camera:hover {
+  color: #ffcc00; /* Amarillo dorado al pasar el mouse */
+}
