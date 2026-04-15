@@ -97,3 +97,39 @@ button:hover,
 .btn:hover {
   background: #ff6600; /* Naranja de acento */
 }
+
+/* Galería fotográfica institucional */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery figure {
+  background: #fdfdfd;
+  border: 2px solid #003366; /* Azul institucional */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.03);
+  border-color: #ffcc00; /* Amarillo dorado al pasar el mouse */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #003366; /* Azul institucional */
+}

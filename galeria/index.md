@@ -5,12 +5,26 @@ La galería busca reflejar los aprendizajes, experiencias y momentos significati
 
 ## Visitas Técnicas
 
-- **Visita Técnica al Eaton Design Center (26 de febrero de 2026)**  
-  ![Estudiantes en la charla](../assets/img/visitas/eaton1.jpg)  
-  ![Grupo junto a ingenieras de Eaton](../assets/img/visitas/eaton2.jpg)  
-  ![Momento de la presentación](../assets/img/visitas/eaton3.jpg)
+<div class="gallery">
+  <figure>
+    <img src="../assets/img/visitas/eaton1.jpg" alt="Estudiantes en la charla">
+    <figcaption>Estudiantes en la charla</figcaption>
+  </figure>
+  <figure>
+    <img src="../assets/img/visitas/eaton2.jpg" alt="Grupo junto a ingenieras de Eaton">
+    <figcaption>Grupo junto a ingenieras de Eaton</figcaption>
+  </figure>
+  <figure>
+    <img src="../assets/img/visitas/eaton3.jpg" alt="Momento de la presentación">
+    <figcaption>Momento de la presentación</figcaption>
+  </figure>
+</div>
 
 ## Pasantías
 
-- **Pasantía en Empresa ABC**  
-  ![Foto de pasantía](../assets/img/pasantias/empresa1.jpg)
+<div class="gallery">
+  <figure>
+    <img src="../assets/img/pasantias/empresa1.jpg" alt="Foto de pasantía">
+    <figcaption>Foto de pasantía</figcaption>
+  </figure>
+</div>
