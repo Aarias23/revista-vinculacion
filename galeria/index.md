@@ -1,5 +1,12 @@
 # Galería Fotográfica
 
+## Índice de Actividades
+
+- [Visita Técnica – Eaton Design Center (26 de febrero de 2026)](#visita-técnica--eaton-design-center-26-de-febrero-de-2026)
+- [Pasantía – Empresa XYZ (Febrero 2026)](#pasantía--empresa-xyz-febrero-2026)
+
+---
+
 En esta sección se presentan las imágenes más representativas de las visitas técnicas y pasantías realizadas por nuestros estudiantes.  
 Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados, las experiencias compartidas y los momentos significativos que fortalecen su formación académica y profesional.
 
