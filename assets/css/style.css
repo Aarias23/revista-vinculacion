@@ -224,3 +224,49 @@ button:hover,
     transform: scale(1);
   }
 }
+
+/* Índice de actividades institucional */
+.index-actividades {
+  background: #f0f4f9; /* Fondo suave azul grisáceo */
+  border: 2px solid #003366; /* Azul institucional */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index-actividades h2 {
+  color: #003366;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.index-actividades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.index-actividades li {
+  margin: 10px 0;
+}
+
+.index-actividades a {
+  display: block;
+  background: #0066cc; /* Azul complementario */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+.index-actividades a:hover {
+  background: #ff6600; /* Naranja de acento */
+  transform: translateX(5px); /* efecto dinámico */
+}

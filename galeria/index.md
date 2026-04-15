@@ -1,9 +1,12 @@
 # Galería Fotográfica
 
-## Índice de Actividades
-
-- [Visita Técnica – Eaton Design Center (26 de febrero de 2026)](#visita-técnica--eaton-design-center-26-de-febrero-de-2026)
-- [Pasantía – Empresa XYZ (Febrero 2026)](#pasantía--empresa-xyz-febrero-2026)
+<div class="index-actividades">
+  <h2>Índice de Actividades</h2>
+  <ul>
+    <li><a href="#visita-técnica--eaton-design-center-26-de-febrero-de-2026">Visita Técnica – Eaton Design Center (26 de febrero de 2026)</a></li>
+    <li><a href="#pasantía--empresa-xyz-febrero-2026">Pasantía – Empresa XYZ (Febrero 2026)</a></li>
+  </ul>
+</div>
 
 ---
 
