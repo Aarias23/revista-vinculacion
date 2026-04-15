@@ -185,6 +185,26 @@ button:hover,
   animation: fadeIn 0.8s ease;
 }
 
+/* Mensaje institucional de cierre en el lightbox */
+.fin-visita {
+  display: inline-block;
+  margin-top: 8px;
+  color: #ffcc00; /* Amarillo dorado institucional */
+  font-weight: bold;
+  font-size: 1.1em;
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 1s ease,
+    transform 0.8s ease;
+}
+
+/* Estado visible con animación */
+.fin-visita.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsividad captions */
 @media (max-width: 768px) {
   .lightbox-caption {

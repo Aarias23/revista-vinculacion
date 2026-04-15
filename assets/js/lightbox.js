@@ -1,19 +1,28 @@
-// Lightbox script con navegación y corrección de reapertura
+// Lightbox script con navegación, contador por visita/pasantía y mensaje de cierre animado
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".gallery img");
+  const figures = document.querySelectorAll(".gallery figure");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const caption = document.getElementById("lightbox-caption");
+  const counter = document.getElementById("lightbox-counter");
   const closeBtn = document.querySelector(".lightbox-close");
   const prevBtn = document.querySelector(".lightbox-prev");
   const nextBtn = document.querySelector(".lightbox-next");
 
   let currentIndex = 0;
+  let currentEvent = "";
+  let eventFigures = [];
 
   // Abrir lightbox
-  images.forEach((img, index) => {
+  figures.forEach((figure) => {
+    const img = figure.querySelector("img");
     img.addEventListener("click", function () {
-      currentIndex = index;
+      currentEvent = figure.dataset.event;
+      eventFigures = Array.from(figures).filter(
+        (f) => f.dataset.event === currentEvent,
+      );
+      currentIndex = eventFigures.indexOf(figure);
+
       showImage(currentIndex);
       lightbox.classList.remove("hide");
       lightbox.classList.add("show");
@@ -22,17 +31,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Mostrar imagen según índice
   function showImage(index) {
-    lightboxImg.src = images[index].src;
-    caption.innerHTML = images[index].alt;
+    const img = eventFigures[index].querySelector("img");
+    const figcaption =
+      eventFigures[index].querySelector("figcaption").innerText;
+
+    lightboxImg.src = img.src;
+    caption.innerHTML = figcaption;
+
+    // Contador normal
+    counter.innerHTML = `Imagen ${index + 1} de ${eventFigures.length} (${currentEvent})`;
+
+    // Mensaje institucional al llegar a la última imagen con animación
+    if (index === eventFigures.length - 1) {
+      let mensajeFinal = "";
+
+      if (currentEvent.toLowerCase().includes("pasantía")) {
+        mensajeFinal = `Fin de la pasantía – ${currentEvent}`;
+      } else {
+        mensajeFinal = `Fin de la visita – ${currentEvent}`;
+      }
+
+      counter.innerHTML += `<br><span class="fin-visita">${mensajeFinal}</span>`;
+      const finMsg = counter.querySelector(".fin-visita");
+      setTimeout(() => {
+        finMsg.classList.add("show");
+      }, 50);
+    }
   }
 
-  // Cerrar con fade out (sin bloquear reapertura)
+  // Cerrar con fade out
   function closeLightbox() {
     lightbox.classList.remove("show");
     lightbox.classList.add("hide");
     setTimeout(() => {
       lightbox.classList.remove("hide");
-      // Eliminamos el display:none para que pueda reabrirse
+      currentEvent = "";
+      eventFigures = [];
+      counter.innerHTML = ""; // limpiar contador al cerrar
     }, 400);
   }
 
@@ -48,23 +83,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Navegación con flechas
   prevBtn.addEventListener("click", function () {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
+    if (currentIndex > 0) {
+      currentIndex--;
+      showImage(currentIndex);
+    }
   });
 
   nextBtn.addEventListener("click", function () {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
+    if (currentIndex < eventFigures.length - 1) {
+      currentIndex++;
+      showImage(currentIndex);
+    }
   });
 
   // Navegación con teclado
   document.addEventListener("keydown", function (e) {
     if (lightbox.classList.contains("show")) {
-      if (e.key === "ArrowLeft") {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
+      if (e.key === "ArrowLeft" && currentIndex > 0) {
+        currentIndex--;
         showImage(currentIndex);
-      } else if (e.key === "ArrowRight") {
-        currentIndex = (currentIndex + 1) % images.length;
+      } else if (
+        e.key === "ArrowRight" &&
+        currentIndex < eventFigures.length - 1
+      ) {
+        currentIndex++;
         showImage(currentIndex);
       } else if (e.key === "Escape") {
         closeLightbox();
