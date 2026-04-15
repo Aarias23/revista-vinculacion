@@ -28,3 +28,10 @@ La galería busca reflejar los aprendizajes, experiencias y momentos significati
     <figcaption>Foto de pasantía</figcaption>
   </figure>
 </div>
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
