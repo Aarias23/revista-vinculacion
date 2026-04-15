@@ -24,15 +24,15 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
 ### Visita Técnica – Eaton Design Center (26 de febrero de 2026)
 
 <div class="gallery">
-  <figure>
+  <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton1.jpg" alt="Estudiantes en la charla">
     <figcaption>Estudiantes en la charla</figcaption>
   </figure>
-  <figure>
+  <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton2.jpg" alt="Grupo junto a ingenieras de Eaton">
     <figcaption>Grupo junto a ingenieras de Eaton</figcaption>
   </figure>
-  <figure>
+  <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton3.jpg" alt="Momento de la presentación">
     <figcaption>Momento de la presentación</figcaption>
   </figure>
@@ -45,7 +45,7 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
 ### Pasantía – Empresa XYZ (Febrero 2026)
 
 <div class="gallery">
-  <figure>
+  <figure data-event="Pasantía – Empresa XYZ">
     <img src="../assets/img/pasantias/empresa1.jpg" alt="Foto de pasantía">
     <figcaption>Foto de pasantía</figcaption>
   </figure>
@@ -58,6 +58,7 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
   <span class="lightbox-close">&times;</span>
   <img class="lightbox-content" id="lightbox-img">
   <div id="lightbox-caption" class="lightbox-caption"></div>
+  <div id="lightbox-counter" class="lightbox-counter"></div>
 
   <!-- Flechas de navegación -->
 
