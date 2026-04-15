@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <nav>
+    <a href="{{ "/" | relative_url }}">Inicio</a> |
+    <a href="{{ "/visitas/" | relative_url }}">Visitas Técnicas</a> |
+    <a href="{{ "/pasantias/" | relative_url }}">Pasantías</a> |
+    <a href="{{ "/archivo/" | relative_url }}">Archivo Anual</a> |
+    <a href="{{ "/galeria/" | relative_url }}">Galería Fotográfica</a>
+  </nav>
+</header>
+
+<div class="container">
+  {{ content }}
+</div>
+
+<footer>
+  <p>© 2026 Instituto Politécnico Salesiano Padre Bartolomé Vegh</p>
+  <p>Unidad de Vinculación Sectorial · Revista Digital</p>
+</footer>
+
+</body>
+</html>
