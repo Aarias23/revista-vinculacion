@@ -1,4 +1,4 @@
-// Lightbox script con navegación
+// Lightbox script con navegación y corrección de reapertura
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".gallery img");
   const lightbox = document.getElementById("lightbox");
@@ -26,18 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
     caption.innerHTML = images[index].alt;
   }
 
-  // Cerrar con fade out
+  // Cerrar con fade out (sin bloquear reapertura)
   function closeLightbox() {
     lightbox.classList.remove("show");
     lightbox.classList.add("hide");
     setTimeout(() => {
       lightbox.classList.remove("hide");
-      lightbox.style.display = "none";
+      // Eliminamos el display:none para que pueda reabrirse
     }, 400);
   }
 
+  // Botón de cierre
   closeBtn.addEventListener("click", closeLightbox);
 
+  // Cerrar al hacer clic fuera de la imagen
   lightbox.addEventListener("click", function (e) {
     if (e.target === lightbox) {
       closeLightbox();
