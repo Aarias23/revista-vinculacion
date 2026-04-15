@@ -147,6 +147,18 @@ button:hover,
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.4s ease; /* transición suave */
+}
+
+.lightbox.show {
+  display: block;
+  opacity: 1;
+}
+
+.lightbox.hide {
+  opacity: 0;
+  transition: opacity 0.4s ease; /* fade out */
 }
 
 .lightbox-content {
@@ -154,6 +166,7 @@ button:hover,
   display: block;
   max-width: 80%;
   border-radius: 8px;
+  animation: fadeIn 0.5s ease; /* animación de entrada */
 }
 
 .lightbox-caption {
@@ -161,6 +174,7 @@ button:hover,
   text-align: center;
   color: #ffcc00; /* Amarillo dorado */
   font-size: 1em;
+  animation: fadeIn 0.8s ease; /* animación más lenta para el caption */
 }
 
 .lightbox-close {
@@ -171,4 +185,42 @@ button:hover,
   font-size: 2em;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Flechas de navegación */
+.lightbox-prev,
+.lightbox-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #ffcc00; /* Amarillo dorado institucional */
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

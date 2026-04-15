@@ -38,4 +38,10 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
   <span class="lightbox-close">&times;</span>
   <img class="lightbox-content" id="lightbox-img">
   <div id="lightbox-caption" class="lightbox-caption"></div>
+
+  <!-- Flechas de navegación -->
+
+<a class="lightbox-prev">&#10094;</a>
+<a class="lightbox-next">&#10095;</a>
+
 </div>
