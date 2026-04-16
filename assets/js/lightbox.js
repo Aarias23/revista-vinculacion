@@ -38,8 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxImg.src = img.src;
     caption.innerHTML = figcaption;
 
-    // Contador normal
+    // Contador con fotos restantes
+    const restantes = eventFigures.length - (index + 1);
     counter.innerHTML = `Imagen ${index + 1} de ${eventFigures.length} (${currentEvent})`;
+
+    if (restantes > 0) {
+      counter.innerHTML += `<br><span class="restantes">Quedan ${restantes} imágenes por recorrer</span>`;
+    }
 
     // Mensaje institucional al llegar a la última imagen con animación
     if (index === eventFigures.length - 1) {

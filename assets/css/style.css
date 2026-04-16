@@ -205,6 +205,25 @@ button:hover,
   transform: translateY(0);
 }
 
+/* Contador de imágenes restantes */
+.restantes {
+  display: block;
+  margin-top: 6px;
+  color: #ffcc00; /* Amarillo dorado institucional */
+  font-size: 0.95em;
+  opacity: 0;
+  transform: translateY(5px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.6s ease;
+}
+
+/* Estado visible con animación */
+.restantes.show {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
 /* Responsividad captions */
 @media (max-width: 768px) {
   .lightbox-caption {
@@ -333,4 +352,23 @@ h1:hover {
 
 h1:hover .fa-camera {
   color: #ffcc00; /* Amarillo dorado para el ícono */
+}
+
+/* Contador de imágenes restantes */
+.restantes {
+  display: block;
+  margin-top: 6px;
+  color: #ffcc00; /* Amarillo dorado institucional */
+  font-size: 0.95em;
+  opacity: 0;
+  transform: translateY(5px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.6s ease;
+}
+
+/* Estado visible con animación */
+.restantes.show {
+  opacity: 0.9;
+  transform: translateY(0);
 }
