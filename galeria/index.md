@@ -27,28 +27,32 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton1.jpg" alt="Llegada y registro del grupo en la entrada">
     <figcaption>Llegada y registro del grupo</figcaption>
-    
   </figure>
+
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton2.jpg" alt="Coordinador de la Oficina de Vinculación Sectorial junto a parte del grupo después del registro">
     <figcaption>Coord. OVS junto a parte del grupo luego de registro</figcaption>
   </figure>
+
   <figure data-event="Visita Técnica – Eaton Design Center">
   <img src="../assets/img/visitas/eaton3.jpg" alt="Estudiantes uniformados y listos para la charla y recorrido">
   <figcaption>Uniformadas y listas para la charla y recorrido</figcaption>
 </figure>
+
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton4.jpg" alt="Estudiantes en la charla técnica">
     <figcaption>Estudiantes en la charla técnica</figcaption>
   </figure>
+  
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton5.jpg" alt="Recorrido por las instalaciones del Eaton Design Center">
     <figcaption>Recorrido por las instalaciones</figcaption>
   </figure>
-    <figure data-event="Visita Técnica – Eaton Design Center">
-    <img src="../assets/img/visitas/eaton6.jpg" alt="Grupo junto a ingenieras de Eaton">
-    <figcaption>Grupo junto a ingenieras de Eaton</figcaption>
-  </figure>
+
+  <figure data-event="Visita Técnica – Eaton Design Center">
+  <img src="../assets/img/visitas/eaton6.jpg" alt="Grupo junto a ingenieras de Eaton">
+  <figcaption>Grupo junto a ingenieras de Eaton</figcaption>
+</figure>
 </div>
 
 ---
