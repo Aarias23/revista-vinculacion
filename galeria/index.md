@@ -27,6 +27,7 @@ De esta manera, las imágenes se convierten en un archivo institucional vivo, qu
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton1.jpg" alt="Llegada y registro del grupo en la entrada">
     <figcaption>Llegada y registro del grupo</figcaption>
+    
   </figure>
   <figure data-event="Visita Técnica – Eaton Design Center">
     <img src="../assets/img/visitas/eaton2.jpg" alt="Coordinador de la Oficina de Vinculación Sectorial junto a parte del grupo después del registro">
