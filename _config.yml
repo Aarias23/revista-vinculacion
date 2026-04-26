@@ -11,5 +11,5 @@ plugins:
 include: ["assets/css"]
 
 # Opciones adicionales
-url: "http://localhost:4000"
-baseurl: "" # si luego publicas en GitHub Pages, aquí va el subpath
+url: "https://aarias23.github.io"
+baseurl: "/revista-vinculacion"
