@@ -1,0 +1,5 @@
+
+ <figure{% if include.event %} data-event="{{ include.event }}"{% endif %}>
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy" />
+  <figcaption>{{ include.caption }}</figcaption>
+</figure>
