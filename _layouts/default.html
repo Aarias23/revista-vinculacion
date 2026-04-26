@@ -12,13 +12,15 @@
 
 <header>
   <h1>{{ site.title }}</h1>
-  <nav>
-    <a href="{{ "/" | relative_url }}">Inicio</a> |
-    <a href="{{ "/visitas/" | relative_url }}">Visitas Técnicas</a> |
-    <a href="{{ "/pasantias/" | relative_url }}">Pasantías</a> |
-    <a href="{{ "/archivo/" | relative_url }}">Archivo Anual</a> |
-    <a href="{{ "/galeria/" | relative_url }}">Galería Fotográfica</a>
-  </nav>
+<nav>
+  <a href="{{ "/" | relative_url }}">Inicio</a> |
+  <a href="{{ "/visitas/" | relative_url }}">Visitas Técnicas</a> |
+  <a href="{{ "/instituciones/" | relative_url }}">Instituciones Visitantes</a> |
+  <a href="{{ "/pasantias/" | relative_url }}">Pasantías</a> |
+  <a href="{{ "/archivo/" | relative_url }}">Archivo Anual</a> |
+  <a href="{{ "/galeria/" | relative_url }}">Galería Fotográfica</a>
+</nav>
+
 </header>
 
 
@@ -30,6 +32,16 @@
   <p>© 2026 Instituto Politécnico Salesiano Padre Bartolomé Vegh</p>
   <p>Unidad de Vinculación Sectorial · Revista Digital</p>
 </footer>
+
+<!-- Lightbox container global -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption" class="lightbox-caption"></div>
+  <div id="lightbox-counter" class="lightbox-counter"></div>
+  <a class="lightbox-prev">&#10094;</a>
+  <a class="lightbox-next">&#10095;</a>
+</div>
 
 <!-- Referencia al script del lightbox -->
 <script src="{{ "/assets/js/lightbox.js" | relative_url }}"></script>

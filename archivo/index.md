@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Archivo Anual"
+permalink: /archivo/
+---
+
 # Archivo Anual
 
 En esta sección se recopilan las actividades de cada año, incluyendo visitas técnicas y pasantías.  

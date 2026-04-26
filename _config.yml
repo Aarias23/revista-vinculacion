@@ -1,4 +1,15 @@
 title: "Revista Digital - Unidad de Vinculación Sectorial"
 description: "Documentación de visitas técnicas y pasantías"
 theme: minima
+
+# Plugins instalados
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Incluir carpeta de estilos personalizados
 include: ["assets/css"]
+
+# Opciones adicionales
+url: "http://localhost:4000"
+baseurl: "" # si luego publicas en GitHub Pages, aquí va el subpath

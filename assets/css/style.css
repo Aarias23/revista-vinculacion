@@ -1,4 +1,18 @@
 /* Fuente base */
+
+:root {
+  --color-bg-dark: #003366;
+  --color-bg-light: #00509e;
+  --color-primary: #0066cc;
+  --color-secondary: rgba(255, 255, 255, 0.15);
+  --color-text: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.35);
+
+  --color-accent: #ffcc00; /* amarillo institucional */
+  --color-text-dark: #333;
+  --color-bg-page: #f9f9f9;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #f9f9f9;
@@ -16,7 +30,7 @@ h3 {
   color: #003366; /* Azul institucional */
   margin-top: 1.2em;
   margin-bottom: 0.6em;
-  transition: color 0.3s ease; /* transición para hover en títulos */
+  transition: color 0.3s ease;
 }
 
 /* Header institucional */
@@ -26,23 +40,19 @@ header {
   padding: 20px;
   text-align: center;
 }
-
 header h1 {
   margin: 0;
   font-size: 1.8em;
 }
-
 header nav {
   margin-top: 10px;
 }
-
 header nav a {
-  color: #ffcc00; /* Amarillo dorado */
+  color: #ffcc00;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
 }
-
 header nav a:hover {
   color: #ffffff;
   text-decoration: underline;
@@ -50,56 +60,15 @@ header nav a:hover {
 
 /* Contenedor principal */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer institucional */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #003366;
-  color: #fff;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-footer nav a {
-  color: #ffcc00; /* Amarillo dorado */
-  text-decoration: none;
-  margin: 0 8px;
-}
-
-footer nav a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-/* Botones institucionales */
-button,
-.btn {
-  background: #0066cc; /* Azul complementario */
-  color: #fff;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover,
-.btn:hover {
-  background: #ff6600; /* Naranja de acento */
-}
-
 /* Galería fotográfica institucional */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -107,33 +76,36 @@ button:hover,
   margin-top: 20px;
 }
 
+.gallery img {
+  width: 100%;
+  height: 250px; /* altura uniforme */
+  object-fit: cover; /* recorta manteniendo proporción */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .gallery figure {
-  background: #fdfdfd;
-  border: 2px solid #003366; /* Azul institucional */
-  border-radius: 8px;
-  padding: 10px;
+  background: #fff;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  padding: 12px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
 }
 
 .gallery figure:hover {
-  transform: scale(1.03);
-  border-color: #ffcc00; /* Amarillo dorado al pasar el mouse */
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  cursor: pointer; /* Indica que se puede hacer clic */
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #00509e; /* azul institucional más brillante */
 }
 
 .gallery figcaption {
-  margin-top: 8px;
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #003366; /* Azul institucional */
+  margin-top: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #004080;
 }
 
 /* Lightbox */
@@ -149,17 +121,15 @@ button:hover,
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
-  transition: opacity 0.4s ease; /* transición suave */
+  transition: opacity 0.4s ease;
 }
-
 .lightbox.show {
   display: block;
   opacity: 1;
 }
-
 .lightbox.hide {
   opacity: 0;
-  transition: opacity 0.4s ease; /* fade out */
+  transition: opacity 0.4s ease;
 }
 
 .lightbox-content {
@@ -167,139 +137,168 @@ button:hover,
   display: block;
   max-width: 80%;
   border-radius: 8px;
-  animation: fadeIn 0.5s ease; /* animación de entrada */
+  animation: zoomFade 0.5s ease;
 }
 
-/* Captions mejorados y responsivos */
+@keyframes zoomFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* =========================
+   LIGHTBOX CAPTION & TEXTOS
+   ========================= */
+
 .lightbox-caption {
   margin: 15px auto;
-  max-width: 90%; /* que no se salga del viewport */
+  max-width: 80%;
   text-align: center;
-  color: #ffcc00; /* Amarillo dorado institucional */
-  font-size: 1.2em; /* más grande para mejor lectura */
-  line-height: 1.4;
-  background: rgba(0, 0, 0, 0.6); /* fondo semitransparente para contraste */
-  padding: 10px 15px;
-  border-radius: 6px;
+  color: #ffcc00; /* amarillo institucional */
+  font-size: 1.1em;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.5); /* fondo más suave */
+  padding: 12px 18px;
+  border-radius: 8px;
   display: inline-block;
-  animation: fadeIn 0.8s ease;
+  animation: zoomFade 0.6s ease; /* animación más elegante */
 }
 
-/* Mensaje institucional de cierre en el lightbox */
 .fin-visita {
   display: inline-block;
-  margin-top: 8px;
-  color: #ffcc00; /* Amarillo dorado institucional */
-  font-weight: bold;
-  font-size: 1.1em;
+  margin-top: 10px;
+  color: #ffcc00;
+  font-weight: 600;
+  font-size: 1em;
   opacity: 0;
   transform: translateY(10px);
   transition:
-    opacity 1s ease,
-    transform 0.8s ease;
+    opacity 0.8s ease,
+    transform 0.6s ease;
 }
-
-/* Estado visible con animación */
 .fin-visita.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Contador de imágenes restantes */
 .restantes {
   display: block;
   margin-top: 6px;
-  color: #ffcc00; /* Amarillo dorado institucional */
-  font-size: 0.95em;
+  color: #ffcc00;
+  font-size: 0.9em;
   opacity: 0;
   transform: translateY(5px);
   transition:
-    opacity 0.8s ease,
-    transform 0.6s ease;
+    opacity 0.6s ease,
+    transform 0.5s ease;
 }
-
-/* Estado visible con animación */
 .restantes.show {
   opacity: 0.9;
   transform: translateY(0);
 }
 
-/* Responsividad captions */
 @media (max-width: 768px) {
   .lightbox-caption {
     font-size: 1em;
+    padding: 10px 14px;
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .lightbox-caption {
+    font-size: 0.9em;
+    line-height: 1.3;
     padding: 8px 12px;
     max-width: 95%;
   }
 }
 
-@media (max-width: 480px) {
-  .lightbox-caption {
-    font-size: 0.9em;
-    line-height: 1.3;
-    padding: 6px 10px;
-    max-width: 95%;
-  }
-}
-
+/* Botón de cierre */
 .lightbox-close {
   position: absolute;
   top: 20px;
   right: 35px;
+  background: rgba(0, 0, 0, 0.5); /* fondo translúcido */
+  border-radius: 50%; /* forma circular */
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em; /* más proporcionado */
   font-weight: bold;
   cursor: pointer;
+  padding: 8px 12px;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffcc00; /* amarillo institucional en hover */
 }
 
-/* Flechas de navegación */
+/* Botones de navegación */
 .lightbox-prev,
 .lightbox-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  padding: 16px;
-  color: #ffcc00; /* Amarillo dorado institucional */
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4); /* fondo translúcido */
+  border-radius: 50%; /* forma circular */
+  color: #ffcc00; /* amarillo institucional */
   font-weight: bold;
-  font-size: 2em;
-  transition: 0.3s;
+  font-size: 1.5em; /* más proporcionado */
+  transition:
+    background 0.3s,
+    color 0.3s;
   user-select: none;
 }
-
 .lightbox-prev {
   left: 20px;
 }
-
 .lightbox-next {
   right: 20px;
 }
 
 .lightbox-prev:hover,
 .lightbox-next:hover {
-  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6); /* fondo más oscuro en hover */
+  color: #fff; /* icono blanco en hover */
 }
 
-@keyframes fadeIn {
+@keyframes zoomFade {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.95) translateY(10px); /* leve desplazamiento */
+    filter: blur(4px); /* desenfoque inicial */
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
+    filter: blur(0); /* imagen nítida al final */
   }
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  border-radius: 8px;
+  animation: zoomFade 0.6s ease; /* sustituye fadeIn */
 }
 
 /* Índice de actividades institucional */
 .index-actividades {
-  background: #f0f4f9; /* Fondo suave azul grisáceo */
-  border: 2px solid #003366; /* Azul institucional */
+  background: #f0f4f9;
+  border: 2px solid #003366;
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .index-actividades h2 {
   color: #003366;
   font-size: 1.4em;
@@ -307,20 +306,17 @@ button:hover,
   text-align: center;
   font-weight: bold;
 }
-
 .index-actividades ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .index-actividades li {
   margin: 10px 0;
 }
-
 .index-actividades a {
   display: block;
-  background: #0066cc; /* Azul complementario */
+  background: #0066cc;
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
@@ -330,45 +326,860 @@ button:hover,
     background 0.3s ease,
     transform 0.2s ease;
 }
-
 .index-actividades a:hover {
-  background: #ff6600; /* Naranja de acento */
-  transform: translateX(5px); /* efecto dinámico */
+  background: #ff6600;
+  transform: translateX(5px);
 }
 
-/* Ícono de cámara en el título principal con Font Awesome */
-h1 .fa-camera {
-  color: #003366; /* Azul institucional */
-  margin-right: 12px;
-  font-size: 1.2em;
-  vertical-align: middle;
+/* Hero institucional */
+
+/* Tarjetas intro */
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   BOTONES MODERNOS Y PROFESIONALES (PULIDOS)
+   =========================== */
+
+/* Base común */
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-link {
+  display: inline-block;
+  padding: 0.9rem 1.8rem; /* más generoso */
+  border-radius: 12px; /* más suave y moderno */
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none; /* elimina subrayado */
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Variante primaria: institucional con gradiente y glow */
+.btn-primary {
+  /*   background: linear-gradient(135deg, #004080, #0066cc);
+  color: #fff; */
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-dark),
+    var(--color-primary)
+  );
+  color: var(--color-text);
+  box-shadow: 0 10px 25px var(--color-shadow);
+  border: none;
+  /* box-shadow: 0 4px 14px rgba(0, 64, 128, 0.35); */
+}
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.45);
+  background: linear-gradient(135deg, #00509e, #0073e6);
+}
+
+/* Variante secundaria: glassmorphism editorial */
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  color: #004080;
+  border: 2px solid #004080;
+  margin: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 64, 128, 0.15);
+}
+.btn-secondary:hover {
+  background: #004080;
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 64, 128, 0.25);
+}
+
+/* Variante link: minimalista editorial */
+.btn-link {
+  color: #004080;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding: 0.3rem 0;
+}
+.btn-link:hover {
+  color: #0073e6;
+  border-bottom-color: #0073e6;
+}
+
+/* Carrusel automático con fade */
+.carousel-fade {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.carousel-fade figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+}
+.carousel-fade figure.active {
+  opacity: 1;
+  position: relative;
+}
+.carousel-fade img {
+  width: 100%;
+  border-radius: 8px;
+}
+.carousel-fade figcaption {
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.carousel-fade img,
+.gallery img {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px; /* límite máximo */
+  width: 100%; /* ocupa el ancho disponible */
+  height: auto; /* mantiene proporción */
+  border-radius: 8px; /* esquinas suaves */
+}
+
+/* =========================
+   INTRO SECTION
+   ========================= */
+.intro {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+  flex: 1 1 280px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #004080;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.card .btn-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #004080;
+  font-weight: 600;
+  border-bottom: 2px solid transparent; /* mantiene espacio */
+  text-decoration: none;
+}
+.card .btn-link:hover {
+  color: #0073e6;
+  border-bottom-color: transparent; /* evita la raya azul */
+}
+
+/* =========================
+   FEATURED SECTION
+   ========================= */
+.featured {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #eef6fa;
+}
+
+.featured figure {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra editorial */
+}
+
+.featured img {
+  width: 100%;
+  height: auto; /* mantiene proporción original */
+  max-height: 500px; /* límite máximo en desktop */
+  object-fit: contain; /* evita recortes bruscos */
+  display: block;
+}
+
+.featured figcaption {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  /*  font-style: italic; */
+  line-height: 1.5;
+  color: #004080; /* azul institucional */
+}
+
+/* =========================
+   ACTIVITIES SECTION
+   ========================= */
+.activities {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.activity-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.activity-index a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  background: #f0f0f0;
+  font-weight: 600;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.activity-index a:hover {
+  background: #004080;
+  color: #fff;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .featured img {
+    height: 300px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================
+   FEATURED CAROUSEL (Fade automático)
+   ========================= */
+.featured-carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden; /* asegura que nada se desborde */
+}
+
+.featured-carousel figure {
+  position: absolute;
+  inset: 0; /* top, right, bottom, left = 0 */
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-carousel figure.active {
+  opacity: 1;
+  position: relative;
+}
+
+.featured-carousel img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* límite máximo en desktop */
+  object-fit: contain; /* mantiene proporción sin recortes */
+  border-radius: 12px; /* esquinas más modernas */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* sombra editorial más marcada */
+  transition: transform 0.6s ease; /* efecto hover */
+}
+
+.featured-carousel img:hover {
+  transform: scale(1.02); /* ligero zoom al pasar el mouse */
+}
+
+.featured-carousel figure:not(.active) {
+  pointer-events: none; /* evita clics en imágenes ocultas */
+}
+
+/* =========================
+   FEATURED CAROUSEL ACTION
+   ========================= */
+.carousel-action {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.carousel-action .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.carousel-action .btn-secondary:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FEATURED CAROUSEL CAPTION
+   ========================= */
+.featured-carousel figcaption {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.65); /* fondo translúcido uniforme */
+  padding: 12px 18px;
+  border-radius: 8px;
+  max-width: 80%;
+  animation: captionFade 0.8s ease; /* animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes captionFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE ADAPTATION
+   ========================= */
+@media (max-width: 768px) {
+  .featured-carousel img {
+    max-height: 300px;
+  }
+  .featured-carousel figcaption {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    max-width: 95%;
+  }
+}
+
+/* =========================================================
+   Estilos para la sección "Instituciones Visitantes"
+   - Tarjetas editoriales con sombra y hover
+   - Ícono institucional en amarillo
+   - Títulos en azul institucional
+   - Texto introductorio justificado
+   - Botón de acción con transición suave
+   ========================================================= */
+
+.institution-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas en pantallas grandes */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.institution-item {
+  background: #f9f9fb;
+  border-radius: 10px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid #003366; /* azul institucional */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.institution-item:hover {
+  transform: translateY(-4px); /* efecto de levantamiento */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* sombra más intensa */
+  border-bottom-color: #00509e; /* azul más brillante en hover */
+  background-color: #ffffff; /* fondo más claro en hover */
+}
+
+/* Botón dentro de la tarjeta */
+.institution-item .btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #003366;
+  border-radius: 6px;
+  color: #003366;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.institution-item:hover .btn-secondary {
+  border-color: #00509e; /* borde acompaña el hover */
+  color: #00509e; /* texto acompaña el hover */
+  background-color: #f0f6fc; /* leve fondo azul claro */
+}
+
+.institution-item h2 {
+  display: flex;
+  align-items: center; /* centra verticalmente ícono y texto */
+  gap: 0.5rem; /* espacio entre ícono y texto */
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #003366; /* azul institucional */
+}
+
+.institution-item h2 i {
+  color: #f4b400; /* amarillo institucional */
+  font-size: 1.3rem;
+}
+
+.institution-item h2 a {
+  text-decoration: none;
+  color: #003366; /* azul institucional */
+  position: relative; /* necesario para el subrayado animado */
   transition: color 0.3s ease;
 }
 
-/* Hover aplicado al título completo: ícono y texto */
-h1:hover {
-  color: #ff6600; /* Naranja de acento para el texto */
+.institution-item h2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #00509e; /* azul más brillante */
+  transition: width 0.3s ease;
 }
 
-h1:hover .fa-camera {
-  color: #ffcc00; /* Amarillo dorado para el ícono */
+.institution-item h2 a:hover {
+  color: #00509e; /* azul más brillante en hover */
 }
 
-/* Contador de imágenes restantes */
-.restantes {
-  display: block;
-  margin-top: 6px;
-  color: #ffcc00; /* Amarillo dorado institucional */
-  font-size: 0.95em;
+.institution-item h2 a:hover::after {
+  width: 100%; /* subrayado aparece suavemente */
+}
+
+.institution-item h2 a:hover i {
+  color: #00509e; /* ícono también cambia */
+}
+
+.institution-item .date {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.institution-item .excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+  text-align: justify;
+}
+
+.institution-item .btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #003366;
+  border-radius: 6px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.institution-item .btn-secondary:hover {
+  background: #003366;
+  color: #fff;
+}
+
+/* texto de los markdown */
+.intro-text {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Footer institucional */
+footer {
+  background: #002f6c;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-top: 4rem; /* aumenta el espacio antes del footer */
+}
+
+/* =========================
+   HERO MODERNO LIMPIO
+   ========================= */
+
+.modern-hero {
+  position: relative;
+  min-height: 60vh;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Fondo real */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-overlay-dark),
+      var(--color-overlay-light)
+    ),
+    radial-gradient(
+      circle at top,
+      var(--color-primary),
+      var(--color-primary-dark)
+    );
+  z-index: 0;
+  transform: scale(1.05);
+}
+
+/* Contenido */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  max-width: 800px;
+}
+
+/* Título */
+.hero-content h1 {
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 1.8rem 1.2rem;
+  }
+}
+
+/* Subtítulo */
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 1.8rem;
+}
+
+/* Botones */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Botón glass (te faltaba este 👇) */
+.btn-glass {
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: var(--color-glass);
+  color: var(--color-text);
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /*  color: #fff; */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO ANIMACIONES
+   ========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   ANIMACIÓN SECUENCIAL HERO
+   ========================= */
+
+/* Estado inicial */
+.hero-content h1,
+.hero-content p,
+.hero-actions {
   opacity: 0;
-  transform: translateY(5px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.6s ease;
+  transform: translateY(20px);
 }
 
-/* Estado visible con animación */
-.restantes.show {
+/* Título */
+.hero-content h1 {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Subtítulo */
+.hero-content p {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Botones */
+.hero-actions {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   HERO ULTRA OPTIMIZADO
+   ========================= */
+
+.modern-hero {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Fondo */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4)),
+    radial-gradient(circle at top, #00509e, #003366);
+  z-index: 0;
+}
+
+/* Contenido */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Tipografía fluida */
+.hero-content h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
   opacity: 0.9;
-  transform: translateY(0);
+  margin-bottom: 1.8rem;
+}
+
+/* Botones */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Botón principal */
+.btn-primary {
+  /* background: linear-gradient(135deg, #004080, #0066cc); */
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-dark),
+    var(--color-primary)
+  );
+  color: var(--color-text);
+  box-shadow: 0 10px 25px var(--color-shadow);
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 64, 128, 0.4);
+}
+
+/* Botón glass */
+.btn-glass {
+  /*   background: rgba(255, 255, 255, 0.15);
+  color: #fff; */
+  background: var(--color-glass);
+  color: var(--color-text);
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Accesibilidad: foco visible */
+.btn-primary:focus-visible,
+.btn-glass:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.btn-primary:active,
+.btn-glass:active {
+  transform: scale(0.97);
+  transition: transform 0.1s;
+}
+
+/* =========================
+   ANIMACIÓN SECUENCIAL
+   ========================= */
+
+.hero-content h1,
+.hero-content p,
+.hero-actions a {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hero-content h1 {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-content p {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-actions a:nth-child(1) {
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.hero-actions a:nth-child(2) {
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
