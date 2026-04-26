@@ -1,0 +1,59 @@
+informatica:
+  - src: "/assets/img/pasantias/informatica/luis-porte-inf-soler-computer.jpg"
+    alt: "Luis Miguel Portes en su pasantía en Soler Computer"
+    caption: "🎓 Luís Miguel Portes – Área Técnica: Informática | Empresa: Soler Computer"
+
+  - src: "/assets/img/pasantias/informatica/marcos-lebron-inf-seguriasa.jpeg"
+    alt: "Marcos Noel Lebrón en su pasantía"
+    caption: "🎓 Marcos Noel Lebrón | Empresa: Seguriasa"
+
+  - src: "/assets/img/pasantias/informatica/emely-peralta-inf-hogar-escuela-rosa-duarte.jpg"
+    alt: "Emely Beatriz Peralta en su pasantía en Hogar Escuela Rosa Duarte"
+    caption: "🎓 Emely Beatriz Peralta – Área Técnica: Informática | Empresa: Hogar Escuela Rosa Duarte"
+
+  - src: "/assets/img/pasantias/informatica/jeison-uceta-inf-hogar-escuela-rosa-duarte.jpg"
+    alt: "Jeison Javier Uceta Báez en su pasantía en Hogar Escuela Rosa Duarte"
+    caption: "🎓 Jeison Javier Uceta Báez – Área Técnica: Informática | Empresa: Hogar Escuela Rosa Duarte"
+
+mercadeo:
+  - src: "/assets/img/pasantias/mercadeo/sheyla-james-merc-distrito-15-03.jpg"
+    alt: "Sheyla Lismar James en su pasantía en el Distrito Educativo 15-03"
+    caption: "🎓 Sheyla Lismar James – Área Técnica: Mercadeo | Empresa: Distrito Educativo 15-03"
+
+  - src: "/assets/img/pasantias/mercadeo/yuderka-sanchez-mec-ufhec.jpg"
+    alt: "Yuderka Sánchez Genao en su pasantía en UFHEC"
+    caption: "🎓 Yuderka Sánchez Genao – Área Técnica: Mecánica | Empresa: UFHEC"
+
+electricidad:
+  - src: "/assets/img/pasantias/electricidad/jonas-tejada-elect-calzasturd.jpg"
+    alt: "Jonás Andrés Tejada en su pasantía en Calzasturd"
+    caption: "🎓 Jonás Andrés Tejada – Área Técnica: Electricidad | Empresa: Calzasturd"
+
+  - src: "/assets/img/pasantias/electricidad/margaret-taveras-elect-eted.jpg"
+    alt: "Margaret Taveras en su pasantía en ETED"
+    caption: "🎓 Margaret Taveras – Área Técnica: Electricidad | Empresa: ETED"
+
+  - src: "/assets/img/pasantias/electricidad/perla-encarnacion-elect-pappaterra-montolio.png"
+    alt: "Perla Encarnación en su pasantía en Pappaterra Montolío"
+    caption: "🎓 Perla Encarnación – Área Técnica: Electricidad | Empresa: Pappaterra Montolío"
+
+  - src: "/assets/img/pasantias/electricidad/darlin-melo-elect-envases-tropicales.jpg"
+    alt: "Darlin Emilio Melo en su pasantía en Envases Tropicales"
+    caption: "🎓 Darlin Emilio Melo – Área Técnica: Electricidad | Empresa: Envases Tropicales"
+
+logistica:
+  - src: "/assets/img/pasantias/logistica/carlos-saul-jimenez-log-delta-comercial.jpg"
+    alt: "Carlos Súal Jiménez Turbí en el área de Logística de Delta Comercial"
+    caption: "🎓 Carlos Súal Jiménez Turbí – Área Técnica: Logística | Empresa: Delta Comercial"
+
+  - src: "/assets/img/pasantias/logistica/jesus-garcia-log-hit.jpg"
+    alt: "Jesús Miguel García en su pasantía en HIT"
+    caption: "🎓 Jesús Miguel García – Área Técnica: Logística | Empresa: HIT"
+
+  - src: "/assets/img/pasantias/logistica/marianny-rosario-log-distrito-15-03.jpg"
+    alt: "Marianny Rosario en su pasantía en el Distrito Educativo 15-03"
+    caption: "🎓 Marianny Rosario – Área Técnica: Logística | Empresa: Distrito Educativo 15-03"
+
+  - src: "/assets/img/pasantias/logistica/yeury-encarnacion-log-schad.jpg"
+    alt: "Yeury De León Encarnación en su pasantía en Frederic Schad"
+    caption: "🎓 Yeury De León Encarnación – Área Técnica: Logística | Empresa: Frederic Schad"
