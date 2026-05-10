@@ -59,6 +59,7 @@ Agradecemos profundamente a la empresa **Eaton** por abrir sus puertas y permiti
 La visita fue posible gracias al esfuerzo conjunto de:
 
 - **Alexis A. Arias**, Coordinador de la Oficina de Vinculación Sectorial.
+- **Jorge García**, Coordinador Académico
 - **Ing. Julissa Terrero**, representante de Eaton.
 - El equipo docente acompañante mencionado anteriormente.
 
