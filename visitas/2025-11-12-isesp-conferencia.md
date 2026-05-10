@@ -3,9 +3,7 @@ layout: default
 title: "Visita Técnica – ISESP (12 de noviembre de 2025)"
 date: 2025-11-12
 permalink: /visitas/2025-11-12-isesp-conferencia/
-excerpt: "Estudiantes de Quinto de Secundaria participaron en la conferencia sobre Fray Antón de Montesino y Fray Pedro de Córdoba, organizada por el ISESP."
----
-
+excerpt: "Estudiantes de Quinto de Secundaria participaron en la conferencia sobre Fray Antón de Montesino y Fray Pedro de Córdoba."
 ---
 
 # Visita - Instituto Superior de Estudios Pedro Poveda
@@ -35,10 +33,10 @@ La participación activa de nuestros estudiantes y docentes evidenció el inter�
 
 La visita permitió a los estudiantes ampliar su visión histórica y cultural, reforzando valores de justicia social y compromiso académico. Además, fortaleció la relación institucional con el ISESP y abrió oportunidades de colaboración futura.
 
-## Galería Fotográfica
+## 📸 Galería Fotográfica
 
 <div class="gallery">
-  {% for item in site.data.gallery_isesp %}
-    {% include figure.html src=item.src alt=item.alt caption=item.caption %}
+  {% for item in site.data.gallery_isesp_conferencia %}
+    {% include figure.html src=item.src alt=item.alt caption=item.caption event="Visita Técnica – ISESP Conferencia (12 de noviembre de 2025)" %}
   {% endfor %}
 </div>

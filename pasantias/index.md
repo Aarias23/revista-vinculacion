@@ -1,16 +1,31 @@
 ---
 layout: default
-title: "Pasantías"
-permalink: /pasantias/
+title: "Visitas Técnicas"
+permalink: /visitas/
 ---
 
-# Pasantías
+# Visitas Técnicas
 
-En esta sección se documentan los módulos de Formación en Centros de Trabajo (FCT) realizados por los estudiantes.  
-Cada pasantía incluye institución, período de duración y aprendizajes adquiridos.
+En esta sección se documentan las visitas técnicas realizadas por la Unidad de Vinculación Sectorial.  
+Cada visita incluye descripción, institución anfitriona y fotografías.
 
 ---
 
-## Listado de Pasantías
+## Listado de Visitas
 
-- [Pasantía – Alcaldía del Distrito Nacional (ADN) (2025–2026)](pasantia-adn-2025-2026.md)
+{% assign visitas = site.pages
+  | where: "layout", "default"
+  | where_exp: "page", "page.permalink contains '/visitas/'"
+  | where_exp: "page", "page.permalink != '/visitas/'"
+  | sort: "date"
+  | reverse %}
+
+<ul>
+{% for visita in visitas %}
+  <li>
+    <a href="{{ visita.url | relative_url }}">
+      {{ visita.title }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

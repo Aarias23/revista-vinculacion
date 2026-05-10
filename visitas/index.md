@@ -11,14 +11,18 @@ Cada visita incluye descripción, institución anfitriona y fotografías.
 
 ---
 
-## Listado de Visitas
-
-{% assign visitas = site.pages
-   | where_exp:"page","page.permalink contains '/visitas/' and page.permalink != '/visitas/'"
-   | sort: 'date' | reverse %}
+## 📋 Listado de Visitas
 
 <ul>
-  {% for visita in visitas %}
-    <li><a href="{{ visita.url }}">{{ visita.title }}</a></li>
-  {% endfor %}
+{% assign todas_visitas = site.pages | where_exp: "page", "page.permalink contains '/visitas/'" %}
+{% assign visitas = todas_visitas | where_exp: "page", "page.url != '/visitas/'" | sort: "date" | reverse %}
+
+{% for visita in visitas %}
+
+  <li>
+    <a href="{{ visita.url | relative_url }}">
+      {{ visita.title }}
+    </a>
+  </li>
+{% endfor %}
 </ul>

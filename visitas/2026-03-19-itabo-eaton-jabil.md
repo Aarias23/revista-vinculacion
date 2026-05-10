@@ -5,67 +5,51 @@ permalink: /visitas/itabojabil-eaton-2026/
 date: 2026-03-19
 ---
 
-## Visita Técnica al Parque Industrial Itabo – Empresas Eaton y Jabil
+# Visita Técnica al Parque Industrial Itabo – Empresas Eaton y Jabil
 
 **Fecha:** Jueves 19 de marzo de 2026  
 **Lugar:** Parque Industrial Itabo, Bajos de Haina, Rep. Dom.
 
-### Propósito de la visita
+## Objetivos de la visita
 
-Motivar a nuestros **estudiantes** a elegir carreras relacionadas con la ciencia, la tecnología, la ingeniería y las matemáticas (STEM). El objetivo planteado por el Parque Industrial Itabo fue **sensibilizar a nuestros jóvenes sobre la importancia de las carreras STEM, atendiendo a las necesidades del sector empresarial, y brindarles la oportunidad de observar procesos de clase mundial en las operaciones de Eaton y Jabil.**
+La actividad tuvo como propósito fortalecer la vinculación entre la formación académica y el sector productivo, motivando a los estudiantes hacia carreras STEM y permitiéndoles conocer de primera mano procesos industriales de clase mundial.
 
-### Desarrollo de la actividad
+## Empresas participantes
 
-La visita fue coordinada por la **Oficina de Vinculación Sectorial**, bajo la dirección de su **Coordinador Alexis Antonio Arias**, junto al **Gerente de Recursos Humanos del Parque Industrial Itabo**, **Rafael Piantini**. También contó con el apoyo del **Coordinador Técnico Jorge García**, quien gestionó la inclusión de la actividad en la programación mensual del centro educativo, la asignación de los docentes acompañantes, el transporte y las condiciones necesarias para garantizar la participación de nuestros estudiantes.
+- **Jabil**: recibió a los estudiantes de la carrera de Logística y Transporte.
+- **Eaton (Itabo)**: recibió a los estudiantes de Administración y Desarrollo de Aplicaciones.
 
-El grupo estuvo conformado por **62 estudiantes de quinto de secundaria** de las secciones de **Logística y Transporte** y **Administración y Desarrollo de Aplicaciones Informáticas**.
+## Actividades realizadas
 
-- Los estudiantes de **Logística y Transporte** visitaron la empresa **Jabil**.
-- Los estudiantes de **Administración y Desarrollo de Aplicaciones Informáticas** visitaron la empresa **Eaton**.
+- Charlas técnicas impartidas por profesionales de ambas empresas.
+- Recorridos guiados por las instalaciones para observar procesos productivos.
+- Espacios de interacción donde los estudiantes pudieron realizar preguntas y relacionar lo aprendido en clase con la práctica laboral.
 
-Los docentes y psicóloga que acompañaron fueron:
+## Resultados obtenidos
 
-- María del Carmen Martínez
-- Eridiana De La Rosa
-- Juana María Feliz Núñez
-- Edwin Vladimir Llúberes
-- Laura Stephany Ramírez
-- Chennys Annerys Matos (psicóloga)
+- Se fortaleció la integración entre la formación académica y el entorno laboral.
+- Los estudiantes vivieron experiencias directas que enriquecen su perfil profesional.
+- Se reforzó el compromiso institucional de vinculación con el sector productivo.
 
-### Sobre las empresas visitadas
+## Agradecimientos
 
-**Jabil** se dedica a ofrecer soluciones de manufactura avanzada a nivel global, con un fuerte enfoque en el sector de dispositivos médicos en República Dominicana. En su planta de Bajos de Haina producen equipos médicos, instrumentos quirúrgicos y kits de diagnóstico, cumpliendo con estándares internacionales de calidad y regulaciones sanitarias. Además, combinan ingeniería, diseño y gestión de la cadena de suministro para apoyar a marcas líderes en salud y otras industrias, posicionándose como un socio estratégico en innovación y manufactura.
+Agradecemos profundamente a las empresas **Eaton** y **Jabil** por abrir sus puertas y permitir que nuestros estudiantes vivan experiencias que enriquecen su formación académica y profesional. Este tipo de iniciativas refuerza nuestro compromiso de vinculación con el sector productivo y contribuye al desarrollo integral de nuestros jóvenes.
 
-**Eaton**, por su parte, se especializa en la fabricación de equipos eléctricos y soluciones de gestión de energía. Su producción incluye controles de motores, accesorios eléctricos y sistemas que permiten un uso seguro y eficiente de la energía eléctrica, hidráulica y mecánica. Como multinacional, Eaton busca ayudar a clientes industriales y comerciales a administrar la energía de manera sostenible, y su planta en República Dominicana forma parte de esa red global de manufactura orientada a la eficiencia y seguridad energética.
+## Reconocimientos especiales
 
-### Impacto en las estudiantes
+La visita fue posible gracias al esfuerzo conjunto de:
 
-La experiencia permitió a nuestros estudiantes conocer de primera mano procesos de clase mundial y comprender cómo las carreras STEM se conectan directamente con las necesidades del sector productivo. El contacto con profesionales y la observación de operaciones industriales fortalecieron su motivación para continuar explorando oportunidades en ciencia, tecnología, ingeniería y matemáticas.
-
-### Agradecimientos
-
-Expresamos nuestro agradecimiento especial al **Sr. Rafael Piantini**, Gerente de Recursos Humanos del Parque Industrial Itabo, por su apoyo en la coordinación de esta visita. Reconocemos también la colaboración del **Coordinador Técnico Jorge García**, así como el acompañamiento de los docentes y psicóloga que guiaron a nuestras estudiantes durante la jornada. Finalmente, agradecemos a las empresas **Eaton** y **Jabil** por abrir sus puertas y compartir sus procesos con nuestros estudiantes.
+- **Alexis A. Arias**, Coordinador de la Oficina de Vinculación Sectorial.
+- **Rafael Piantini**, Gerente de Recursos Humanos en el Parque Industrial Itabo.
+- **Jorge García**, Coordinador Técnico.
+- El equipo docente acompañante: **María del Carmen Martínez**, **Eridiana De La Rosa**, **Juana María Feliz Núñez**, **Edwin Vladimir Llúberes**, **Laura Stephany Ramírez** y **Chennys Annerys Matos**.
 
 ---
 
-## Galería Fotográfica
+## 📸 Galería Fotográfica
 
 <div class="gallery">
-  {% for item in site.data.gallery %}
-    {% include figure.html src=item.src alt=item.alt caption=item.caption %}
+  {% for item in site.data.gallery_itabo_2026 %}
+    {% include figure.html src=item.src alt=item.alt caption=item.caption event="Visita Técnica – Itabo/Jabil/Eaton (19 de marzo de 2026)" %}
   {% endfor %}
-</div>
-
-<!-- Lightbox container -->
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-  <div id="lightbox-caption" class="lightbox-caption"></div>
-  <div id="lightbox-counter" class="lightbox-counter"></div>
-
-  <!-- Flechas de navegación -->
-
-<a class="lightbox-prev">&#10094;</a>
-<a class="lightbox-next">&#10095;</a>
-
 </div>

@@ -6,43 +6,39 @@ permalink: /instituciones/
 
 # Visitas Institucionales
 
-<div class="intro-text">
-  <p>
-    El Instituto Politécnico Salesiano Padre Bartolomé Vegh recibe periódicamente la visita de universidades, empresas y organismos, fortaleciendo la vinculación académica y profesional.
-  </p>
-  <p>
-    Cada actividad es coordinada por la <strong>Oficina de Vinculación Sectorial</strong>, en articulación con la <strong>Coordinación Técnica</strong>, y se documenta con rigor institucional para preservar su valor educativo.
-  </p>
-</div>
+El Instituto Politécnico Salesiano Padre Bartolomé Vegh recibe periódicamente la visita de universidades, empresas y organismos, fortaleciendo la vinculación académica y profesional.
+
+Cada actividad es coordinada por la Oficina de Vinculación Sectorial, en articulación con la Coordinación Técnica.
 
 ---
 
-## Registro de visitas institucionales recibidas
+## 📋 Registro de visitas institucionales recibidas
 
 {% assign instituciones = site.pages
-   | where_exp:"page","page.permalink contains '/instituciones/' and page.permalink != '/instituciones/'"
-   | sort: 'date' | reverse %}
+  | where_exp: "page", "page.permalink contains '/instituciones/'"
+  | sort: "date"
+  | reverse %}
 
 <div class="institution-list">
   {% for institucion in instituciones %}
-    <article class="institution-item">
-      <h2>
-        <i class="fa-solid fa-building"></i>
-        <a href="{{ institucion.url }}">
+    {% if institucion.permalink != '/instituciones/' %}
+      <article class="institution-item">
+        <h2>
+          <i class="fa-solid fa-building"></i>
           {{ institucion.title }}
-        </a>
-      </h2>
-      {% if institucion.date %}
-        <p class="date">📅 {{ institucion.date | date: "%d de %B de %Y" }}</p>
-      {% endif %}
-      {% if institucion.excerpt %}
-        <p class="excerpt">{{ institucion.excerpt }}</p>
-      {% else %}
+        </h2>
+        {% if institucion.date %}
+          <p class="date">📅 {{ institucion.date | date: "%d de %B de %Y" }}</p>
+        {% endif %}
         <p class="excerpt">
-          Esta visita fortaleció la vinculación académica y profesional de nuestro Instituto.
+          {% if institucion.excerpt %}
+            {{ institucion.excerpt }}
+          {% else %}
+            Esta visita fortaleció la vinculación académica y profesional de nuestro Instituto.
+          {% endif %}
         </p>
-      {% endif %}
-      <a href="{{ institucion.url }}" class="btn-secondary">Ver detalle →</a>
-    </article>
+        <a href="{{ institucion.url | relative_url }}" class="btn-secondary">Ver detalle →</a>
+      </article>
+    {% endif %}
   {% endfor %}
 </div>

@@ -1,15 +1,34 @@
-title: "Revista Digital - Unidad de Vinculación Sectorial"
-description: "Documentación de visitas técnicas y pasantías"
+title: "Revista Digital – Unidad de Vinculación Sectorial"
+description: "Documentación oficial de visitas técnicas, pasantías e instituciones visitantes del Instituto Politécnico Salesiano Padre Bartolomé Vegh"
+
 theme: minima
 
-# Plugins instalados
+# URL base (GitHub Pages)
+url: "https://aarias23.github.io"
+baseurl: "/revista-vinculacion"
+
+# Idioma y zona horaria
+lang: es-DO
+timezone: America/Santo_Domingo
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Incluir carpeta de estilos personalizados
-include: ["assets/css"]
+# Feed
+feed:
+  path: feed.xml
 
-# Opciones adicionales
-url: "https://aarias23.github.io"
-baseurl: "/revista-vinculacion"
+# IMPORTANTE: assets deben copiarse tal cual al build
+include:
+  - assets
+
+# 🔥 FIX CLAVE para Windows + TZINFO + Live reload
+incremental: false
+watch: true
+force_polling: true
+
+# Mejora compatibilidad GitHub Pages
+future: false
+show_drafts: false

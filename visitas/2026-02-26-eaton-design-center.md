@@ -12,7 +12,7 @@ date: 2026-02-26
 
 ### Propósito de la visita
 
-Motivar a nuestras estudiantes a elegir carreras relacionadas con la ciencia, la tecnología, la ingeniería y las matemáticas (STEM). Fuimos invitados por un grupo de ingenieras para inspirar a los jóvenes a estudiar carreras STEAM.
+Fomentar en nuestras estudiantes el interés y la motivación por elegir carreras en las áreas de ciencia, tecnología, ingeniería y matemáticas (STEM), a través de un encuentro con un grupo de ingenieras que compartieron sus experiencias profesionales para inspirar y orientar a los jóvenes en su desarrollo académico y vocacional.
 
 ### Desarrollo de la actividad
 
@@ -22,9 +22,7 @@ El grupo estuvo acompañado por los docentes **Alexis Arias (Coordinador de la O
 
 Las ingenieras **Dorkiana Casilla** y **Laura Portuondo** impartieron una charla motivadora y guiaron al grupo en un recorrido por las instalaciones del Eaton Design Center, compartiendo sus conocimientos y experiencias de manera cercana y enriquecedora.
 
-Las ingenieras **Dorkiana Casilla** y **Laura Portuondo** impartieron una charla motivadora y guiaron al grupo en un recorrido por las instalaciones del Eaton Design Center, compartiendo sus conocimientos y experiencias de manera cercana y enriquecedora.
-
-El mensaje de motivar a nuestras jóvenes a atreverse a elegir carreras STEM fue claro, cercano y transformador. Escuchar testimonios, conocer experiencias reales y ver ejemplos concretos dentro de un entorno profesional como el de Eaton tuvo un impacto muy significativo.
+El mensaje de motivar a nuestras jóvenes a atreverse a elegir carreras STEM fue claro, cercano y transformador. Escuchar testimonios, conocer experiencias reales y ver ejemplos concretos dentro de un entorno profesional como el de Eaton Design Center tuvo un impacto muy significativo.
 
 ### Impacto en nuestras estudiantes
 
@@ -38,24 +36,10 @@ Asimismo, expresamos nuestro reconocimiento a los docentes **Alexis Arias, Grimi
 
 ---
 
-## Galería Fotográfica
+## 📸 Galería Fotográfica
 
 <div class="gallery">
-  {% for item in site.data.gallery_design %}
-    {% include figure.html src=item.src alt=item.alt caption=item.caption %}
+  {% for item in site.data.gallery_eaton_2026 %}
+    {% include figure.html src=item.src alt=item.alt caption=item.caption event="Visita Técnica – Eaton Design Center (26 de febrero de 2026)" %}
   {% endfor %}
-</div>
-
-<!-- Lightbox container -->
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-  <div id="lightbox-caption" class="lightbox-caption"></div>
-  <div id="lightbox-counter" class="lightbox-counter"></div>
-
-  <!-- Flechas de navegación -->
-
-<a class="lightbox-prev">&#10094;</a>
-<a class="lightbox-next">&#10095;</a>
-
 </div>
