@@ -1,13 +1,5 @@
-<!-- <figure{% if include.event %} data-event="{{ include.event | escape }}"{% endif %}>
-  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy" />
-
-  {% if include.caption %}
-    <figcaption>{{ include.caption }}</figcaption>
-  {% endif %}
-</figure> -->
-
 <figure
-  class="gallery-card"
+  class="gallery-item"
   {%
   if
   include.event
@@ -17,15 +9,13 @@
   endif
   %}
 >
-  <div class="gallery-image-wrapper">
-    <img
-      src="{{ include.src | relative_url }}"
-      alt="{{ include.alt | escape }}"
-      loading="lazy"
-    />
-  </div>
+  <img
+    src="{{ include.src | relative_url }}"
+    alt="{{ include.alt | escape }}"
+    loading="lazy"
+  />
 
   {% if include.caption %}
-  <figcaption class="gallery-caption">{{ include.caption }}</figcaption>
+  <figcaption>{{ include.caption }}</figcaption>
   {% endif %}
 </figure>

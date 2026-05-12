@@ -146,9 +146,4 @@ title: "Revista Digital"
   </div>
 </section>
 
-<footer>
-  <p>© 2026 Instituto Politécnico Salesiano Padre Bartolomé Vegh · Unidad de Vinculación Sectorial</p>
-  <p>Santo Domingo, República Dominicana</p>
-</footer>
-
 <script src="{{ '/assets/js/carousel.js' | relative_url }}"></script>

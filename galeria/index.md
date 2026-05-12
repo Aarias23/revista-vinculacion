@@ -44,8 +44,8 @@ Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados,
 
 ### Eaton Design Center (26 de febrero de 2026)
 
-<div class="gallery">
-  {% for item in site.data.gallery_eaton_2026 limit:2 %}
+<div class="gallery preview">
+  {% for item in site.data.gallery_eaton_2026 limit:3 %}
     {% include figure.html 
       src=item.src 
       alt=item.alt 
@@ -63,8 +63,8 @@ Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados,
 
 ### Parque Industrial Itabo (2026)
 
-<div class="gallery">
-  {% for item in site.data.gallery_itabo_2026 limit:2 %}
+<div class="gallery preview">
+  {% for item in site.data.gallery_itabo_2026 limit:3 %}
     {% include figure.html 
       src=item.src 
       alt=item.alt 
@@ -84,7 +84,7 @@ Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados,
 
 ### Pasantía – Año Escolar 2025–2026
 
-<div class="gallery">
+<div class="gallery preview">
 
 {% assign pasantia = site.data.pasantia_2025_2026 %}
 
@@ -97,7 +97,7 @@ event="Pasantía – Año Escolar 2025–2026"
 %}
 {% endfor %}
 
-{% for item in pasantia.logistica limit:1 %}
+{% for item in pasantia.logistica limit:3 %}
 {% include figure.html
 src=item.src
 alt=item.alt
