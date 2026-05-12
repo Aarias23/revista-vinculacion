@@ -69,10 +69,6 @@ header nav a:hover {
    GALERÍA PROFESIONAL Y SIMÉTRICA
    ========================= */
 
-/* =========================
-   GALERÍA PROFESIONAL
-   ========================= */
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
