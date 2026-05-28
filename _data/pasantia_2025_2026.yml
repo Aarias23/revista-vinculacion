@@ -1,7 +1,7 @@
 informatica:
-  - src: "/assets/img/pasantias/informatica/luis-porte-inf-soler-computer.jpg"
-    alt: "Luis Miguel Portes en su pasantía en Soler Computer"
-    caption: "Luis Miguel Portes – Área Técnica: Informática | Empresa: Soler Computer"
+  - src: "/assets/img/pasantias/informatica/keiler-alexis-arias.jpeg"
+    alt: "Keiler Alexis Arias en su pasantía en la Alcaldía del Distrito Nacional"
+    caption: "Keiler Alexis Arias – Área Técnica: Informática | Empresa: Alcaldía del Distrito Nacional"
     event: "Pasantía – Año Escolar 2025–2026"
 
   - src: "/assets/img/pasantias/informatica/marcos-lebron-inf-seguriasa.jpeg"
@@ -17,6 +17,11 @@ informatica:
   - src: "/assets/img/pasantias/informatica/jeison-uceta-inf-hogar-escuela-rosa-duarte.jpg"
     alt: "Jeison Javier Uceta Báez en su pasantía en Hogar Escuela Rosa Duarte"
     caption: "Jeison Javier Uceta Báez – Área Técnica: Informática | Empresa: Hogar Escuela Rosa Duarte"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/informatica/xaviel-pereyra-marte.jpeg"
+    alt: "Xaviel Pereyra Marte en su pasantía en la Alcaldía del Distrito Nacional"
+    caption: "Xaviel Pereyra Marte – Área Técnica: Informática | Empresa: Alcaldía del Distrito Nacional"
     event: "Pasantía – Año Escolar 2025–2026"
 
   - src: "/assets/img/pasantias/informatica/franciel-montero-inf.jpg"
@@ -44,26 +49,101 @@ informatica:
     caption: "Camila Rodríguez Ramírez – Área Técnica: Informática | Empresa: Pappaterra Montolío"
     event: "Pasantía – Año Escolar 2025–2026"
 
-mercadeo:
-  - src: "/assets/img/pasantias/mercadeo/sheyla-james-merc-distrito-15-03.jpg"
-    alt: "Sheyla Lismar James en su pasantía en el Distrito Educativo 15-03"
-    caption: "Sheyla Lismar James – Área Técnica: Mercadeo | Empresa: Distrito Educativo 15-03"
+  - src: "/assets/img/pasantias/informatica/juan-diego-cavallo.jpeg"
+    alt: "Juan Diego Cavallo en su pasantía en la Junta Central Electoral"
+    caption: "Juan Diego Cavallo – Área Técnica: Informática | Empresa: Junta Central Electoral"
     event: "Pasantía – Año Escolar 2025–2026"
 
+  - src: "/assets/img/pasantias/informatica/emely-marie-gonzalez-encarnacion.jpeg"
+    alt: "Emely Marie González Encarnación en su pasantía en Listín Diario"
+    caption: "Emely Marie González Encarnación – Área Técnica: Informática | Empresa: Listín Diario"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/informatica/genesis-daniela-vasquez.jpg"
+    alt: "Génesis Daniela Vásquez en su pasantía en Agencia de Aduanas Álvaro Gestiones"
+    caption: "Génesis Daniela Vásquez – Área Técnica: Informática | Empresa: Agencia de Aduanas Álvaro Gestiones"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/informatica/luis-porte-inf-soler-computer.jpg"
+    alt: "Luis Miguel Portes en su pasantía en Soler Computer"
+    caption: "Luis Miguel Portes – Área Técnica: Informática | Empresa: Soler Computer"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/informatica/enmanuel-canario-mora.jpg"
+    alt: "Enmanuel Canario Mora en su pasantía en el Instituto Superior de Estudios Poveda"
+    caption: "Enmanuel Canario Mora – Área Técnica: Informática | Empresa: Instituto Superior de Estudios Poveda"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/informatica/justin-pujols.jpg"
+    alt: "Justin Pujols en su pasantía en el Banco Agrícola"
+    caption: "Justin Pujols – Área Técnica: Informática | Empresa: Banco Agrícola"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+mercadeo:
   - src: "/assets/img/pasantias/mercadeo/yuderka-sanchez-mec-ufhec.jpg"
     alt: "Yuderka Sánchez Genao en su pasantía en UFHEC"
     caption: "Yuderka Sánchez Genao – Área Técnica: Mercadeo | Empresa: UFHEC"
     event: "Pasantía – Año Escolar 2025–2026"
 
+  - src: "/assets/img/pasantias/mercadeo/marie-angely-del-rosario.jpg"
+    alt: "Marie Angely Del Rosario en su pasantía en Service Travel"
+    caption: "Marie Angely Del Rosario – Área Técnica: Mercadeo | Empresa: Service Travel"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/arielby-misael-perez.jpg"
+    alt: "Arielby Misael Pérez en su pasantía en Altacopa, SA"
+    caption: "Arielby Misael Pérez – Área Técnica: Mercadeo | Empresa: Altacopa, SA"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/mariely-lora-rodriguez.jpg"
+    alt: "Mariely Lora Rodríguez en su pasantía en el Distrito Educativo 15-03"
+    caption: "Mariely Lora Rodríguez – Área Técnica: Mercadeo | Empresa: Distrito Educativo 15-03"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/sheyla-james-merc-distrito-15-03.jpg"
+    alt: "Sheyla Lismar James en su pasantía en el Distrito Educativo 15-03"
+    caption: "Sheyla Lismar James – Área Técnica: Mercadeo | Empresa: Distrito Educativo 15-03"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/cruz-mariel-zapata-brito.jpg"
+    alt: "Cruz Mariel Zapata Brito en su pasantía en el Distrito Educativo 15-03"
+    caption: "Cruz Mariel Zapata Brito – Área Técnica: Mercadeo | Empresa: Distrito Educativo 15-03"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/felix-steven-de-los-santos.jpeg"
+    alt: "Félix Steven De Los Santos en su pasantía en Altacopa, S.A."
+    caption: "Félix Steven De Los Santos – Área Técnica: Mercadeo | Empresa: Altacopa, S.A."
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/julianny-manon-ramirez.jpg"
+    alt: "Julianny Mañon Ramírez en su pasantía en Santo Domingo Country, SRL"
+    caption: "Julianny Mañon Ramírez – Área Técnica: Mercadeo | Empresa: Santo Domingo Country, SRL"
+    event: "Pasantía – Año Escolar 2025–2026"
+
 electricidad:
-  - src: "/assets/img/pasantias/electricidad/jonas-tejada-elect-calzasturd.jpg"
-    alt: "Jonás Andrés Tejada en su pasantía en Calzasturd"
-    caption: "Jonás Andrés Tejada – Área Técnica: Electricidad | Empresa: Calzasturd"
+  - src: "/assets/img/pasantias/electricidad/benjamin-farina-cordero.jpg"
+    alt: "Benjamín Fariña Cordero en su pasantía en ETED"
+    caption: "Benjamín Fariña Cordero – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/maicol-miguel-ubri-cuevas.jpeg"
+    alt: "Maicol Miguel Ubrí Cuevas en su pasantía en la Alcaldía del Distrito Nacional"
+    caption: "Maicol Miguel Ubrí Cuevas y Arlenys Eridania Tejeda Sánchez – Área Técnica: Electricidad | Empresa: Alcaldía del Distrito Nacional"
     event: "Pasantía – Año Escolar 2025–2026"
 
   - src: "/assets/img/pasantias/electricidad/margaret-taveras-elect-eted.jpg"
     alt: "Margaret Taveras en su pasantía en ETED"
     caption: "Margaret Taveras – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/justin-marinez-ubri.jpeg"
+    alt: "Justin Mariñez Ubri en su pasantía en Servicios Aduanales Franmar, SRL"
+    caption: "Justin Mariñez Ubri – Área Técnica: Electricidad | Empresa: Servicios Aduanales Franmar, SRL"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/jonas-tejada-elect-calzasturd.jpg"
+    alt: "Jonás Andrés Tejada en su pasantía en Calzasturd"
+    caption: "Jonás Andrés Tejada – Área Técnica: Electricidad | Empresa: Calzasturd"
     event: "Pasantía – Año Escolar 2025–2026"
 
   - src: "/assets/img/pasantias/electricidad/perla-encarnacion-elect-pappaterra-montolio.png"
@@ -76,15 +156,55 @@ electricidad:
     caption: "Darlin Emilio Melo – Área Técnica: Electricidad | Empresa: Envases Tropicales"
     event: "Pasantía – Año Escolar 2025–2026"
 
+  - src: "/assets/img/pasantias/electricidad/elizabeth-carolina-garcia-castillo.jpg"
+    alt: "Elizabeth Carolina Garcia Castillo en su pasantía en Haina International Terminals (HIT)"
+    caption: "Elizabeth Carolina Garcia Castillo – Área Técnica: Electricidad | Empresa: Haina International Terminals (HIT)"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/liz-marie-clase-sanchez.jpeg"
+    alt: "Liz Marie Clase Sánchez en su pasantía en ETED"
+    caption: "Liz Marie Clase Sánchez – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/yabriel-nicolas-pena-santana.jpg"
+    alt: "Yabriel Nicolás Peña Santana en su pasantía en ETED"
+    caption: "Yabriel Nicolás Peña Santana – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/raylin-yoel-pujols-gonzalez.jpg"
+    alt: "Raylin Yoel Pujols González en su pasantía en ETED"
+    caption: "Raylin Yoel Pujols González – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/electricidad/jariel-andres-encarnacion-chalas.jpeg"
+    alt: "Jariel Andrés Encarnación Chalas en su pasantía en ETED"
+    caption: "Jariel Andrés Encarnación Chalas – Área Técnica: Electricidad | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
 logistica:
+  - src: "/assets/img/pasantias/logistica/scarlet-tavarez-pena.jpeg"
+    alt: "Scarlet Tavarez Peña en su pasantía en Agencia Aduanal & Comercio Exterior"
+    caption: "Scarlet Tavarez Peña – Área Técnica: Logística | Empresa: Agencia Aduanal & Comercio Exterior"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/charlenis-matos-de-los-santos.jpg"
+    alt: "Charlenis Matos De Los Santos en su pasantía en Haina International Terminal"
+    caption: "Charlenis Matos De Los Santos – Área Técnica: Logística | Empresa: Haina International Terminal"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/jaronli-maciel-camilo.png"
+    alt: "Jaronli Maciel Camilo en su pasantía en el Instituto Nacional de Aguas Potables y Alcantarillados"
+    caption: "Jaronli Maciel Camilo – Área Técnica: Logística | Empresa: Instituto Nacional de Aguas Potables y Alcantarillados"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/yeury-encarnacion-log-schad.jpg"
+    alt: "Yeury De León Encarnación en su pasantía en Frederic Schad"
+    caption: "Yeury De León Encarnación – Área Técnica: Logística | Empresa: Frederic Schad"
+    event: "Pasantía – Año Escolar 2025–2026"
+
   - src: "/assets/img/pasantias/logistica/carlos-saul-jimenez-log-delta-comercial.jpg"
     alt: "Carlos Súal Jiménez Turbí en el área de Logística de Delta Comercial"
     caption: "Carlos Súal Jiménez Turbí – Área Técnica: Logística | Empresa: Delta Comercial"
-    event: "Pasantía – Año Escolar 2025–2026"
-
-  - src: "/assets/img/pasantias/logistica/jesus-garcia-log-hit.jpg"
-    alt: "Jesús Miguel García en su pasantía en HIT"
-    caption: "Jesús Miguel García – Área Técnica: Logística | Empresa: HIT"
     event: "Pasantía – Año Escolar 2025–2026"
 
   - src: "/assets/img/pasantias/logistica/marianny-rosario-log-distrito-15-03.jpg"
@@ -92,7 +212,47 @@ logistica:
     caption: "Marianny Rosario – Área Técnica: Logística | Empresa: Distrito Educativo 15-03"
     event: "Pasantía – Año Escolar 2025–2026"
 
-  - src: "/assets/img/pasantias/logistica/yeury-encarnacion-log-schad.jpg"
-    alt: "Yeury De León Encarnación en su pasantía en Frederic Schad"
-    caption: "Yeury De León Encarnación – Área Técnica: Logística | Empresa: Frederic Schad"
+  - src: "/assets/img/pasantias/logistica/jesus-garcia-log-hit.jpg"
+    alt: "Jesús Miguel García en su pasantía en HIT"
+    caption: "Jesús Miguel García – Área Técnica: Logística | Empresa: HIT"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/nikairy-altagrasi-franco-aquino.jpeg"
+    alt: "Nikairy Altagrasi Franco Aquino en su pasantía en Navisfret, S.R.L."
+    caption: "Nikairy Altagrasi Franco Aquino – Área Técnica: Logística | Empresa: Navisfret, S.R.L."
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/melannie-anais-ruiz.jpg"
+    alt: "Melannie Anais Ruiz en su pasantía en Altacopa, S.A."
+    caption: "Melannie Anais Ruiz – Área Técnica: Logística | Empresa: Altacopa, S.A."
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/dileynni-heredia-contreras.jpeg"
+    alt: "Dileynni Heredia Contreras en su pasantía en la Operadora Metropolitana de Servicios de Autobuses"
+    caption: "Dileynni Heredia Contreras – Área Técnica: Logística | Empresa: Operadora Metropolitana de Servicios de Autobuses"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/mia-esther-lucas.jpeg"
+    alt: "Mia Esther Lucas en su pasantía en Capital Transport Solutions"
+    caption: "Mia Esther Lucas – Área Técnica: Logística | Empresa: Capital Transport Solutions"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/reyna-luz-matos-montano.jpeg"
+    alt: "Reyna Luz Matos Montaño en su pasantía en la Dirección General de Impuestos Internos"
+    caption: "Reyna Luz Matos Montaño – Área Técnica: Logística | Empresa: Dirección General de Impuestos Internos"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/michel-moreta-reyes.jpeg"
+    alt: "Michel Moreta Reyes en su pasantía en el Distrito 15-03"
+    caption: "Michel Moreta Reyes – Área Técnica: Logística | Empresa: Distrito 15-03"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/rusbelt-adrian-gavilan-feliz.jpeg"
+    alt: "Rusbelt Adrian Gavilan Feliz en su pasantía en el Hospital General Doctor José Vinicio Calventi"
+    caption: "Rusbelt Adrian Gavilan Feliz – Área Técnica: Logística | Empresa: Hospital General Doctor José Vinicio Calventi"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/karyme-ravelo-reyes.jpg"
+    alt: "Karyme Ravelo Reyes en su pasantía en Fex Mirador Norte"
+    caption: "Karyme Ravelo Reyes – Área Técnica: Logística | Empresa: Fex Mirador Norte"
     event: "Pasantía – Año Escolar 2025–2026"

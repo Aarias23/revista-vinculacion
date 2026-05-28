@@ -606,37 +606,30 @@ header nav {
     height: 300px;
   }
 }
+
 /* =========================
-   FEATURED CAROUSEL (BASE)
+   FEATURED CAROUSEL (DEPURADO)
    ========================= */
 .featured-carousel {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
-
-  height: 600px; /* 🔥 altura principal */
+  height: 600px;
   overflow: hidden;
-
+  border-radius: 12px;
   perspective: 1000px;
 }
 
 /* =========================
    SLIDES
    ========================= */
-
 .featured-carousel figure {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
-  display: flex;
-  flex-direction: column;
-
   opacity: 0;
   transform: scale(1.02);
-
   transition:
     opacity 0.8s ease-in-out,
     transform 1.2s ease-out;
@@ -653,90 +646,50 @@ header nav {
 }
 
 /* =========================
-   IMAGEN (UNIFORME)
+   IMAGEN
    ========================= */
 .featured-carousel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* =========================
-   CAPTION (MEJORADO)
-   ========================= */
-.featured-carousel figcaption {
-  position: absolute;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(6px);
-
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
-
-  font-size: 0.95rem;
-  text-align: center;
-
-  opacity: 0;
-  transition: all 0.4s ease;
-}
-
-.featured-carousel figure.active figcaption {
-  opacity: 1;
-}
-
-/* =========================
-   PROGRESS BAR (FIX)
+   PROGRESS BAR
    ========================= */
 .carousel-progress {
   position: absolute;
   top: 0;
   left: 0;
-
   height: 4px;
   width: 0%;
-
   background: linear-gradient(90deg, #ffcc00, #ff9900);
-
   z-index: 20;
   border-radius: 12px 12px 0 0;
-
-  /* 🔥 IMPORTANTE: quitamos delay visual */
   transition: none;
 }
 
 /* =========================
-   BOTONES
+   BOTONES DE NAVEGACIÓN
    ========================= */
 .carousel-btn {
   position: absolute;
-  top: 48%; /* 🔥 ajuste visual más preciso */
+  top: 48%;
   transform: translateY(-50%);
-
   padding: 8px 14px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: rgba(0, 0, 0, 0.35);
   color: #fff;
-
   border: none;
-  border-radius: 8px; /* 🔥 forma rectangular suave */
-
+  border-radius: 8px;
   font-size: 1.5rem;
-
   cursor: pointer;
   z-index: 20;
-
   transition:
     background 0.3s ease,
     transform 0.2s ease;
@@ -748,71 +701,50 @@ header nav {
 }
 
 .carousel-btn.prev {
-  left: 15px; /* 🔥 mejor separación */
+  left: 15px;
 }
 
 .carousel-btn.next {
-  right: 15px; /* 🔥 mejor separación */
-}
-/* =========================
-   RESPONSIVE
-   ========================= */
-@media (max-width: 768px) {
-  .featured-carousel {
-    height: 420px;
-  }
-
-  .featured-carousel figcaption {
-    bottom: 70px;
-    font-size: 0.85rem;
-  }
+  right: 15px;
 }
 
-/* 🔥 BLOQUE DE TEXTO DEBAJO */
-
 /* =========================
-   CONTENIDO DEL SLIDE (TEXTO + BOTÓN)
+   CAPTION FUERA DE LA IMAGEN
    ========================= */
-
-.carousel-meta {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
-  padding: 20px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.2),
-    transparent
-  );
-
+.carousel-info {
+  margin-top: 1rem;
   text-align: center;
-  z-index: 10;
 }
 
-/* Texto */
 .carousel-caption {
-  font-size: 1rem;
-  color: #fff;
-  line-height: 1.4;
-  margin-bottom: 10px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #004080; /* azul institucional */
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 .carousel-caption strong {
   display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #003366; /* azul más profundo */
 }
 
-/* Botón */
+/* =========================
+   BOTÓN FUERA DE LA IMAGEN
+   ========================= */
+.carousel-actions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .carousel-btn-link {
   display: inline-block;
   background: #ffffff;
   color: #004080;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -825,15 +757,28 @@ header nav {
   color: #fff;
 }
 
-/* 🔥 IMPORTANTE: evitar que se monte sobre imagen */
-.featured-carousel {
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 12px;
-  perspective: 1000px;
+/* =========================
+   RESPONSIVE (MÓVILES)
+   ========================= */
+@media (max-width: 768px) {
+  .featured-carousel {
+    height: auto; /* que se ajuste al contenido */
+  }
+
+  .carousel-caption {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .carousel-btn-link {
+    width: 90%; /* botón ancho en móviles */
+    font-size: 1rem; /* texto más grande */
+    padding: 14px 0; /* más alto para pulsar fácil */
+  }
+
+  .carousel-actions {
+    margin-top: 1.25rem;
+  }
 }
 
 /* =========================================================
