@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!items.length) return;
 
+  const autoplayDelay = 5000;
   let index = 0;
-  let interval = null;
-  let isPaused = false;
+  let timer = null;
 
   // -----------------------------
   // PROGRESS BAR
@@ -28,10 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        progressBar.style.transition = "width 5s linear";
+        if (document.hidden) return;
+
+        progressBar.style.transition = `width ${autoplayDelay}ms linear`;
         progressBar.style.width = "100%";
       });
     });
+  }
+
+  function pauseProgress() {
+    const currentWidth = getComputedStyle(progressBar).width;
+    progressBar.style.transition = "none";
+    progressBar.style.width = currentWidth;
   }
 
   // -----------------------------
@@ -56,17 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!activeSlide || !actionBtn || !captionBox) return;
 
     const link = activeSlide.dataset.link || "#";
-    const title = activeSlide.dataset.title || "";
     const caption = activeSlide.dataset.caption || "";
 
     actionBtn.setAttribute("href", link);
     captionBox.replaceChildren();
-
-    if (title) {
-      const strong = document.createElement("strong");
-      strong.textContent = title;
-      captionBox.append(strong);
-    }
 
     if (caption) {
       const span = document.createElement("span");
@@ -87,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     preloadNext();
-    resetProgress();
     updateInfo();
   }
 
@@ -111,21 +111,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // AUTO PLAY CONTROL
   // -----------------------------
   function clearTimer() {
-    if (interval) clearInterval(interval);
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
   }
 
-  function start() {
+  function pause() {
     clearTimer();
-
-    interval = setInterval(() => {
-      if (!isPaused && !document.hidden) {
-        next();
-      }
-    }, 5000);
+    pauseProgress();
   }
 
   function restart() {
-    start();
+    clearTimer();
+
+    if (document.hidden) return;
+
+    resetProgress();
+
+    timer = setTimeout(() => {
+      next();
+      restart();
+    }, autoplayDelay);
   }
 
   // -----------------------------
@@ -155,14 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
     restart();
   });
 
-  carousel.addEventListener("mouseenter", () => {
-    isPaused = true;
-  });
-
-  carousel.addEventListener("mouseleave", () => {
-    isPaused = false;
-  });
-
   // -----------------------------
   // MOBILE SWIPE
   // -----------------------------
@@ -189,12 +188,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // TAB VISIBILITY CONTROL
   // -----------------------------
   document.addEventListener("visibilitychange", () => {
-    isPaused = document.hidden;
+    if (document.hidden) {
+      pause();
+    } else {
+      restart();
+    }
   });
 
   window.addEventListener("beforeunload", clearTimer);
 
   // INIT
   update();
-  start();
+  restart();
 });

@@ -3,6 +3,10 @@ layout: default
 title: "Visita Técnica – Empresa Eaton (4 de diciembre de 2025)"
 permalink: /visitas/eaton-haina-2025/
 date: 2025-12-04
+list_title: "Eaton Haina"
+display_date: "4 de diciembre de 2025"
+excerpt: "38 estudiantes conocieron procesos industriales y oportunidades de desarrollo en las áreas STEM."
+print_report: true
 ---
 
 # Visita Técnica a la Empresa Eaton – Parque Industrial de Haina

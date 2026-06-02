@@ -3,6 +3,10 @@ layout: default
 title: "Visita Técnica – Eaton Design Center (26 de febrero de 2026)"
 permalink: /visitas/eaton-2026/
 date: 2026-02-26
+list_title: "Eaton Design Center"
+display_date: "26 de febrero de 2026"
+excerpt: "Una jornada de orientación STEM acercó a las estudiantes a experiencias profesionales en ingeniería y tecnología."
+print_report: true
 ---
 
 ## Visita Técnica al Eaton Santo Domingo Design Center

@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const lightboxImg = document.getElementById("lightbox-img");
   const caption = document.getElementById("lightbox-caption");
   const counter = document.getElementById("lightbox-counter");
+  const downloadBtn = document.getElementById("lightbox-download");
   const closeBtn = document.querySelector(".lightbox-close");
   const prevBtn = document.querySelector(".lightbox-prev");
   const nextBtn = document.querySelector(".lightbox-next");
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt || "";
+    downloadBtn.href = img.src;
     caption.textContent = figcaption;
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === eventFigures.length - 1;

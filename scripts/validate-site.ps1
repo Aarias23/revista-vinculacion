@@ -151,6 +151,11 @@ if ($LASTEXITCODE -ne 0) {
   Add-ValidationError "assets/js/lightbox.js contiene errores de sintaxis"
 }
 
+node --check (Join-Path $root "assets/js/site-actions.js")
+if ($LASTEXITCODE -ne 0) {
+  Add-ValidationError "assets/js/site-actions.js contiene errores de sintaxis"
+}
+
 if ($errors.Count -gt 0) {
   Write-Host "Validacion fallida:" -ForegroundColor Red
   $errors | ForEach-Object { Write-Host " - $_" -ForegroundColor Red }

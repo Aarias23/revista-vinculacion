@@ -28,6 +28,15 @@
 {% include header.html %}
 
 <main class="container my-4">
+  {% if page.print_report %}
+  <div class="report-actions">
+    <button type="button" class="report-print-btn" data-print-report>
+      <i class="fa-solid fa-print" aria-hidden="true"></i>
+      Imprimir informe
+    </button>
+  </div>
+  {% endif %}
+
   {{ content }}
 </main>
 
@@ -39,12 +48,17 @@
   <img class="lightbox-content" id="lightbox-img" alt="">
   <div id="lightbox-caption" class="lightbox-caption"></div>
   <div id="lightbox-counter" class="lightbox-counter"></div>
+  <a href="#" id="lightbox-download" class="lightbox-download" download>
+    <i class="fa-solid fa-download" aria-hidden="true"></i>
+    Descargar imagen
+  </a>
   <button type="button" class="lightbox-prev" aria-label="Imagen anterior">&#10094;</button>
   <button type="button" class="lightbox-next" aria-label="Imagen siguiente">&#10095;</button>
 </div>
 
 <!-- Referencia al script del lightbox -->
 <script src="{{ "/assets/js/lightbox.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/site-actions.js" | relative_url }}"></script>
 
 </body>
 </html>

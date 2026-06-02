@@ -3,7 +3,10 @@ layout: default
 title: "Visita Técnica – ISESP Biblioteca Abigail Mejía (23 de abril de 2026)"
 permalink: /visitas/isesp-biblioteca-abigail-mejia-2026/
 date: 2026-04-23
+list_title: "Biblioteca Abigail Mejía"
+display_date: "23 de abril de 2026"
 excerpt: "15 estudiantes de tercero de secundaria participaron en el panel de animación y promoción de la lectura en la Biblioteca Abigail Mejía."
+print_report: true
 ---
 
 # Visita Técnica – Instituto Superior de Estudios Educativos Pedro Poveda

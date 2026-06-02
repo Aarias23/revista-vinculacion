@@ -44,6 +44,24 @@ powershell -ExecutionPolicy Bypass -File .\scripts\validate-site.ps1
 La validación comprueba permalinks, referencias de assets, enlaces internos
 generados, exclusión de `_site/` y sintaxis JavaScript.
 
+## Publicar una visita técnica
+
+Guarda la nueva página dentro de `visitas/` y usa estos metadatos para que la
+tarjeta y la opción de imprimir el informe se generen automáticamente:
+
+```yaml
+---
+layout: default
+title: "Visita Técnica – Nombre completo"
+permalink: /visitas/nombre-de-la-visita/
+date: 2026-06-02
+list_title: "Nombre breve para la tarjeta"
+display_date: "2 de junio de 2026"
+excerpt: "Resumen breve de una línea para presentar la actividad."
+print_report: true
+---
+```
+
 ## Optimización de imágenes
 
 El proyecto conserva las imágenes originales como fallback y genera derivados

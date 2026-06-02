@@ -3,6 +3,10 @@ layout: default
 title: "Visita Técnica – Parque Industrial Itabo (19 de marzo de 2026)"
 permalink: /visitas/itabojabil-eaton-2026/
 date: 2026-03-19
+list_title: "Parque Industrial Itabo"
+display_date: "19 de marzo de 2026"
+excerpt: "Estudiantes de áreas técnicas conocieron procesos industriales y oportunidades profesionales en Eaton y Jabil."
+print_report: true
 ---
 
 # Visita Técnica al Parque Industrial Itabo – Empresas Eaton y Jabil

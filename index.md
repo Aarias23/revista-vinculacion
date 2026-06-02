@@ -55,7 +55,6 @@ title: "Revista Digital"
     {% for item in site.data.recent %}
     <figure class="carousel-item{% if forloop.first %} active{% endif %}"
             data-link="{{ item.link | relative_url }}"
-            data-title="{{ item.alt }}"
             data-caption="{{ item.caption }}">
       {% assign webp_image = item.image
         | replace: ".jpeg", ".webp"
@@ -84,7 +83,7 @@ title: "Revista Digital"
 
   <!-- ✅ Caption y botón fuera de la imagen -->
   <div class="carousel-info">
-    <div id="carouselCaption" class="carousel-caption" aria-live="polite"></div>
+    <div id="carouselCaption" class="featured-carousel-caption" aria-live="polite"></div>
     <div class="carousel-actions">
       <a href="#" id="carouselLinkBtn" class="btn-secondary carousel-btn-link">
         Ver galería completa
