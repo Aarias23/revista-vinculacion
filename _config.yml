@@ -15,19 +15,17 @@ timezone: America/Santo_Domingo
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Feed
 feed:
   path: feed.xml
 
-# IMPORTANTE: assets deben copiarse tal cual al build
-include:
-  - assets
-
-# 🔥 FIX CLAVE para Windows + TZINFO + Live reload
-incremental: false
-watch: true
-force_polling: true
+# Archivos internos que no forman parte del sitio publicado
+exclude:
+  - docs
+  - scripts
+  - README.md
 
 # Mejora compatibilidad GitHub Pages
 future: false

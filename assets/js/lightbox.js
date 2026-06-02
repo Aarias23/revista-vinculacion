@@ -12,20 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
   let currentEvent = "";
   let eventFigures = [];
+  let lastTrigger = null;
 
   // Abrir lightbox
   figures.forEach((figure) => {
     const img = figure.querySelector("img");
-    img.addEventListener("click", function () {
-      currentEvent = figure.dataset.event;
+    const trigger = figure.querySelector(".gallery-trigger");
+
+    trigger?.addEventListener("click", function () {
+      lastTrigger = trigger;
+      currentEvent = figure.dataset.event || "Galería";
       eventFigures = Array.from(figures).filter(
-        (f) => f.dataset.event === currentEvent,
+        (f) => (f.dataset.event || "Galería") === currentEvent,
       );
       currentIndex = eventFigures.indexOf(figure);
 
       showImage(currentIndex);
       lightbox.classList.remove("hide");
       lightbox.classList.add("show");
+      lightbox.setAttribute("aria-hidden", "false");
+      closeBtn.focus();
     });
   });
 
@@ -33,17 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
   function showImage(index) {
     const img = eventFigures[index].querySelector("img");
     const figcaption =
-      eventFigures[index].querySelector("figcaption").innerText;
+      eventFigures[index].querySelector("figcaption")?.innerText || img.alt || "";
 
     lightboxImg.src = img.src;
-    caption.innerHTML = figcaption;
+    lightboxImg.alt = img.alt || "";
+    caption.textContent = figcaption;
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === eventFigures.length - 1;
 
     // Contador con fotos restantes
     const restantes = eventFigures.length - (index + 1);
-    counter.innerHTML = `Imagen ${index + 1} de ${eventFigures.length} (${currentEvent})`;
+    counter.replaceChildren(
+      document.createTextNode(
+        `Imagen ${index + 1} de ${eventFigures.length} (${currentEvent})`,
+      ),
+    );
 
     if (restantes > 0) {
-      counter.innerHTML += `<br><span class="restantes">Quedan ${restantes} imágenes por recorrer</span>`;
+      const restantesText = document.createElement("span");
+      restantesText.className = "restantes show";
+      restantesText.textContent = `Quedan ${restantes} imágenes por recorrer`;
+      counter.append(document.createElement("br"), restantesText);
     }
 
     // Mensaje institucional al llegar a la última imagen con animación
@@ -56,8 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
         mensajeFinal = `Fin de la visita – ${currentEvent}`;
       }
 
-      counter.innerHTML += `<br><span class="fin-visita">${mensajeFinal}</span>`;
-      const finMsg = counter.querySelector(".fin-visita");
+      const finMsg = document.createElement("span");
+      finMsg.className = "fin-visita";
+      finMsg.textContent = mensajeFinal;
+      counter.append(document.createElement("br"), finMsg);
       setTimeout(() => {
         finMsg.classList.add("show");
       }, 50);
@@ -68,11 +86,14 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeLightbox() {
     lightbox.classList.remove("show");
     lightbox.classList.add("hide");
+    lightbox.setAttribute("aria-hidden", "true");
     setTimeout(() => {
       lightbox.classList.remove("hide");
       currentEvent = "";
       eventFigures = [];
-      counter.innerHTML = ""; // limpiar contador al cerrar
+      counter.replaceChildren(); // limpiar contador al cerrar
+      lastTrigger?.focus();
+      lastTrigger = null;
     }, 400);
   }
 

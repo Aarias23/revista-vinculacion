@@ -24,6 +24,6 @@ entre ambas instituciones.
   {% endfor %}
 </div>
 
-<a href="/revista-vinculacion/visitas/isesp-biblioteca-abigail-mejia-2026/" class="btn-secondary">
+<a href="{{ '/visitas/isesp-biblioteca-abigail-mejia-2026/' | relative_url }}" class="btn-secondary">
   Ver informe
 </a>

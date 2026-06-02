@@ -9,11 +9,30 @@
   endif
   %}
 >
-  <img
-    src="{{ include.src | relative_url }}"
-    alt="{{ include.alt | escape }}"
-    loading="lazy"
-  />
+  {% assign webp_src = include.src
+    | replace: ".jpeg", ".webp"
+    | replace: ".jpg", ".webp"
+    | replace: ".png", ".webp"
+  %}
+  {% assign image_meta = site.data.image_dimensions[include.src] %}
+  <button
+    type="button"
+    class="gallery-trigger"
+    aria-label="Ampliar imagen: {{ include.alt | escape }}"
+  >
+    <picture>
+      <source srcset="{{ webp_src | relative_url }}" type="image/webp" />
+      <img
+        src="{{ include.src | relative_url }}"
+        alt="{{ include.alt | escape }}"
+        loading="lazy"
+        {% if image_meta %}
+        width="{{ image_meta.width }}"
+        height="{{ image_meta.height }}"
+        {% endif %}
+      />
+    </picture>
+  </button>
 
   {% if include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
