@@ -36,6 +36,7 @@ Get-ChildItem $root -Recurse -File |
     -not $_.FullName.StartsWith((Join-Path $root ".tools") + $separator) -and
     -not $_.FullName.StartsWith((Join-Path $root "docs") + $separator) -and
     -not $_.FullName.StartsWith((Join-Path $root "scripts") + $separator) -and
+    -not $_.FullName.StartsWith((Join-Path $root "vendor") + $separator) -and
     $_.Extension -in ".md", ".html", ".yml"
   } |
   ForEach-Object {

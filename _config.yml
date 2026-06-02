@@ -26,6 +26,7 @@ exclude:
   - docs
   - scripts
   - README.md
+  - vendor
 
 # Mejora compatibilidad GitHub Pages
 future: false

@@ -18,6 +18,7 @@ function Get-SourceFiles {
       -not $_.FullName.StartsWith("$root$separator.git$separator") -and
       -not $_.FullName.StartsWith("$root$separator" + ".tools$separator") -and
       -not $_.FullName.StartsWith("$root$separator" + "docs$separator") -and
+      -not $_.FullName.StartsWith("$root$separator" + "vendor$separator") -and
       $_.Extension -in ".md", ".html", ".yml"
     }
 }
