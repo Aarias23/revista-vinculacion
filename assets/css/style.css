@@ -2,17 +2,23 @@
   /* Paleta clara optimizada */
   --color-bg-main: #ffffff; /* blanco puro */
   --color-bg-section: #f5f7fa; /* gris muy claro */
-  --color-primary: #4da6ff; /* azul claro fresco */
-  --color-secondary: #0066cc; /* azul medio armónico */
+  --color-primary: #0066cc; /* azul institucional accesible */
+  --color-primary-dark: #003366;
+  --color-secondary: #004080;
   --color-text: #1c1c1c; /* gris oscuro */
   --color-text-light: #ffffff; /* blanco puro */
   --color-hover: #003366; /* azul profundo elegante */
   --color-accent: #5bc0be; /* turquesa fresco opcional */
   --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-overlay-dark: rgba(0, 0, 0, 0.65);
+  --color-overlay-light: rgba(0, 0, 0, 0.4);
+  --color-glass: rgba(255, 255, 255, 0.15);
 
   /* Overrides Bootstrap */
-  --bs-primary: #4da6ff; /* azul claro */
-  --bs-secondary: #0066cc; /* azul medio */
+  --bs-primary: #0066cc;
+  --bs-primary-rgb: 0, 102, 204;
+  --bs-secondary: #004080;
+  --bs-secondary-rgb: 0, 64, 128;
   --bs-warning: #555555; /* gris medio */
   --bs-light: #ffffff;
   --bs-dark: #1c1c1c;
@@ -47,7 +53,8 @@ header {
   box-shadow: 0 2px 8px var(--color-shadow); /* sombra ligera */
 }
 
-header h1 {
+header h1,
+.site-title {
   margin: 0;
   font-size: 1.8em;
   font-family: "Roboto", sans-serif;
@@ -58,6 +65,10 @@ header h1 {
 /* Navegación */
 header nav {
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
 }
 
 /* Enlaces de navegación */
@@ -190,6 +201,19 @@ header nav {
   transform: scale(1.05);
 }
 
+.gallery-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.gallery-trigger:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
 /* Caption */
 .gallery figcaption {
   padding: 0.8rem;
@@ -225,14 +249,6 @@ header nav {
 .lightbox.hide {
   opacity: 0;
   transition: opacity 0.4s ease;
-}
-
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  border-radius: 8px;
-  animation: zoomFade 0.5s ease;
 }
 
 @keyframes zoomFade {
@@ -330,6 +346,7 @@ header nav {
   transition:
     background 0.3s,
     color 0.3s;
+  border: 0;
 }
 .lightbox-close:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -352,6 +369,7 @@ header nav {
     background 0.3s,
     color 0.3s;
   user-select: none;
+  border: 0;
 }
 .lightbox-prev {
   left: 20px;
@@ -364,6 +382,12 @@ header nav {
 .lightbox-next:hover {
   background: rgba(0, 0, 0, 0.6); /* fondo más oscuro en hover */
   color: #fff; /* icono blanco en hover */
+}
+
+.lightbox-prev:disabled,
+.lightbox-next:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
 }
 
 .lightbox-content {
@@ -447,7 +471,7 @@ header nav {
     var(--color-primary-dark),
     var(--color-primary)
   );
-  color: var(--color-text);
+  color: var(--color-text-light);
   box-shadow: 0 10px 25px var(--color-shadow);
   border: none;
   /* box-shadow: 0 4px 14px rgba(0, 64, 128, 0.35); */
@@ -762,7 +786,8 @@ header nav {
    ========================= */
 @media (max-width: 768px) {
   .featured-carousel {
-    height: auto; /* que se ajuste al contenido */
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .carousel-caption {
@@ -901,159 +926,6 @@ footer a {
 }
 
 /* =========================
-   HERO MODERNO LIMPIO
-   ========================= */
-
-.modern-hero {
-  position: relative;
-  min-height: 60vh;
-  padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
-
-/* Fondo real */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      135deg,
-      var(--color-overlay-dark),
-      var(--color-overlay-light)
-    ),
-    radial-gradient(
-      circle at top,
-      var(--color-primary),
-      var(--color-primary-dark)
-    );
-  z-index: 0;
-  transform: scale(1.05);
-}
-
-/* Contenido */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 2.5rem 3rem;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-  max-width: 800px;
-}
-
-/* Título */
-.hero-content h1 {
-  color: var(--color-text);
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 1.8rem 1.2rem;
-  }
-}
-
-/* Subtítulo */
-.hero-content p {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  margin-bottom: 1.8rem;
-}
-
-/* Botones */
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Botón glass (te faltaba este 👇) */
-.btn-glass {
-  /* background: rgba(255, 255, 255, 0.1); */
-  background: var(--color-glass);
-  color: var(--color-text);
-  padding: 0.9rem 1.8rem;
-  border-radius: 30px;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  /*  color: #fff; */
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-glass:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
-/* =========================
-   HERO ANIMACIONES
-   ========================= */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
-   ANIMACIÓN SECUENCIAL HERO
-   ========================= */
-
-/* Estado inicial */
-.hero-content h1,
-.hero-content p,
-.hero-actions {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* Título */
-.hero-content h1 {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.2s;
-}
-
-/* Subtítulo */
-.hero-content p {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.5s;
-}
-
-/* Botones */
-.hero-actions {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.8s;
-}
-
-/* Keyframes */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
    HERO ULTRA OPTIMIZADO
    ========================= */
 
@@ -1122,7 +994,7 @@ footer a {
     var(--color-primary-dark),
     var(--color-primary)
   );
-  color: var(--color-text);
+  color: var(--color-text-light);
   box-shadow: 0 10px 25px var(--color-shadow);
   padding: 0.9rem 1.8rem;
   border-radius: 30px;
@@ -1141,7 +1013,7 @@ footer a {
   /*   background: rgba(255, 255, 255, 0.15);
   color: #fff; */
   background: var(--color-glass);
-  color: var(--color-text);
+  color: var(--color-text-light);
   padding: 0.9rem 1.8rem;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1207,5 +1079,16 @@ footer a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

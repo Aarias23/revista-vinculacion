@@ -1,30 +1,30 @@
 ---
 layout: default
-title: "Visitas Técnicas"
-permalink: /visitas/
+title: "Pasantías"
+permalink: /pasantias/
 ---
 
-# Visitas Técnicas
+# Pasantías
 
-En esta sección se documentan las visitas técnicas realizadas por la Unidad de Vinculación Sectorial.  
-Cada visita incluye descripción, institución anfitriona y fotografías.
+En esta sección se documentan las pasantías realizadas por nuestros estudiantes.
+Cada registro presenta la institución anfitriona, el propósito formativo y las experiencias desarrolladas.
 
 ---
 
-## Listado de Visitas
+## Listado de Pasantías
 
-{% assign visitas = site.pages
+{% assign pasantias = site.pages
   | where: "layout", "default"
-  | where_exp: "page", "page.permalink contains '/visitas/'"
-  | where_exp: "page", "page.permalink != '/visitas/'"
+  | where_exp: "page", "page.permalink contains '/pasantias/'"
+  | where_exp: "page", "page.permalink != '/pasantias/'"
   | sort: "date"
   | reverse %}
 
 <ul>
-{% for visita in visitas %}
+{% for pasantia in pasantias %}
   <li>
-    <a href="{{ visita.url | relative_url }}">
-      {{ visita.title }}
+    <a href="{{ pasantia.url | relative_url }}">
+      {{ pasantia.title }}
     </a>
   </li>
 {% endfor %}

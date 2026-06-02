@@ -14,7 +14,7 @@ y enriquecer la formación de los asistentes.
 </p>
 
 <div class="gallery">
-  {% for item in site.data.gallery_isesp %}
+  {% for item in site.data.gallery_isesp_poveda %}
     {% include figure.html 
        src=item.src 
        alt=item.alt 

@@ -51,27 +51,40 @@ title: "Revista Digital"
 
 {% if site.data.recent %}
 
-  <div class="featured-carousel" id="featuredCarousel">
+  <div class="featured-carousel" id="featuredCarousel" role="region" aria-label="Actividades destacadas">
     {% for item in site.data.recent %}
     <figure class="carousel-item{% if forloop.first %} active{% endif %}"
             data-link="{{ item.link | relative_url }}"
             data-title="{{ item.alt }}"
             data-caption="{{ item.caption }}">
-      <img src="{{ item.image | relative_url }}"
-           alt="{{ item.alt }}"
-           loading="lazy">
+      {% assign webp_image = item.image
+        | replace: ".jpeg", ".webp"
+        | replace: ".jpg", ".webp"
+        | replace: ".png", ".webp"
+      %}
+      {% assign image_meta = site.data.image_dimensions[item.image] %}
+      <picture>
+        <source srcset="{{ webp_image | relative_url }}" type="image/webp">
+        <img src="{{ item.image | relative_url }}"
+             alt="{{ item.alt }}"
+             {% unless forloop.first %}loading="lazy"{% endunless %}
+             {% if image_meta %}
+             width="{{ image_meta.width }}"
+             height="{{ image_meta.height }}"
+             {% endif %}>
+      </picture>
     </figure>
     {% endfor %}
 
     <!-- controles -->
-    <button class="carousel-btn prev">‹</button>
-    <button class="carousel-btn next">›</button>
+    <button type="button" class="carousel-btn prev" aria-label="Actividad destacada anterior">‹</button>
+    <button type="button" class="carousel-btn next" aria-label="Actividad destacada siguiente">›</button>
 
   </div>
 
   <!-- ✅ Caption y botón fuera de la imagen -->
   <div class="carousel-info">
-    <div id="carouselCaption" class="carousel-caption"></div>
+    <div id="carouselCaption" class="carousel-caption" aria-live="polite"></div>
     <div class="carousel-actions">
       <a href="#" id="carouselLinkBtn" class="btn-secondary carousel-btn-link">
         Ver galería completa
@@ -115,36 +128,3 @@ title: "Revista Digital"
 </section>
 
 <script src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
-
-<!-- Script para actualizar caption y botón -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const carousel = document.getElementById("featuredCarousel");
-  const actionBtn = document.getElementById("carouselLinkBtn");
-  const captionBox = document.getElementById("carouselCaption");
-
-  function updateInfo() {
-    const activeSlide = carousel.querySelector(".carousel-item.active");
-    if (activeSlide) {
-      const link = activeSlide.getAttribute("data-link");
-      const title = activeSlide.getAttribute("data-title") || "";
-      const caption = activeSlide.getAttribute("data-caption") || "";
-
-      // ✅ Actualiza el botón con el link correcto
-      actionBtn.setAttribute("href", link);
-
-      // ✅ Muestra el caption debajo de la imagen
-      captionBox.innerHTML = title
-        ? `<strong>${title}</strong><br><span>${caption}</span>`
-        : `<span>${caption}</span>`;
-    }
-  }
-
-  // Inicializar al cargar
-  updateInfo();
-
-  // Actualizar al cambiar de slide
-  document.querySelector(".carousel-btn.prev").addEventListener("click", updateInfo);
-  document.querySelector(".carousel-btn.next").addEventListener("click", updateInfo);
-});
-</script>

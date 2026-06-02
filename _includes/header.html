@@ -1,11 +1,11 @@
-<header>
-  <h1>{{ site.title }}</h1>
-  <nav>
-    <a href="{{ "/" | relative_url }}">Inicio</a> |
-    <a href="{{ "/visitas/" | relative_url }}">Visitas Técnicas</a> |
-    <a href="{{ "/instituciones/" | relative_url }}">Instituciones Visitantes</a> |
-    <a href="{{ "/pasantias/" | relative_url }}">Pasantías</a> |
-    <a href="{{ "/archivo/" | relative_url }}">Archivo Anual</a> |
-    <a href="{{ "/galeria/" | relative_url }}">Galería Fotográfica</a>
+<header class="bg-primary text-white text-center py-3">
+  <p class="site-title">{{ site.title }}</p>
+  <nav class="mt-2" aria-label="Navegación principal">
+    <a href="{{ "/" | relative_url }}" class="nav-link-custom fw-bold">Inicio</a>
+    <a href="{{ "/visitas/" | relative_url }}" class="nav-link-custom fw-bold">Visitas Técnicas</a>
+    <a href="{{ "/instituciones/" | relative_url }}" class="nav-link-custom fw-bold">Instituciones Visitantes</a>
+    <a href="{{ "/pasantias/" | relative_url }}" class="nav-link-custom fw-bold">Pasantías</a>
+    <a href="{{ "/archivo/" | relative_url }}" class="nav-link-custom fw-bold">Archivo Anual</a>
+    <a href="{{ "/galeria/" | relative_url }}" class="nav-link-custom fw-bold">Galería Fotográfica</a>
   </nav>
 </header>

@@ -30,9 +30,4 @@ El Instituto Politécnico Salesiano Padre Bartolomé Vegh agradece a la **Alcald
 
 ## Galería Fotográfica
 
-<div class="gallery">
-  {% include figure.html src="/assets/img/pasantias/adn1.jpg" alt="Estudiantes colaborando en proyectos de la ADN" caption="Estudiantes colaborando en proyectos de la ADN" %}
-
-{% include figure.html src="/assets/img/pasantias/adn2.jpg" alt="Equipo de trabajo junto a estudiantes en la Alcaldía del Distrito Nacional" caption="Equipo de trabajo junto a estudiantes en la Alcaldía del Distrito Nacional" %}
-
-</div>
+Las fotografías de esta experiencia se encuentran pendientes de actualización.

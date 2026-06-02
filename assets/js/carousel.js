@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevBtn = carousel.querySelector(".carousel-btn.prev");
   const nextBtn = carousel.querySelector(".carousel-btn.next");
   const dotsContainer = carousel.querySelector(".carousel-dots");
+  const actionBtn = document.getElementById("carouselLinkBtn");
+  const captionBox = document.getElementById("carouselCaption");
 
   if (!items.length) return;
 
@@ -37,7 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // -----------------------------
   const dots = items.map((_, i) => {
     const dot = document.createElement("button");
+    dot.type = "button";
     dot.className = "dot";
+    dot.setAttribute("aria-label", `Mostrar actividad destacada ${i + 1}`);
     dot.addEventListener("click", () => goTo(i));
     dotsContainer?.appendChild(dot);
     return dot;
@@ -46,17 +50,45 @@ document.addEventListener("DOMContentLoaded", () => {
   // -----------------------------
   // CORE
   // -----------------------------
+  function updateInfo() {
+    const activeSlide = items[index];
+
+    if (!activeSlide || !actionBtn || !captionBox) return;
+
+    const link = activeSlide.dataset.link || "#";
+    const title = activeSlide.dataset.title || "";
+    const caption = activeSlide.dataset.caption || "";
+
+    actionBtn.setAttribute("href", link);
+    captionBox.replaceChildren();
+
+    if (title) {
+      const strong = document.createElement("strong");
+      strong.textContent = title;
+      captionBox.append(strong);
+    }
+
+    if (caption) {
+      const span = document.createElement("span");
+      span.textContent = caption;
+      captionBox.append(span);
+    }
+  }
+
   function update() {
     items.forEach((el, i) => {
       el.classList.toggle("active", i === index);
+      el.setAttribute("aria-hidden", i === index ? "false" : "true");
     });
 
     dots.forEach((d, i) => {
       d.classList.toggle("active", i === index);
+      d.setAttribute("aria-current", i === index ? "true" : "false");
     });
 
     preloadNext();
     resetProgress();
+    updateInfo();
   }
 
   function goTo(i) {
@@ -90,8 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
         next();
       }
     }, 5000);
-
-    resetProgress();
   }
 
   function restart() {
@@ -117,13 +147,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // -----------------------------
   nextBtn?.addEventListener("click", () => {
     next();
-    update();
     restart();
   });
 
   prevBtn?.addEventListener("click", () => {
     prev();
-    update();
     restart();
   });
 
@@ -153,7 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (Math.abs(diff) > 50) {
       diff > 0 ? next() : prev();
-      update();
       restart();
     }
   });

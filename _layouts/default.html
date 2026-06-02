@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ site.lang | default: 'es' }}">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
     {% if page.title %}
       {{ page.title }} - {{ site.title }}
@@ -18,39 +19,28 @@
 
   <!-- Librería de íconos Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  {% seo %}
 </head>
 
 <body>
 
-<header class="bg-primary text-white text-center py-3">
-  <h1>{{ site.title }}</h1>
-  <nav class="mt-2">
-    <a href="{{ "/" | relative_url }}" class="nav-link-custom fw-bold">Inicio</a> |
-    <a href="{{ "/visitas/" | relative_url }}" class="nav-link-custom fw-bold">Visitas Técnicas</a> |
-    <a href="{{ "/instituciones/" | relative_url }}" class="nav-link-custom fw-bold">Instituciones Visitantes</a> |
-    <a href="{{ "/pasantias/" | relative_url }}" class="nav-link-custom fw-bold">Pasantías</a> |
-    <a href="{{ "/archivo/" | relative_url }}" class="nav-link-custom fw-bold">Archivo Anual</a> |
-    <a href="{{ "/galeria/" | relative_url }}" class="nav-link-custom fw-bold">Galería Fotográfica</a>
-  </nav>
-</header>
+{% include header.html %}
 
-<div class="container my-4">
+<main class="container my-4">
   {{ content }}
-</div>
+</main>
 
-<footer class="bg-primary text-white text-center py-4 mt-5">
-  <p>© 2026 Instituto Politécnico Salesiano Padre Bartolomé Vegh</p>
-  <p>Unidad de Vinculación Sectorial · Revista Digital</p>
-</footer>
+{% include footer.html %}
 
 <!-- Lightbox container global -->
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" aria-hidden="true">
+  <button type="button" class="lightbox-close" aria-label="Cerrar visor">&times;</button>
+  <img class="lightbox-content" id="lightbox-img" alt="">
   <div id="lightbox-caption" class="lightbox-caption"></div>
   <div id="lightbox-counter" class="lightbox-counter"></div>
-  <a class="lightbox-prev">&#10094;</a>
-  <a class="lightbox-next">&#10095;</a>
+  <button type="button" class="lightbox-prev" aria-label="Imagen anterior">&#10094;</button>
+  <button type="button" class="lightbox-next" aria-label="Imagen siguiente">&#10095;</button>
 </div>
 
 <!-- Referencia al script del lightbox -->

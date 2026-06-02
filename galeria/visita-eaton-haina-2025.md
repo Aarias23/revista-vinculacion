@@ -24,6 +24,6 @@ la integración entre la formación académica y el entorno laboral.
 </div>
 
 <!-- Botón hacia el informe institucional -->
-<a href="/revista-vinculacion/visitas/eaton-haina-2025/" class="btn-secondary">
+<a href="{{ '/visitas/eaton-haina-2025/' | relative_url }}" class="btn-secondary">
   Ver informe completo
 </a>
