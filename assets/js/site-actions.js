@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const stickyHeader = document.querySelector("[data-sticky-header]");
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const primaryMenu = document.querySelector("[data-primary-menu]");
+  const mobileMenuQuery = window.matchMedia("(max-width: 991px)");
 
   printReportBtn?.addEventListener("click", () => {
     window.print();
@@ -17,10 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
       "aria-label",
       open ? "Cerrar menú de navegación" : "Abrir menú de navegación",
     );
+
+    if (mobileMenuQuery.matches) {
+      primaryMenu.toggleAttribute("inert", !open);
+      primaryMenu.setAttribute("aria-hidden", String(!open));
+    }
+    else {
+      primaryMenu.removeAttribute("inert");
+      primaryMenu.removeAttribute("aria-hidden");
+    }
   }
 
   function updateHeaderState() {
     stickyHeader?.classList.toggle("is-scrolled", window.scrollY > 12);
+  }
+
+  function syncResponsiveMenu() {
+    const isOpen = stickyHeader?.classList.contains("menu-open") ?? false;
+    setMenu(mobileMenuQuery.matches ? isOpen : false);
   }
 
   menuToggle?.addEventListener("click", () => {
@@ -46,6 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  mobileMenuQuery.addEventListener("change", syncResponsiveMenu);
   window.addEventListener("scroll", updateHeaderState, { passive: true });
+  syncResponsiveMenu();
   updateHeaderState();
 });
