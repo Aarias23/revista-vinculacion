@@ -1,11 +1,51 @@
-<header class="bg-primary text-white text-center py-3">
-  <p class="site-title">{{ site.title }}</p>
-  <nav class="mt-2" aria-label="Navegación principal">
-    <a href="{{ "/" | relative_url }}" class="nav-link-custom fw-bold">Inicio</a>
-    <a href="{{ "/visitas/" | relative_url }}" class="nav-link-custom fw-bold">Visitas Técnicas</a>
-    <a href="{{ "/instituciones/" | relative_url }}" class="nav-link-custom fw-bold">Instituciones Visitantes</a>
-    <a href="{{ "/pasantias/" | relative_url }}" class="nav-link-custom fw-bold">Pasantías</a>
-    <a href="{{ "/archivo/" | relative_url }}" class="nav-link-custom fw-bold">Archivo Anual</a>
-    <a href="{{ "/galeria/" | relative_url }}" class="nav-link-custom fw-bold">Galería Fotográfica</a>
+<header class="site-header" data-sticky-header>
+  <nav class="site-navbar" aria-label="Navegación principal">
+    <a href="{{ '/' | relative_url }}" class="site-brand" aria-label="{{ site.title }} - Inicio">
+      <span class="site-brand-mark" aria-hidden="true">RV</span>
+      <span class="site-brand-text">{{ site.title }}</span>
+    </a>
+
+    <button
+      type="button"
+      class="site-menu-toggle"
+      aria-label="Abrir menú de navegación"
+      aria-controls="sitePrimaryMenu"
+      aria-expanded="false"
+      data-menu-toggle>
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <ul class="site-nav-list" id="sitePrimaryMenu" data-primary-menu>
+      <li>
+        <a href="{{ '/' | relative_url }}" class="site-nav-link"{% if page.url == '/' %} aria-current="page"{% endif %}>
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/visitas/' | relative_url }}" class="site-nav-link"{% if page.url contains '/visitas/' %} aria-current="page"{% endif %}>
+          Visitas Técnicas
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/instituciones/' | relative_url }}" class="site-nav-link"{% if page.url contains '/instituciones/' %} aria-current="page"{% endif %}>
+          Instituciones
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/pasantias/' | relative_url }}" class="site-nav-link"{% if page.url contains '/pasantias/' %} aria-current="page"{% endif %}>
+          Pasantías
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/archivo/' | relative_url }}" class="site-nav-link"{% if page.url contains '/archivo/' %} aria-current="page"{% endif %}>
+          Archivo
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/galeria/' | relative_url }}" class="site-nav-link site-nav-cta"{% if page.url contains '/galeria/' %} aria-current="page"{% endif %}>
+          Galería
+        </a>
+      </li>
+    </ul>
   </nav>
 </header>
