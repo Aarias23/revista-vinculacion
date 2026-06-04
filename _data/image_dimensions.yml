@@ -65,6 +65,9 @@
 '/assets/img/pasantias/informatica/camila-rodriguez-ramirez-inf.jpg':
   width: 4080
   height: 3060
+'/assets/img/pasantias/informatica/cesar-david-pineda.jpeg':
+  width: 4032
+  height: 3024
 '/assets/img/pasantias/informatica/cristal-mariel-inf.jpg':
   width: 3072
   height: 4080
@@ -110,6 +113,15 @@
 '/assets/img/pasantias/informatica/xaviel-pereyra-marte.jpeg':
   width: 1600
   height: 1200
+'/assets/img/pasantias/logistica/alexa-marie-guzman-estevez.jpeg':
+  width: 3024
+  height: 4032
+'/assets/img/pasantias/logistica/allison-margarin-infante.jpeg':
+  width: 3024
+  height: 4032
+'/assets/img/pasantias/logistica/braian-emmanuel-valdez-garcia.jpeg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/carlos-saul-jimenez-log-delta-comercial.jpg':
   width: 709
   height: 945
@@ -167,6 +179,9 @@
 '/assets/img/pasantias/mercadeo/julianny-manon-ramirez.jpg':
   width: 1200
   height: 1600
+'/assets/img/pasantias/mercadeo/leonela-cedenio.jpeg':
+  width: 3024
+  height: 4032
 '/assets/img/pasantias/mercadeo/marie-angely-del-rosario.jpg':
   width: 532
   height: 945

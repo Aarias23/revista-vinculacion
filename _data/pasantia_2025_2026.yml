@@ -79,6 +79,11 @@ informatica:
     caption: "Justin Pujols – Área Técnica: Informática | Empresa: Banco Agrícola"
     event: "Pasantía – Año Escolar 2025–2026"
 
+  - src: "/assets/img/pasantias/informatica/cesar-david-pineda.jpeg"
+    alt: "Cesar David Pineda en su pasantía en la Universidad Pedro Henríquez Ureña"
+    caption: "Cesar David Pineda – Área Técnica: Informática | Empresa: Universidad Pedro Henríquez Ureña"
+    event: "Pasantía – Año Escolar 2025–2026"
+
 mercadeo:
   - src: "/assets/img/pasantias/mercadeo/yuderka-sanchez-mec-ufhec.jpg"
     alt: "Yuderka Sánchez Genao en su pasantía en UFHEC"
@@ -118,6 +123,11 @@ mercadeo:
   - src: "/assets/img/pasantias/mercadeo/julianny-manon-ramirez.jpg"
     alt: "Julianny Mañon Ramírez en su pasantía en Santo Domingo Country, SRL"
     caption: "Julianny Mañon Ramírez – Área Técnica: Mercadeo | Empresa: Santo Domingo Country, SRL"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/mercadeo/leonela-cedenio.jpeg"
+    alt: "Leonela Cedenio en su pasantía en Ferretería Pepe"
+    caption: "Leonela Cedenio – Área Técnica: Mercadeo | Empresa: Ferretería Pepe"
     event: "Pasantía – Año Escolar 2025–2026"
 
 electricidad:
@@ -255,4 +265,19 @@ logistica:
   - src: "/assets/img/pasantias/logistica/karyme-ravelo-reyes.jpg"
     alt: "Karyme Ravelo Reyes en su pasantía en Fex Mirador Norte"
     caption: "Karyme Ravelo Reyes – Área Técnica: Logística | Empresa: Fex Mirador Norte"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/alexa-marie-guzman-estevez.jpeg"
+    alt: "Alexa Marie Guzmán Estevez en su pasantía en Delta Comercial"
+    caption: "Alexa Marie Guzmán Estevez – Área Técnica: Logística | Empresa: Delta Comercial"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/allison-margarin-infante.jpeg"
+    alt: "Allison Margarin Infante en su pasantía en Ferretería Pepe"
+    caption: "Allison Margarin Infante – Área Técnica: Logística | Empresa: Ferretería Pepe"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/braian-emmanuel-valdez-garcia.jpeg"
+    alt: "Braian Emmanuel Valdez García en su pasantía en Frederic Schad"
+    caption: "Braian Emmanuel Valdez García – Área Técnica: Logística | Empresa: Frederic Schad"
     event: "Pasantía – Año Escolar 2025–2026"
