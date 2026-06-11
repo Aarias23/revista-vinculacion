@@ -21,6 +21,11 @@ permalink: /galeria/
         Pasantía – Año Escolar 2025–2026
       </a>
     </li>
+    <li>
+      <a href="{{ '/galeria/supervision-docente-mfct/' | relative_url }}">
+        Supervisión Docente del MFCT
+      </a>
+    </li>
   </ul>
 </div>
 
@@ -87,4 +92,17 @@ Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados,
 
 <a href="{{ '/galeria/pasantia-2025-2026/' | relative_url }}" class="btn-secondary">
   Ver galería completa
+</a>
+
+---
+
+## Supervisión Docente del MFCT
+
+<p>
+Documentación del acompañamiento realizado por las docentes tutoras a los
+estudiantes durante sus procesos formativos en las empresas receptoras.
+</p>
+
+<a href="{{ '/galeria/supervision-docente-mfct/' | relative_url }}" class="btn-secondary">
+  Ver sección
 </a>

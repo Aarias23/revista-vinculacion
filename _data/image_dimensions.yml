@@ -131,12 +131,18 @@
 '/assets/img/pasantias/informatica/xaviel-pereyra-marte.jpeg':
   width: 1600
   height: 1200
+'/assets/img/pasantias/informatica/yancen-garcia.jpeg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/alexa-marie-guzman-estevez.jpeg':
   width: 3024
   height: 4032
 '/assets/img/pasantias/logistica/allison-margarin-infante.jpeg':
   width: 3024
   height: 4032
+'/assets/img/pasantias/logistica/angel-silvestre-rodriguez.jpeg':
+  width: 960
+  height: 1280
 '/assets/img/pasantias/logistica/braian-emmanuel-valdez-garcia.jpeg':
   width: 1200
   height: 1600
@@ -149,12 +155,21 @@
 '/assets/img/pasantias/logistica/dileynni-heredia-contreras.jpeg':
   width: 1200
   height: 1600
+'/assets/img/pasantias/logistica/genesis-isabel-antonio-feliz.jpeg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/jaronli-maciel-camilo.png':
   width: 730
   height: 548
+'/assets/img/pasantias/logistica/mailyn-esther-vangely-marie-reynoso.jpeg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/jesus-garcia-log-hit.jpg':
   width: 709
   height: 945
+'/assets/img/pasantias/logistica/jose-angel-merced-veras-acosta.jpeg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/karyme-ravelo-reyes.jpg':
   width: 4080
   height: 2296
@@ -176,9 +191,15 @@
 '/assets/img/pasantias/logistica/reyna-luz-matos-montano.jpeg':
   width: 4032
   height: 3024
+'/assets/img/pasantias/logistica/ruth-mariel-diaz.jpg':
+  width: 1200
+  height: 1600
 '/assets/img/pasantias/logistica/rusbelt-adrian-gavilan-feliz.jpeg':
   width: 900
   height: 1600
+'/assets/img/pasantias/logistica/santianny-asencio.jpg':
+  width: 899
+  height: 1599
 '/assets/img/pasantias/logistica/scarlet-tavarez-pena.jpeg':
   width: 1200
   height: 1600
@@ -305,3 +326,201 @@
 '/assets/img/visitas/piisa/recorrido-itabo-eaton.jpeg':
   width: 1280
   height: 960
+'/assets/img/supervision-mfct/informatica/bryan-daniel-beltre-vargas-creation-studio.jpg':
+  width: 1600
+  height: 902
+'/assets/img/supervision-mfct/informatica/camila-altagracia-rosado-cdn.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/informatica/cesar-david-pineda-unphu.jpg':
+  width: 1280
+  height: 721
+'/assets/img/supervision-mfct/informatica/daimellys-valeria-pena-casa-de-espana.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/informatica/emely-beatriz-peralta-hogar-escuela-rosa-duarte.jpeg':
+  width: 4032
+  height: 2268
+'/assets/img/supervision-mfct/informatica/emely-marie-gonzalez-listin-diario.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/informatica/emidriany-ramirez-santo-domingo-country-club.jpeg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/informatica/enmanuel-canario-deivy-valdez-anthony-philoxene-jhostim-galan-poveda.jpg':
+  width: 1280
+  height: 721
+'/assets/img/supervision-mfct/informatica/genesis-daniela-vasquez-agencia-de-aduanas-alvaro-gestiones.jpeg':
+  width: 1444
+  height: 1128
+'/assets/img/supervision-mfct/informatica/jeison-javier-uceta-baez-hogar-escuela-rosa-duarte.jpeg':
+  width: 2268
+  height: 4032
+'/assets/img/supervision-mfct/informatica/justin-pujols-banco-agricola.jpeg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/informatica/luis-jose-montes-hogar-escuela-santo-domingo-savio.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/informatica/marcos-noel-lebron-seguriasa.jpeg':
+  width: 1280
+  height: 720
+'/assets/img/supervision-mfct/informatica/sahid-martinez-medina-junta-central-electoral.jpeg':
+  width: 1280
+  height: 721
+'/assets/img/supervision-mfct/informatica/sarah-victoria-cabrera-cristal-mariel-hospital-general-de-las-fuerzas-armadas.jpeg':
+  width: 2268
+  height: 4032
+'/assets/img/supervision-mfct/informatica/sebastian-yadel-geronimo-diaz-junta-central-electoral.jpeg':
+  width: 721
+  height: 1280
+'/assets/img/supervision-mfct/informatica/wellington-hansel-luis-miguel-juan-jose-soler-computer.jpeg':
+  width: 721
+  height: 1280
+'/assets/img/supervision-mfct/informatica/xavier-pereyra-keiler-alexis-arias-franciel-montano-alcaldia-del-distrito-nacional.jpeg':
+  width: 1280
+  height: 720
+'/assets/img/supervision-mfct/informatica/yancen-garcia-juan-diego-cavallo-franchesca-gonzalez-kate-lorens-estevez-junta-central-electoral.jpg':
+  width: 1280
+  height: 721
+'/assets/img/supervision-mfct/instalaciones-electricas/raylin-joel-pujols-yabriel-nicolas-pena-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/jariel-andres-encarnacion-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/margaret-esther-taveras-benjamin-farina-cordero-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/liz-marie-clase-sanchez-haina-international-terminal.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/angel-luis-garcia-benjamin-farina-cordero-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/margaret-esther-taveras-abreu-benjamin-farina-cordero-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/jonas-andres-tejeda-calzasturd-srl.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/elizabeth-carolina-garcia-haina-international-terminal.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/hilary-jeramimy-pena-ministerio-de-agricultura.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/angel-luis-garcia-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/camila-rodriguez-ramirez-pappaterra-montolio-sas.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/liz-marie-clase-sanchez-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/yabriel-nicolas-penas-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/jariel-andres-encarnacion-eted-supervision-2.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/raylin-joel-pujols-gonzalez-eted.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/jeansenny-david-martinez-supervisor-homewood-suites-by-hilton.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/maicol-ubri-cuevas-alcaldia-del-distrito-nacional.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/william-moises-suarez-instituto-politecnico-salesiano-padre-bartolome-vegh.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/juan-david-alcantara-ferreteria-fuente-de-amor.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/elizabeth-carolina-garcia-haina-international-terminal-supervision-2.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/darlin-emilio-melo-ramirez-envases-tropicales.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/instalaciones-electricas/enmanuel-alexander-sanchez-isfodosu.jpeg':
+  width: 1600
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/alexa-marie-guzman-delta-comercial.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/ana-patricia-cuevas-papidpack.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/angel-silvestre-rodriguez-plasticos-comerciales.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/asael-tavarez-junta-central-electoral.jpg':
+  width: 737
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/braian-emmanuel-valdez-garcia.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/carlos-saul-jimenez-turbi-delta-comercial.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/charlenis-matos-de-los-santos-haina-international-terminal.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/dileynni-heredia-contrera-omsa.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/genesis-isabel-antonio-feliz-eted.jpeg':
+  width: 3024
+  height: 4032
+'/assets/img/supervision-mfct/logistica-transporte/heimi-franco-rodriguez-autoridad-portuaria-dominicana.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/jaronli-maciel-camilo-inapa.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/jeimy-montero-alexa-guzman-delta-comercial.jpg':
+  width: 1280
+  height: 960
+'/assets/img/supervision-mfct/logistica-transporte/jesus-miguel-garcia-haina-international-terminal.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/jose-angel-merced-veras-acosta-junta-de-aviacion-civil.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/supervision-mfct/logistica-transporte/jose-david-destin-evangelista-jce.jpg':
+  width: 737
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/karyme-ravelo-reyes-fex-mirador-norte.jpg':
+  width: 591
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/marianny-rosario-alcaldia-del-distrito-nacional.jpg':
+  width: 899
+  height: 1599
+'/assets/img/supervision-mfct/logistica-transporte/mia-esther-lucas-capital-transport-solutions.jpg':
+  width: 899
+  height: 1599
+'/assets/img/supervision-mfct/logistica-transporte/michel-moreta-distrito-educativo-15-03.jpg':
+  width: 960
+  height: 1280
+'/assets/img/supervision-mfct/logistica-transporte/nikaury-altagracia-franco-aquino-navisfret.jpg':
+  width: 1280
+  height: 960
+'/assets/img/supervision-mfct/logistica-transporte/reyna-luz-matos-direccion-general-de-impuestos-internos.jpg':
+  width: 738
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/ruth-mariel-diaz-haina-international-terminal.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/santianny-asencio-ferreteria-fuente-de-amor.jpg':
+  width: 899
+  height: 1599
+'/assets/img/supervision-mfct/logistica-transporte/scarlet-tavarez-pena-agencia-aduanal-comercio-exterior.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/logistica-transporte/yeury-de-leon-encarnacion-frederic-schad.jpg':
+  width: 737
+  height: 1600

@@ -14,6 +14,13 @@
     | replace: ".jpg", ".webp"
     | replace: ".png", ".webp"
   %}
+  {% assign webp_exists = false %}
+  {% for static_file in site.static_files %}
+    {% if static_file.path == webp_src %}
+      {% assign webp_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
   {% assign image_meta = site.data.image_dimensions[include.src] %}
   <button
     type="button"
@@ -21,7 +28,9 @@
     aria-label="Ampliar imagen: {{ include.alt | escape }}"
   >
     <picture>
+      {% if webp_exists %}
       <source srcset="{{ webp_src | relative_url }}" type="image/webp" />
+      {% endif %}
       <img
         src="{{ include.src | relative_url }}"
         alt="{{ include.alt | escape }}"

@@ -54,6 +54,11 @@ informatica:
     caption: "Juan Diego Cavallo – Área Técnica: Informática | Empresa: Junta Central Electoral"
     event: "Pasantía – Año Escolar 2025–2026"
 
+  - src: "/assets/img/pasantias/informatica/yancen-garcia.jpeg"
+    alt: "Yancen García en su pasantía en la Junta Central Electoral"
+    caption: "Yancen García – Área Técnica: Informática | Empresa: Junta Central Electoral"
+    event: "Pasantía – Año Escolar 2025–2026"
+
   - src: "/assets/img/pasantias/informatica/emely-marie-gonzalez-encarnacion.jpeg"
     alt: "Emely Marie González Encarnación en su pasantía en Listín Diario"
     caption: "Emely Marie González Encarnación – Área Técnica: Informática | Empresa: Listín Diario"
@@ -192,6 +197,36 @@ electricidad:
     event: "Pasantía – Año Escolar 2025–2026"
 
 logistica:
+  - src: "/assets/img/pasantias/logistica/angel-silvestre-rodriguez.jpeg"
+    alt: "Ángel Silvestre Rodríguez en su pasantía en Plásticos Comerciales"
+    caption: "Ángel Silvestre Rodríguez – Área Técnica: Logística | Empresa: Plásticos Comerciales"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/jose-angel-merced-veras-acosta.jpeg"
+    alt: "José Ángel Merced Veras Acosta en su pasantía en la Junta de Aviación Civil"
+    caption: "José Ángel Merced Veras Acosta – Área Técnica: Logística | Empresa: Junta de Aviación Civil"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/santianny-asencio.jpg"
+    alt: "Santianny Asencio en su pasantía en Ferretería Fuente de Amor"
+    caption: "Santianny Asencio – Área Técnica: Logística | Empresa: Ferretería Fuente de Amor"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/genesis-isabel-antonio-feliz.jpeg"
+    alt: "Génesis Isabel Antonio Feliz en su pasantía en ETED"
+    caption: "Génesis Isabel Antonio Feliz – Área Técnica: Logística | Empresa: ETED"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/mailyn-esther-vangely-marie-reynoso.jpeg"
+    alt: "Mailyn Esther y Vangely Marie Reynoso en su pasantía en el Instituto de Seguridad Social de las Fuerzas Armadas"
+    caption: "Mailyn Esther y Vangely Marie Reynoso – Área Técnica: Logística | Empresa: Instituto de Seguridad Social de las Fuerzas Armadas"
+    event: "Pasantía – Año Escolar 2025–2026"
+
+  - src: "/assets/img/pasantias/logistica/ruth-mariel-diaz.jpg"
+    alt: "Ruth Mariel Diaz en su pasantía en Haina International Terminal"
+    caption: "Ruth Mariel Diaz – Área Técnica: Logística | Empresa: Haina International Terminal"
+    event: "Pasantía – Año Escolar 2025–2026"
+
   - src: "/assets/img/pasantias/logistica/scarlet-tavarez-pena.jpeg"
     alt: "Scarlet Tavarez Peña en su pasantía en Agencia Aduanal & Comercio Exterior"
     caption: "Scarlet Tavarez Peña – Área Técnica: Logística | Empresa: Agencia Aduanal & Comercio Exterior"

@@ -143,6 +143,9 @@ header h1,
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   transition: transform 0.3s ease;
 }
 
@@ -209,7 +212,8 @@ header h1,
 }
 
 .gallery-download {
-  margin: 0 0.8rem 0.9rem;
+  align-self: flex-start;
+  margin: auto 0.8rem 0.9rem;
   padding: 0.45rem 0.8rem;
   background: #eaf4ff;
   color: #004080;
@@ -1024,6 +1028,66 @@ header h1,
 .visit-card-link:focus-visible {
   outline: 3px solid #ffcc00;
   outline-offset: 4px;
+}
+
+/* =========================
+   SUPERVISION DOCENTE MFCT
+   ========================= */
+.supervision-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 2.25rem;
+}
+
+.supervision-area-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 100%;
+  padding: 1.1rem;
+  border: 1px solid #dfe7ef;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 64, 128, 0.08);
+}
+
+.supervision-area-card h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.supervision-area-card p,
+.supervision-school-year,
+.supervision-teacher,
+.supervision-empty {
+  margin: 0;
+  color: #334155;
+}
+
+.supervision-section {
+  margin-top: 2.25rem;
+}
+
+.supervision-section .gallery img {
+  height: clamp(300px, 42vw, 360px);
+  object-position: center top;
+}
+
+.supervision-teacher {
+  font-weight: 700;
+}
+
+.supervision-school-year {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.supervision-empty {
+  padding: 1rem;
+  border-left: 4px solid #0066cc;
+  background: #eef6fa;
 }
 
 .report-actions {

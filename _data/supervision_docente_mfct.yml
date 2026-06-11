@@ -1,0 +1,280 @@
+instalaciones_electricas:
+  area: "Instalaciones Eléctricas"
+  docente: "Erminda Bello"
+  fotos:
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/raylin-joel-pujols-yabriel-nicolas-pena-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Raylin Joel Pujols y Yabriel Nicolás Peña en ETED"
+      caption: "Erminda Bello durante visita a Raylin Joel Pujols y Yabriel Nicolás Peña | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/jariel-andres-encarnacion-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Jariel Andrés Encarnación en ETED"
+      caption: "Erminda Bello durante visita a Jariel Andrés Encarnación | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/margaret-esther-taveras-benjamin-farina-cordero-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Margaret Esther Taveras y Benjamin Fariña Cordero en ETED"
+      caption: "Erminda Bello durante visita a Margaret Esther Taveras y Benjamin Fariña Cordero | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/liz-marie-clase-sanchez-haina-international-terminal.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Liz Maríe Clase Sánchez en Haina International Terminal"
+      caption: "Erminda Bello durante visita a Liz Maríe Clase Sánchez | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/angel-luis-garcia-benjamin-farina-cordero-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Ángel Luís García y Benjamin Fariña Cordero en ETED"
+      caption: "Erminda Bello durante visita a Ángel Luís García y Benjamin Fariña Cordero | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/margaret-esther-taveras-abreu-benjamin-farina-cordero-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Margaret Esther Taveras Abreu y Benjamin Fariña Cordero en ETED"
+      caption: "Erminda Bello durante visita a Margaret Esther Taveras Abreu y Benjamin Fariña Cordero | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/jonas-andres-tejeda-calzasturd-srl.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Jonas Andrés Tejeda en Calzasturd, SRL"
+      caption: "Erminda Bello durante visita a Jonas Andrés Tejeda | Calzasturd, SRL"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/elizabeth-carolina-garcia-haina-international-terminal.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Elizabeth Carolina García en Haina International Terminal"
+      caption: "Erminda Bello durante visita a Elizabeth Carolina García | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/hilary-jeramimy-pena-ministerio-de-agricultura.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Hilary Jeramimy Peña en Ministerio de Agricultura"
+      caption: "Erminda Bello durante visita a Hilary Jeramimy Peña | Ministerio de Agricultura"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/angel-luis-garcia-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Ángel Luís García en ETED"
+      caption: "Erminda Bello durante visita a Ángel Luís García | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/camila-rodriguez-ramirez-pappaterra-montolio-sas.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Camila Rodríguez Ramírez en Pappaterra Montolío, SAS"
+      caption: "Erminda Bello durante visita a Camila Rodríguez Ramírez | Pappaterra Montolío, SAS"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/liz-marie-clase-sanchez-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Liz Marie Clase Sánchez en ETED"
+      caption: "Erminda Bello durante visita a Liz Marie Clase Sánchez | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/yabriel-nicolas-penas-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Yabriel Nicolas Peñas en ETED"
+      caption: "Erminda Bello durante visita a Yabriel Nicolas Peñas | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/jariel-andres-encarnacion-eted-supervision-2.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Jariel Andrés Encarnación en ETED"
+      caption: "Erminda Bello durante visita a Jariel Andrés Encarnación | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/raylin-joel-pujols-gonzalez-eted.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Raylin Joel Pujols Gonzalez en ETED"
+      caption: "Erminda Bello durante visita a Raylin Joel Pujols Gonzalez | ETED"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/jeansenny-david-martinez-supervisor-homewood-suites-by-hilton.jpeg"
+      alt: "Erminda Bello conversando con uno de los supervisores del estudiante Jeansenny David Martínez en Homewood Suites by Hilton"
+      caption: "Erminda Bello conversa con supervisor de Jeansenny David Martínez | Homewood Suites by Hilton"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/maicol-ubri-cuevas-alcaldia-del-distrito-nacional.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Maicol Ubrí Cuevas en la Alcaldía del Distrito Nacional"
+      caption: "Erminda Bello durante visita a Maicol Ubrí Cuevas | Alcaldía del Distrito Nacional"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/william-moises-suarez-instituto-politecnico-salesiano-padre-bartolome-vegh.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a William Moíses Suarez en el Instituto Politécnico Salesiano Padre Bartolomé Vegh"
+      caption: "Erminda Bello durante visita a William Moíses Suarez | Instituto Politécnico Salesiano Padre Bartolomé Vegh"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/juan-david-alcantara-ferreteria-fuente-de-amor.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Juan David Alcantara en Ferretería Fuente de Amor"
+      caption: "Erminda Bello durante visita a Juan David Alcantara | Ferretería Fuente de Amor"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/elizabeth-carolina-garcia-haina-international-terminal-supervision-2.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Elizabeth Carolina García en Haina International Terminal"
+      caption: "Erminda Bello durante visita a Elizabeth Carolina García | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/darlin-emilio-melo-ramirez-envases-tropicales.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Darlin Emilio Melo Ramírez en Envases Tropicales"
+      caption: "Erminda Bello durante visita a Darlin Emilio Melo Ramírez | Envases Tropicales"
+
+    - src: "/assets/img/supervision-mfct/instalaciones-electricas/enmanuel-alexander-sanchez-isfodosu.jpeg"
+      alt: "Erminda Bello durante visita de supervisión a Enmanuel Alexander Sánchez en ISFODOSU"
+      caption: "Erminda Bello durante visita a Enmanuel Alexander Sánchez | ISFODOSU"
+
+informatica:
+  area: "Administración y Desarrollo de Aplicaciones Informáticas"
+  docente: "Carolina Del Rosario"
+  fotos:
+    - src: "/assets/img/supervision-mfct/informatica/bryan-daniel-beltre-vargas-creation-studio.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Bryan Daniel Beltré Vargas en Creation Studio"
+      caption: "Carolina Del Rosario durante visita a Bryan Daniel Beltré Vargas | Creation Studio"
+
+    - src: "/assets/img/supervision-mfct/informatica/camila-altagracia-rosado-cdn.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Camila Altagracia Rosado en CDN"
+      caption: "Carolina Del Rosario durante visita a Camila Altagracia Rosado | CDN"
+
+    - src: "/assets/img/supervision-mfct/informatica/cesar-david-pineda-unphu.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Cesar David Pineda en UNPHU"
+      caption: "Carolina Del Rosario durante visita a Cesar David Pineda | UNPHU"
+
+    - src: "/assets/img/supervision-mfct/informatica/daimellys-valeria-pena-casa-de-espana.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Daimellys Valeria Peña en Casa de España"
+      caption: "Carolina Del Rosario durante visita a Daimellys Valeria Peña | Casa de España"
+
+    - src: "/assets/img/supervision-mfct/informatica/emely-beatriz-peralta-hogar-escuela-rosa-duarte.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Emely Beatriz Peralta en Hogar Escuela Rosa Duarte"
+      caption: "Carolina Del Rosario durante visita a Emely Beatriz Peralta | Hogar Escuela Rosa Duarte"
+
+    - src: "/assets/img/supervision-mfct/informatica/emely-marie-gonzalez-listin-diario.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Emely Marie González en Listín Diario"
+      caption: "Carolina Del Rosario durante visita a Emely Marie González | Listín Diario"
+
+    - src: "/assets/img/supervision-mfct/informatica/emidriany-ramirez-santo-domingo-country-club.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Emidriany Ramírez en Santo Domingo Country Club"
+      caption: "Carolina Del Rosario durante visita a Emidriany Ramírez | Santo Domingo Country Club"
+
+    - src: "/assets/img/supervision-mfct/informatica/enmanuel-canario-deivy-valdez-anthony-philoxene-jhostim-galan-poveda.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Enmanuel Canario, Deivy Valdez, Anthony Philoxene y Jhostim Galan en Poveda"
+      caption: "Carolina Del Rosario durante visita a Enmanuel Canario, Deivy Valdez, Anthony Philoxene y Jhostim Galan | Poveda"
+
+    - src: "/assets/img/supervision-mfct/informatica/genesis-daniela-vasquez-agencia-de-aduanas-alvaro-gestiones.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Génesis Daniela Vásquez en Agencia de Aduanas Alvaro Gestiones"
+      caption: "Carolina Del Rosario durante visita a Génesis Daniela Vásquez | Agencia de Aduanas Alvaro Gestiones"
+
+    - src: "/assets/img/supervision-mfct/informatica/jeison-javier-uceta-baez-hogar-escuela-rosa-duarte.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Jeison Javier Uceta Báez en Hogar Escuela Rosa Duarte"
+      caption: "Carolina Del Rosario durante visita a Jeison Javier Uceta Báez | Hogar Escuela Rosa Duarte"
+
+    - src: "/assets/img/supervision-mfct/informatica/justin-pujols-banco-agricola.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Justin Pujols en Banco Agrícola"
+      caption: "Carolina Del Rosario durante visita a Justin Pujols | Banco Agrícola"
+
+    - src: "/assets/img/supervision-mfct/informatica/luis-jose-montes-hogar-escuela-santo-domingo-savio.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Luis José Montes en Hogar Escuela Santo Domingo Savio"
+      caption: "Carolina Del Rosario durante visita a Luis José Montes | Hogar Escuela Santo Domingo Savio"
+
+    - src: "/assets/img/supervision-mfct/informatica/marcos-noel-lebron-seguriasa.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Marcos Noel Lebrón en Seguriasa"
+      caption: "Carolina Del Rosario durante visita a Marcos Noel Lebrón | Seguriasa"
+
+    - src: "/assets/img/supervision-mfct/informatica/sahid-martinez-medina-junta-central-electoral.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Sahid Martínez Medina en la Junta Central Electoral"
+      caption: "Carolina Del Rosario durante visita a Sahid Martínez Medina | Junta Central Electoral"
+
+    - src: "/assets/img/supervision-mfct/informatica/sarah-victoria-cabrera-cristal-mariel-hospital-general-de-las-fuerzas-armadas.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Sarah Victoria Cabrera y Cristal Mariel en el Hospital General de las Fuerzas Armadas"
+      caption: "Carolina Del Rosario durante visita a Sarah Victoria Cabrera y Cristal Mariel | Hospital General de las Fuerzas Armadas"
+
+    - src: "/assets/img/supervision-mfct/informatica/sebastian-yadel-geronimo-diaz-junta-central-electoral.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Sebastián Yadel Gerónimo Díaz en la Junta Central Electoral"
+      caption: "Carolina Del Rosario durante visita a Sebastián Yadel Gerónimo Díaz | Junta Central Electoral"
+
+    - src: "/assets/img/supervision-mfct/informatica/wellington-hansel-luis-miguel-juan-jose-soler-computer.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Wellington, Hansel, Luis Miguel y Juan José en Soler Computer"
+      caption: "Carolina Del Rosario durante visita a Wellington, Hansel, Luis Miguel y Juan José | Soler Computer"
+
+    - src: "/assets/img/supervision-mfct/informatica/xavier-pereyra-keiler-alexis-arias-franciel-montano-alcaldia-del-distrito-nacional.jpeg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Xavier Pereyra, Keiler Alexis Arias y Franciel Montaño en la Alcaldía del Distrito Nacional"
+      caption: "Carolina Del Rosario durante visita a Xavier Pereyra, Keiler Alexis Arias y Franciel Montaño | Alcaldía del Distrito Nacional"
+
+    - src: "/assets/img/supervision-mfct/informatica/yancen-garcia-juan-diego-cavallo-franchesca-gonzalez-kate-lorens-estevez-junta-central-electoral.jpg"
+      alt: "Carolina Del Rosario durante visita de supervisión a Yancen García, Juan Diego Cavallo, Franchesca Gonzalez y Kate Lorens Estevez en la Junta Central Electoral"
+      caption: "Carolina Del Rosario durante visita a Yancen García, Juan Diego Cavallo, Franchesca Gonzalez y Kate Lorens Estevez | Junta Central Electoral"
+
+logistica_transporte:
+  area: "Logística y Transporte"
+  docente: "Eridania De La Rosa"
+  fotos:
+    - src: "/assets/img/supervision-mfct/logistica-transporte/alexa-marie-guzman-delta-comercial.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Alexa Marie Guzmán en Delta Comercial"
+      caption: "Eridania De La Rosa durante visita a Alexa Marie Guzmán | Delta Comercial"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/ana-patricia-cuevas-papidpack.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Ana Patricia Cuevas en PapidPack"
+      caption: "Eridania De La Rosa durante visita a Ana Patricia Cuevas | PapidPack"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/angel-silvestre-rodriguez-plasticos-comerciales.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Ángel Silvestre Rodríguez en Plásticos Comerciales"
+      caption: "Eridania De La Rosa durante visita a Ángel Silvestre Rodríguez | Plásticos Comerciales"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/asael-tavarez-junta-central-electoral.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Asael Tavárez en la Junta Central Electoral"
+      caption: "Eridania De La Rosa durante visita a Asael Tavárez | Junta Central Electoral"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/braian-emmanuel-valdez-garcia.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Braian Emmanuel Valdez García en Frederic Schad"
+      caption: "Eridania De La Rosa durante visita a Braian Emmanuel Valdez García | Frederic Schad"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/carlos-saul-jimenez-turbi-delta-comercial.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Carlos Saúl Jiménez Turbi en Delta Comercial, S.A."
+      caption: "Eridania De La Rosa durante visita a Carlos Saúl Jiménez Turbi | Delta Comercial, S.A."
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/charlenis-matos-de-los-santos-haina-international-terminal.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Charlenis Matos De Los Santos en Haina International Terminal"
+      caption: "Eridania De La Rosa durante visita a Charlenis Matos De Los Santos | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/dileynni-heredia-contrera-omsa.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Dileynni Heredia Contrera en OMSA"
+      caption: "Eridania De La Rosa durante visita a Dileynni Heredia Contrera | OMSA"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/genesis-isabel-antonio-feliz-eted.jpeg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Génesis Isabel Antonio Feliz en ETED"
+      caption: "Eridania De La Rosa durante visita a Génesis Isabel Antonio Feliz | ETED"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/heimi-franco-rodriguez-autoridad-portuaria-dominicana.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Heimi Franco Rodríguez en Autoridad Portuaria Dominicana"
+      caption: "Eridania De La Rosa durante visita a Heimi Franco Rodríguez | Autoridad Portuaria Dominicana"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/jaronli-maciel-camilo-inapa.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Jaronli Maciel Camilo en INAPA"
+      caption: "Eridania De La Rosa durante visita a Jaronli Maciel Camilo | INAPA"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/jeimy-montero-alexa-guzman-delta-comercial.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Jeimy Montero y Alexa Guzmán en Delta Comercial"
+      caption: "Eridania De La Rosa durante visita a Jeimy Montero y Alexa Guzmán | Delta Comercial"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/jesus-miguel-garcia-haina-international-terminal.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Jesús Miguel García en Haina International Terminal"
+      caption: "Eridania De La Rosa durante visita a Jesús Miguel García | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/jose-angel-merced-veras-acosta-junta-de-aviacion-civil.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a José Ángel Merced Veras Acosta en la Junta de Aviación Civil"
+      caption: "Eridania De La Rosa durante visita a José Ángel Merced Veras Acosta | Junta de Aviación Civil"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/jose-david-destin-evangelista-jce.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a José David Destin Evangelista en JCE"
+      caption: "Eridania De La Rosa durante visita a José David Destin Evangelista | JCE"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/karyme-ravelo-reyes-fex-mirador-norte.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Karyme Ravelo Reyes en Fex Mirador Norte"
+      caption: "Eridania De La Rosa durante visita a Karyme Ravelo Reyes | Fex Mirador Norte"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/marianny-rosario-alcaldia-del-distrito-nacional.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Marianny Rosario en la Alcaldía del Distrito Nacional"
+      caption: "Eridania De La Rosa durante visita a Marianny Rosario | Alcaldía del Distrito Nacional"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/mia-esther-lucas-capital-transport-solutions.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Mía Esther Lucas en Capital Transport Solutions"
+      caption: "Eridania De La Rosa durante visita a Mía Esther Lucas | Capital Transport Solutions"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/michel-moreta-distrito-educativo-15-03.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Michel Moreta en el Distrito Educativo 15-03"
+      caption: "Eridania De La Rosa durante visita a Michel Moreta | Distrito Educativo 15-03"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/nikaury-altagracia-franco-aquino-navisfret.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Nikaury Altagracia Franco Aquino en Navisfret, S.R.L."
+      caption: "Eridania De La Rosa durante visita a Nikaury Altagracia Franco Aquino | Navisfret, S.R.L."
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/reyna-luz-matos-direccion-general-de-impuestos-internos.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Reyna Luz Matos en la Dirección General de Impuestos Internos"
+      caption: "Eridania De La Rosa durante visita a Reyna Luz Matos | Dirección General de Impuestos Internos"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/ruth-mariel-diaz-haina-international-terminal.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Ruth Mariel Diaz en Haina International Terminal"
+      caption: "Eridania De La Rosa durante visita a Ruth Mariel Diaz | Haina International Terminal"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/santianny-asencio-ferreteria-fuente-de-amor.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Santianny Asencio en Ferretería Fuente de Amor"
+      caption: "Eridania De La Rosa durante visita a Santianny Asencio | Ferretería Fuente de Amor"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/scarlet-tavarez-pena-agencia-aduanal-comercio-exterior.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Scarlet Tavarez Peña en Agencia Aduanal & Comercio Exterior"
+      caption: "Eridania De La Rosa durante visita a Scarlet Tavarez Peña | Agencia Aduanal & Comercio Exterior"
+
+    - src: "/assets/img/supervision-mfct/logistica-transporte/yeury-de-leon-encarnacion-frederic-schad.jpg"
+      alt: "Eridania De La Rosa durante visita de supervisión a Yeury De León Encarnación en Frederic Schad"
+      caption: "Eridania De La Rosa durante visita a Yeury De León Encarnación | Frederic Schad"
+
+comercio_mercadeo:
+  area: "Comercio y Mercadeo"
+  docente: "María Hiciano"
+  fotos: []
