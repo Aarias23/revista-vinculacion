@@ -81,12 +81,13 @@ else {
 
     foreach ($match in $matches) {
       $url = $match.Groups[1].Value
+      $pathOnly = ($url -split "[?#]", 2)[0]
 
-      if ($url.StartsWith("$baseUrl/")) {
-        $relativePath = $url.Substring($baseUrl.Length).TrimStart([char]"/").Replace([char]"/", $separator)
+      if ($pathOnly.StartsWith("$baseUrl/")) {
+        $relativePath = $pathOnly.Substring($baseUrl.Length).TrimStart([char]"/").Replace([char]"/", $separator)
         $target = Join-Path $siteDir $relativePath
 
-        if ($url.EndsWith("/")) {
+        if ($pathOnly.EndsWith("/")) {
           $target = Join-Path $target "index.html"
         }
 
