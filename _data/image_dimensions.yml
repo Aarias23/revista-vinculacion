@@ -101,6 +101,9 @@
 '/assets/img/pasantias/informatica/franciel-montero-inf.jpg':
   width: 532
   height: 945
+'/assets/img/pasantias/informatica/franchesca-gonzalez-minaya.jpg':
+  width: 1280
+  height: 721
 '/assets/img/pasantias/informatica/genesis-daniela-vasquez.jpg':
   width: 2992
   height: 4000
@@ -111,8 +114,8 @@
   width: 1200
   height: 1600
 '/assets/img/pasantias/informatica/justin-pujols.jpg':
-  width: 2448
-  height: 3264
+  width: 1600
+  height: 1200
 '/assets/img/pasantias/informatica/kate-lorens-estevez-perez-inf.jpg':
   width: 3024
   height: 4032
@@ -120,8 +123,44 @@
   width: 1600
   height: 900
 '/assets/img/pasantias/informatica/luis-porte-inf-soler-computer.jpg':
-  width: 674
-  height: 945
+  width: 1280
+  height: 721
+'/assets/img/pasantias/informatica/luis-jose-montes-de-oca.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/pasantias/informatica/daimellys-valeria-pena.jpg':
+  width: 1600
+  height: 1200
+'/assets/img/pasantias/informatica/deivy-valdez-de-la-rosa.jpg':
+  width: 1280
+  height: 960
+'/assets/img/pasantias/informatica/anthony-philoxene-omuscat.jpg':
+  width: 1280
+  height: 960
+'/assets/img/pasantias/informatica/jhostim-alexander-galan-caraballo.jpg':
+  width: 1280
+  height: 960
+'/assets/img/pasantias/informatica/emidriany-ramirez-santana.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/pasantias/informatica/bryan-daniel-beltre-vargas.jpg':
+  width: 1600
+  height: 932
+'/assets/img/pasantias/informatica/hansel-arturo-perez-ramirez.jpg':
+  width: 721
+  height: 1280
+'/assets/img/pasantias/informatica/wellington-junior-ogando.jpg':
+  width: 721
+  height: 1280
+'/assets/img/pasantias/informatica/juan-jose-destin.jpg':
+  width: 721
+  height: 1280
+'/assets/img/pasantias/informatica/sahid-martinez-medina.jpg':
+  width: 721
+  height: 1280
+'/assets/img/pasantias/informatica/sebastian-yadel-geronimo.jpg':
+  width: 1280
+  height: 721
 '/assets/img/pasantias/informatica/marcos-lebron-inf-seguriasa.jpeg':
   width: 4032
   height: 3024
@@ -524,3 +563,69 @@
 '/assets/img/supervision-mfct/logistica-transporte/yeury-de-leon-encarnacion-frederic-schad.jpg':
   width: 737
   height: 1600
+'/assets/img/pasantias/mercadeo/nicole-paulino-solis.jpg':
+  width: 3024
+  height: 4032
+'/assets/img/pasantias/mercadeo/pedro-jose-terrero-garcia.jpg':
+  width: 720
+  height: 960
+'/assets/img/pasantias/mercadeo/lia-omaylin-payano.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/pasantias/mercadeo/julianni-jasmin-reyes-almanzar.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/pasantias/mercadeo/daismery-hiraldo-cuevas.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/pasantias/mercadeo/leodeinys-anais-gomez.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/pasantias/mercadeo/jose-enrique-novas.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/daismery-hiraldo-cuevas-pappaterra-montolio-sas.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/jose-enrique-novas-compu-futuro-de-los-angeles.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/leonela-alanis-gomez-ferreteria-pepe.jpeg':
+  width: 867
+  height: 1156
+'/assets/img/supervision-mfct/comercio-mercadeo/arianna-michelle-marte-ramos-harmony-glass-srl.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/arielby-misael-perez-sosa-altacopa-sa.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/felix-steven-de-los-santos-altacopa-sa.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/mariely-lora-rodriguez-cruz-mariel-zapata-brito-distrito-15-03.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/marie-angely-del-rosario-service-travel.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/yuderka-genao-ufhec.jpeg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/julianni-jasmin-reyes-almanzar-distrito-educativo-15-03.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/julianny-manon-ramirez-santo-domingo-country-srl.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/leodeinys-anais-gomez-hogar-escuela-santo-domingo-savio.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/lia-omaylin-payano-ferreteria-fuente-de-amor.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/nicole-paulino-solis-reminter.jpg':
+  width: 1200
+  height: 1600
+'/assets/img/supervision-mfct/comercio-mercadeo/pedro-jose-terrero-garcia-ministerio-industria-comercio-mipymes.jpg':
+  width: 720
+  height: 960

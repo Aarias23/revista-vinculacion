@@ -277,4 +277,63 @@ logistica_transporte:
 comercio_mercadeo:
   area: "Comercio y Mercadeo"
   docente: "María Hiciano"
-  fotos: []
+  fotos:
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/leonela-alanis-gomez-ferreteria-pepe.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Leonela Alanís Gómez en Ferretería Pepe"
+      caption: "Visita de supervisión realizada por María Hiciano a Leonela Alanís Gómez | Ferretería Pepe"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/arianna-michelle-marte-ramos-harmony-glass-srl.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Arianna Michelle Marte Ramos en Harmony Glass SRL"
+      caption: "Visita de supervisión realizada por María Hiciano a Arianna Michelle Marte Ramos | Harmony Glass SRL"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/arielby-misael-perez-sosa-altacopa-sa.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Arielby Misael Perez Sosa en Altacopa, S.A."
+      caption: "Visita de supervisión realizada por María Hiciano a Arielby Misael Perez Sosa | Altacopa, S.A."
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/felix-steven-de-los-santos-altacopa-sa.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Felix Steven De Los Santos en Altacopa, S.A."
+      caption: "Visita de supervisión realizada por María Hiciano a Felix Steven De Los Santos | Altacopa, S.A."
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/mariely-lora-rodriguez-cruz-mariel-zapata-brito-distrito-15-03.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Mariely Lora Rodriguez y Cruz Mariel Zapata Brito en Distrito 15-03"
+      caption: "Visita de supervisión realizada por María Hiciano a Mariely Lora Rodriguez y Cruz Mariel Zapata Brito | Distrito 15-03"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/marie-angely-del-rosario-service-travel.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Marie Angely Del Rosario en Service Travel"
+      caption: "Visita de supervisión realizada por María Hiciano a Marie Angely Del Rosario | Service Travel"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/nicole-paulino-solis-reminter.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Nicole Paulino Solís en Reminter"
+      caption: "Visita de supervisión realizada por María Hiciano a Nicole Paulino Solís | Reminter"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/yuderka-genao-ufhec.jpeg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Yuderka Genao en UFHEC"
+      caption: "Visita de supervisión realizada por María Hiciano a Yuderka Genao | UFHEC"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/leodeinys-anais-gomez-hogar-escuela-santo-domingo-savio.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Leodeinys Anaís Gómez en Hogar Escuela Santo Domingo Savio"
+      caption: "Visita de supervisión realizada por María Hiciano a Leodeinys Anaís Gómez | Hogar Escuela Santo Domingo Savio"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/daismery-hiraldo-cuevas-pappaterra-montolio-sas.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Daismery Hiraldo Cuevas en Pappaterra Montolío, SAS"
+      caption: "Visita de supervisión realizada por María Hiciano a Daismery Hiraldo Cuevas | Pappaterra Montolío, SAS"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/julianny-manon-ramirez-santo-domingo-country-srl.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Julianny Mañon Ramírez en Santo Domingo Country, SRL"
+      caption: "Visita de supervisión realizada por María Hiciano a Julianny Mañon Ramírez | Santo Domingo Country, SRL"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/jose-enrique-novas-compu-futuro-de-los-angeles.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a José Enrique Novas en Compu-futuro de los Ángeles"
+      caption: "Visita de supervisión realizada por María Hiciano a José Enrique Novas | Compu-futuro de los Ángeles"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/lia-omaylin-payano-ferreteria-fuente-de-amor.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Lia Omaylin Payano en Ferretería Fuente de Amor"
+      caption: "Visita de supervisión realizada por María Hiciano a Lia Omaylin Payano | Ferretería Fuente de Amor"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/julianni-jasmin-reyes-almanzar-distrito-educativo-15-03.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Julianni Jasmin Reyes Almanzar en Distrito Educativo 15-03"
+      caption: "Visita de supervisión realizada por María Hiciano a Julianni Jasmin Reyes Almanzar | Distrito Educativo 15-03"
+
+    - src: "/assets/img/supervision-mfct/comercio-mercadeo/pedro-jose-terrero-garcia-ministerio-industria-comercio-mipymes.jpg"
+      alt: "Evidencia de la visita de supervisión realizada por María Hiciano a Pedro Jose Terrero Garcia en Ministerio de Industria, Comercio y Mipymes"
+      caption: "Visita de supervisión realizada por María Hiciano a Pedro Jose Terrero Garcia | Ministerio de Industria, Comercio y Mipymes"

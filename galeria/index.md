@@ -103,6 +103,42 @@ Documentación del acompañamiento realizado por las docentes tutoras a los
 estudiantes durante sus procesos formativos en las empresas receptoras.
 </p>
 
+<div class="gallery preview">
+  {% assign supervision = site.data.supervision_docente_mfct %}
+
+  {% assign informatica_preview = supervision.informatica.fotos[0] %}
+  {% include figure.html
+    src=informatica_preview.src
+    alt=informatica_preview.alt
+    caption=informatica_preview.caption
+    event="preview-supervision"
+  %}
+
+  {% assign instalaciones_preview = supervision.instalaciones_electricas.fotos[0] %}
+  {% include figure.html
+    src=instalaciones_preview.src
+    alt=instalaciones_preview.alt
+    caption=instalaciones_preview.caption
+    event="preview-supervision"
+  %}
+
+  {% assign logistica_preview = supervision.logistica_transporte.fotos[0] %}
+  {% include figure.html
+    src=logistica_preview.src
+    alt=logistica_preview.alt
+    caption=logistica_preview.caption
+    event="preview-supervision"
+  %}
+
+  {% assign logistica_preview_extra = supervision.logistica_transporte.fotos[1] %}
+  {% include figure.html
+    src=logistica_preview_extra.src
+    alt=logistica_preview_extra.alt
+    caption=logistica_preview_extra.caption
+    event="preview-supervision"
+  %}
+</div>
+
 <a href="{{ '/galeria/supervision-docente-mfct/' | relative_url }}" class="btn-secondary">
   Ver sección
 </a>

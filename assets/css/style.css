@@ -1670,3 +1670,250 @@ iframe {
     width: min(100% - 1.5rem, 1200px);
   }
 }
+
+/* =========================================================
+   Directorio de pasantes
+   ========================================================= */
+.pasantes-hero {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: end;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #dbe5ef;
+  border-radius: 8px;
+  background: #f8fbfd;
+}
+
+.section-kicker {
+  margin: 0 0 0.35rem;
+  color: #52616f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.pasantes-hero h1 {
+  margin: 0 0 0.5rem;
+  color: var(--color-primary-dark);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.pasantes-hero p {
+  max-width: 68ch;
+  margin: 0;
+  color: #273442;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+}
+
+.pasantes-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.pasantes-summary div {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid #d5e1ec;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.pasantes-summary dt {
+  color: var(--color-primary-dark);
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pasantes-summary dd {
+  margin: 0.35rem 0 0;
+  color: #52616f;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.pasantes-area-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: clamp(1rem, 3vw, 1.5rem) 0;
+}
+
+.pasantes-area-nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid #cbd8e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-primary-dark);
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease;
+}
+
+.pasantes-area-nav a:hover,
+.pasantes-area-nav a:focus-visible {
+  border-color: var(--color-primary);
+  background: #eaf4ff;
+  color: var(--color-primary-dark);
+}
+
+.pasantes-section {
+  scroll-margin-top: 6rem;
+  margin-top: clamp(2rem, 5vw, 3.25rem);
+}
+
+.pasantes-section-header {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dbe5ef;
+}
+
+.pasantes-section-header h2 {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.pasantes-section-header span {
+  flex: 0 0 auto;
+  color: #52616f;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.pasantes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr));
+  gap: clamp(1rem, 2.4vw, 1.35rem);
+}
+
+.pasante-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #dbe5ef;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(31, 49, 68, 0.08);
+}
+
+.pasante-card picture {
+  display: block;
+  width: min(100%, 244px);
+  aspect-ratio: 244 / 258;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #dff2ff;
+}
+
+.pasante-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pasante-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1rem;
+}
+
+.pasante-card h3 {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.pasante-card dl {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.pasante-card dt {
+  color: #52616f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.pasante-card dd {
+  margin: 0.1rem 0 0;
+  color: #1f2d3a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pasante-cert-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pasante-cert-link:hover,
+.pasante-cert-link:focus-visible {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+.pasante-cert-link.is-disabled {
+  border-color: #cbd8e3;
+  background: #eef3f7;
+  color: #52616f;
+}
+
+@media (min-width: 768px) {
+  .pasantes-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .pasantes-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .pasantes-section-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .pasantes-area-nav a {
+    flex: 1 1 100%;
+  }
+}
