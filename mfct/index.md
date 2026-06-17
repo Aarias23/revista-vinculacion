@@ -47,7 +47,7 @@ permalink: /mfct/
     </div>
     <div>
       <dt>{{ concluidos_documentados }}</dt>
-      <dd>documentados</dd>
+      <dd>con evidencia</dd>
     </div>
     <div>
       <dt>{{ por_verificar }}</dt>
