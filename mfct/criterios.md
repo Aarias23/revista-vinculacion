@@ -90,7 +90,7 @@ permalink: /mfct/criterios/
 
   <p class="mfct-footnote">
     Los porcentajes se muestran redondeados a números enteros para facilitar la
-    lectura; por eso, al sumar varias áreas, el total visible puede quedar en 99%
-    o 101% aunque el cálculo base use los 103 estudiantes registrados.
+    lectura; por eso, la suma visible de las áreas puede variar ligeramente
+    respecto al 100%, aunque el cálculo base use los 103 estudiantes registrados.
   </p>
 </section>
