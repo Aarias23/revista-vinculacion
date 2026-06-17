@@ -1617,6 +1617,10 @@ iframe {
   border-bottom: 1px solid #dbe5ef;
 }
 
+.context-nav.is-related-only {
+  justify-content: flex-end;
+}
+
 .context-nav a {
   display: inline-flex;
   min-height: 44px;
@@ -1635,6 +1639,16 @@ iframe {
   background: #ffffff;
 }
 
+.context-nav-back span {
+  font-weight: 900;
+}
+
+.context-nav-back span::before {
+  content: "Volver a ";
+  color: #52616f;
+  font-weight: 800;
+}
+
 .context-nav-back:hover,
 .context-nav-back:focus-visible,
 .context-nav-links a:hover,
@@ -1651,7 +1665,9 @@ iframe {
 }
 
 .context-nav-links a {
+  border: 1px solid transparent;
   padding: 0.5rem 0.7rem;
+  background: #f8fbfd;
 }
 
 footer a {

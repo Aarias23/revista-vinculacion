@@ -1,71 +1,75 @@
 {% assign current_url = page.url | default: "/" %}
 {% unless current_url == "/" %}
-  {% assign parent_url = "/" %}
-  {% assign parent_label = "Inicio" %}
-  {% assign companion_url = "" %}
-  {% assign companion_label = "" %}
+  {% assign parent_url = "" %}
+  {% assign parent_label = "" %}
+  {% assign related_links = "" %}
 
   {% if current_url contains "/visitas/" %}
     {% unless current_url == "/visitas/" %}
       {% assign parent_url = "/visitas/" %}
       {% assign parent_label = "Visitas Técnicas" %}
-      {% assign companion_url = "/galeria/" %}
-      {% assign companion_label = "Galería" %}
+      {% assign related_links = "/galeria/|Galería" %}
     {% endunless %}
   {% elsif current_url contains "/instituciones/" %}
     {% unless current_url == "/instituciones/" %}
       {% assign parent_url = "/instituciones/" %}
       {% assign parent_label = "Instituciones" %}
-      {% assign companion_url = "/galeria/" %}
-      {% assign companion_label = "Galería" %}
+      {% assign related_links = "/galeria/|Galería" %}
     {% endunless %}
   {% elsif current_url contains "/pasantias/" %}
     {% unless current_url == "/pasantias/" %}
       {% assign parent_url = "/pasantias/" %}
       {% assign parent_label = "Pasantías" %}
-      {% assign companion_url = "/pasantes/" %}
-      {% assign companion_label = "Pasantes" %}
+      {% assign related_links = "/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
     {% endunless %}
   {% elsif current_url contains "/galeria/" %}
     {% unless current_url == "/galeria/" %}
       {% assign parent_url = "/galeria/" %}
       {% assign parent_label = "Galería" %}
-      {% assign companion_url = "/visitas/" %}
-      {% assign companion_label = "Visitas Técnicas" %}
+      {% assign related_links = "/visitas/|Visitas Técnicas,/mfct/|Informe MFCT" %}
     {% endunless %}
   {% elsif current_url contains "/mfct/" %}
     {% unless current_url == "/mfct/" %}
       {% assign parent_url = "/mfct/" %}
       {% assign parent_label = "Informe MFCT" %}
-      {% assign companion_url = "/pasantes/" %}
-      {% assign companion_label = "Pasantes" %}
+      {% assign related_links = "/pasantes/|Pasantes,/empresas/|Empresas" %}
     {% endunless %}
   {% endif %}
 
   {% if current_url == "/pasantes/" %}
-    {% assign companion_url = "/mfct/" %}
-    {% assign companion_label = "Informe MFCT" %}
+    {% assign related_links = "/empresas/|Empresas,/mfct/|Informe MFCT" %}
   {% elsif current_url == "/empresas/" %}
-    {% assign companion_url = "/pasantes/" %}
-    {% assign companion_label = "Pasantes" %}
+    {% assign related_links = "/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
   {% elsif current_url == "/mfct/" %}
-    {% assign companion_url = "/empresas/" %}
-    {% assign companion_label = "Empresas" %}
+    {% assign related_links = "/pasantes/|Pasantes,/empresas/|Empresas,/mfct/criterios/|Criterios" %}
+  {% elsif current_url == "/visitas/" %}
+    {% assign related_links = "/galeria/|Galería,/instituciones/|Instituciones" %}
+  {% elsif current_url == "/galeria/" %}
+    {% assign related_links = "/visitas/|Visitas Técnicas,/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
+  {% elsif current_url == "/instituciones/" %}
+    {% assign related_links = "/visitas/|Visitas Técnicas,/galeria/|Galería" %}
+  {% elsif current_url == "/pasantias/" %}
+    {% assign related_links = "/pasantes/|Pasantes,/empresas/|Empresas,/mfct/|Informe MFCT" %}
   {% endif %}
 
-  <nav class="context-nav" aria-label="Navegación contextual">
-    <a class="context-nav-back" href="{{ parent_url | relative_url }}">
-      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-      <span>Volver a {{ parent_label }}</span>
-    </a>
-
-    <div class="context-nav-links">
-      {% unless parent_url == "/" %}
-        <a href="{{ '/' | relative_url }}">Inicio</a>
-      {% endunless %}
-      {% if companion_url != "" %}
-        <a href="{{ companion_url | relative_url }}">{{ companion_label }}</a>
+  {% if parent_url != "" or related_links != "" %}
+    <nav class="context-nav{% if parent_url == "" %} is-related-only{% endif %}" aria-label="Navegación contextual">
+      {% if parent_url != "" %}
+        <a class="context-nav-back" href="{{ parent_url | relative_url }}">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>{{ parent_label }}</span>
+        </a>
       {% endif %}
-    </div>
-  </nav>
+
+      {% if related_links != "" %}
+        <div class="context-nav-links" aria-label="Secciones relacionadas">
+          {% assign links = related_links | split: "," %}
+          {% for link in links %}
+            {% assign parts = link | split: "|" %}
+            <a href="{{ parts[0] | relative_url }}">{{ parts[1] }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </nav>
+  {% endif %}
 {% endunless %}
