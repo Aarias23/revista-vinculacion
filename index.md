@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Revista Digital"
+title: "Portal de Vinculación Sectorial"
 ---
 
 <!-- Hero principal -->
@@ -8,10 +8,10 @@ title: "Revista Digital"
   <div class="hero-bg"></div>
   <div class="hero-content">
     <h1>
-      Instituto Politécnico Salesiano<br>
-      Padre Bartolomé Vegh
+      Portal de Vinculación<br>
+      Sectorial
     </h1>
-    <p>Revista Digital · Unidad de Vinculación Sectorial</p>
+    <p>Instituto Politécnico Salesiano Padre Bartolomé Vegh</p>
     <div class="hero-actions">
       <a href="{{ '/galeria/' | relative_url }}" class="btn-primary">Explorar Galería</a>
       <a href="{{ '/mfct/' | relative_url }}" class="btn-glass">Informe MFCT</a>

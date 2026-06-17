@@ -1,7 +1,8 @@
-# Revista Digital de Vinculación Sectorial
+# Portal de Vinculación Sectorial
 
-Revista digital para documentar visitas técnicas, pasantías y actividades
-institucionales del Instituto Politécnico Salesiano Padre Bartolomé Vegh.
+Portal institucional para documentar visitas técnicas, pasantías, MFCT,
+empresas colaboradoras y actividades institucionales del Instituto Politécnico
+Salesiano Padre Bartolomé Vegh.
 
 ## Requisitos
 

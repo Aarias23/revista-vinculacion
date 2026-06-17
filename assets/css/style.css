@@ -1413,6 +1413,7 @@ header.site-header .site-navbar {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+  flex: 0 1 auto;
   min-width: 0;
   color: var(--color-text-light);
   text-decoration: none;
@@ -1437,13 +1438,10 @@ header.site-header .site-navbar {
 }
 
 .site-brand-text {
-  max-width: 28ch;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.2;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -1575,8 +1573,7 @@ header.site-header .site-navbar {
   }
 
   .site-brand-text {
-    max-width: 18ch;
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 }
 
