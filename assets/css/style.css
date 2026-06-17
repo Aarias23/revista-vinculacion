@@ -1809,6 +1809,10 @@ footer a:focus-visible {
   overflow-wrap: normal;
 }
 
+.pasantes-summary dd span {
+  display: block;
+}
+
 .pasantes-area-nav {
   display: flex;
   flex-wrap: wrap;
@@ -1991,9 +1995,9 @@ footer a:focus-visible {
   color: #52616f;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .pasantes-hero {
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.4fr);
   }
 }
 

@@ -32,11 +32,11 @@ permalink: /pasantes/
     </div>
     <div>
       <dt>{{ pasantes_data.areas.size }}</dt>
-      <dd>áreas técnicas</dd>
+      <dd><span>áreas</span><span>técnicas</span></dd>
     </div>
     <div>
       <dt>{{ pendientes_empresa }}</dt>
-      <dd>empresas por registrar</dd>
+      <dd><span>empresas</span><span>pendientes</span></dd>
     </div>
   </dl>
 </section>
