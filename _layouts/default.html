@@ -28,6 +28,8 @@
 {% include header.html %}
 
 <main class="container my-4">
+  {% include contextual-nav.html %}
+
   {% if page.print_report %}
   <div class="report-actions">
     <button type="button" class="report-print-btn" data-print-report>

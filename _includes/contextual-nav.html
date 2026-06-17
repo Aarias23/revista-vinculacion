@@ -1,0 +1,71 @@
+{% assign current_url = page.url | default: "/" %}
+{% unless current_url == "/" %}
+  {% assign parent_url = "/" %}
+  {% assign parent_label = "Inicio" %}
+  {% assign companion_url = "" %}
+  {% assign companion_label = "" %}
+
+  {% if current_url contains "/visitas/" %}
+    {% unless current_url == "/visitas/" %}
+      {% assign parent_url = "/visitas/" %}
+      {% assign parent_label = "Visitas Técnicas" %}
+      {% assign companion_url = "/galeria/" %}
+      {% assign companion_label = "Galería" %}
+    {% endunless %}
+  {% elsif current_url contains "/instituciones/" %}
+    {% unless current_url == "/instituciones/" %}
+      {% assign parent_url = "/instituciones/" %}
+      {% assign parent_label = "Instituciones" %}
+      {% assign companion_url = "/galeria/" %}
+      {% assign companion_label = "Galería" %}
+    {% endunless %}
+  {% elsif current_url contains "/pasantias/" %}
+    {% unless current_url == "/pasantias/" %}
+      {% assign parent_url = "/pasantias/" %}
+      {% assign parent_label = "Pasantías" %}
+      {% assign companion_url = "/pasantes/" %}
+      {% assign companion_label = "Pasantes" %}
+    {% endunless %}
+  {% elsif current_url contains "/galeria/" %}
+    {% unless current_url == "/galeria/" %}
+      {% assign parent_url = "/galeria/" %}
+      {% assign parent_label = "Galería" %}
+      {% assign companion_url = "/visitas/" %}
+      {% assign companion_label = "Visitas Técnicas" %}
+    {% endunless %}
+  {% elsif current_url contains "/mfct/" %}
+    {% unless current_url == "/mfct/" %}
+      {% assign parent_url = "/mfct/" %}
+      {% assign parent_label = "Informe MFCT" %}
+      {% assign companion_url = "/pasantes/" %}
+      {% assign companion_label = "Pasantes" %}
+    {% endunless %}
+  {% endif %}
+
+  {% if current_url == "/pasantes/" %}
+    {% assign companion_url = "/mfct/" %}
+    {% assign companion_label = "Informe MFCT" %}
+  {% elsif current_url == "/empresas/" %}
+    {% assign companion_url = "/pasantes/" %}
+    {% assign companion_label = "Pasantes" %}
+  {% elsif current_url == "/mfct/" %}
+    {% assign companion_url = "/empresas/" %}
+    {% assign companion_label = "Empresas" %}
+  {% endif %}
+
+  <nav class="context-nav" aria-label="Navegación contextual">
+    <a class="context-nav-back" href="{{ parent_url | relative_url }}">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      <span>Volver a {{ parent_label }}</span>
+    </a>
+
+    <div class="context-nav-links">
+      {% unless parent_url == "/" %}
+        <a href="{{ '/' | relative_url }}">Inicio</a>
+      {% endunless %}
+      {% if companion_url != "" %}
+        <a href="{{ companion_url | relative_url }}">{{ companion_label }}</a>
+      {% endif %}
+    </div>
+  </nav>
+{% endunless %}
