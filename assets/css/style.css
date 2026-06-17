@@ -1783,7 +1783,7 @@ footer a:focus-visible {
 
 .pasantes-summary {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(min(100%, 6.75rem), 1fr));
   gap: 0.75rem;
   margin: 0;
 }
@@ -1808,6 +1808,8 @@ footer a:focus-visible {
   color: #52616f;
   font-size: 0.88rem;
   font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .pasantes-area-nav {
