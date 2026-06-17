@@ -6,15 +6,17 @@ permalink: /mfct/
 
 {% assign pasantes_data = site.data.pasantes_2025_2026 %}
 {% assign total_estudiantes = 0 %}
-{% assign certificaciones_registradas = 0 %}
+{% assign concluidos_documentados = 0 %}
+{% assign por_verificar = 0 %}
 {% assign empresas_vistas = "" %}
 {% assign total_empresas = 0 %}
 {% for area_group in pasantes_data.areas %}
   {% assign total_estudiantes = total_estudiantes | plus: area_group[1].size %}
   {% for pasante in area_group[1] %}
-    {% assign cert_file = site.static_files | where: "path", pasante.certificacion | first %}
-    {% if cert_file %}
-      {% assign certificaciones_registradas = certificaciones_registradas | plus: 1 %}
+    {% if pasante.estado_mfct == "concluido_documentado" %}
+      {% assign concluidos_documentados = concluidos_documentados | plus: 1 %}
+    {% else %}
+      {% assign por_verificar = por_verificar | plus: 1 %}
     {% endif %}
     {% if pasante.empresa != "Por registrar" %}
       {% capture empresa_token %}|{{ pasante.empresa }}|{% endcapture %}
@@ -25,9 +27,8 @@ permalink: /mfct/
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign pendientes_evidencia = total_estudiantes | minus: certificaciones_registradas %}
-{% assign certificadas_pct = certificaciones_registradas | times: 100 | divided_by: total_estudiantes %}
-{% assign pendientes_pct = pendientes_evidencia | times: 100 | divided_by: total_estudiantes %}
+{% assign documentados_pct = concluidos_documentados | times: 100 | divided_by: total_estudiantes %}
+{% assign verificar_pct = por_verificar | times: 100 | divided_by: total_estudiantes %}
 
 <section class="pasantes-hero mfct-hero" aria-labelledby="mfct-title">
   <div>
@@ -35,8 +36,8 @@ permalink: /mfct/
     <h1 id="mfct-title">Informe MFCT</h1>
     <p>
       Panel de seguimiento para rendir informes sobre la Formación en Centros de
-      Trabajo, con indicadores actualizados desde el registro de pasantes y sus
-      certificaciones adjuntas.
+      Trabajo, alimentado desde el registro de pasantes, empresas receptoras y
+      estado documental del proceso.
     </p>
   </div>
   <dl class="pasantes-summary" aria-label="Resumen del informe MFCT">
@@ -45,24 +46,28 @@ permalink: /mfct/
       <dd>estudiantes</dd>
     </div>
     <div>
-      <dt>{{ certificaciones_registradas }}</dt>
-      <dd>certificaciones</dd>
+      <dt>{{ concluidos_documentados }}</dt>
+      <dd>documentados</dd>
     </div>
     <div>
-      <dt>{{ pendientes_evidencia }}</dt>
-      <dd>pendientes</dd>
+      <dt>{{ por_verificar }}</dt>
+      <dd>por verificar</dd>
     </div>
   </dl>
 </section>
 
 <section class="mfct-note" aria-labelledby="mfct-criterio-title">
   <p class="section-kicker">Criterio del informe</p>
-  <h2 id="mfct-criterio-title">Conclusión documentada</h2>
+  <h2 id="mfct-criterio-title">Lectura profesional del estado MFCT</h2>
   <p>
-    En este panel, un estudiante aparece como concluido documentado cuando tiene
-    certificación adjunta. Si no aparece la certificación, queda como pendiente de
-    evidencia hasta que se registre el documento o se agregue un estado más específico.
+    El informe separa los estudiantes con conclusión documentada de los casos por
+    verificar. Un estudiante aparece como concluido documentado cuando el registro
+    tiene evidencia cargada; si no hay evidencia o el cierre no está confirmado en
+    la fuente de datos, permanece por verificar para seguimiento institucional.
   </p>
+  <a class="mfct-note-link" href="{{ '/mfct/criterios/' | relative_url }}">
+    Ver criterios de lectura
+  </a>
 </section>
 
 <section class="pasantes-section mfct-section" aria-labelledby="mfct-indicadores-title">
@@ -77,32 +82,32 @@ permalink: /mfct/
   <div class="mfct-stat-grid">
     <article class="mfct-stat-card">
       <span class="mfct-stat-label">Conclusión documentada</span>
-      <strong>{{ certificaciones_registradas }}</strong>
-      <progress class="mfct-progress" value="{{ certificaciones_registradas }}" max="{{ total_estudiantes }}">
-        {{ certificadas_pct }}%
+      <strong>{{ concluidos_documentados }}</strong>
+      <progress class="mfct-progress" value="{{ concluidos_documentados }}" max="{{ total_estudiantes }}">
+        {{ documentados_pct }}%
       </progress>
-      <span>{{ certificadas_pct }}% del total registrado</span>
+      <span>{{ documentados_pct }}% del total registrado tiene evidencia cargada</span>
     </article>
 
     <article class="mfct-stat-card">
-      <span class="mfct-stat-label">Pendiente de evidencia</span>
-      <strong>{{ pendientes_evidencia }}</strong>
-      <progress class="mfct-progress is-warning" value="{{ pendientes_evidencia }}" max="{{ total_estudiantes }}">
-        {{ pendientes_pct }}%
+      <span class="mfct-stat-label">Por verificar</span>
+      <strong>{{ por_verificar }}</strong>
+      <progress class="mfct-progress is-warning" value="{{ por_verificar }}" max="{{ total_estudiantes }}">
+        {{ verificar_pct }}%
       </progress>
-      <span>{{ pendientes_pct }}% requiere seguimiento documental</span>
+      <span>{{ verificar_pct }}% requiere confirmación o evidencia documental</span>
     </article>
 
     <article class="mfct-stat-card">
       <span class="mfct-stat-label">Centros de trabajo</span>
       <strong>{{ total_empresas }}</strong>
-      <span>empresas e instituciones receptoras</span>
+      <span>empresas e instituciones receptoras registradas</span>
     </article>
 
     <article class="mfct-stat-card">
       <span class="mfct-stat-label">Áreas técnicas</span>
       <strong>{{ pasantes_data.areas.size }}</strong>
-      <span>programas participantes</span>
+      <span>programas participantes en el periodo</span>
     </article>
   </div>
 </section>
@@ -120,26 +125,25 @@ permalink: /mfct/
     {% for area_group in pasantes_data.areas %}
       {% assign area_items = area_group[1] %}
       {% assign area_label = area_items[0].area %}
-      {% assign area_certificaciones = 0 %}
+      {% assign area_documentados = 0 %}
       {% for pasante in area_items %}
-        {% assign cert_file = site.static_files | where: "path", pasante.certificacion | first %}
-        {% if cert_file %}
-          {% assign area_certificaciones = area_certificaciones | plus: 1 %}
+        {% if pasante.estado_mfct == "concluido_documentado" %}
+          {% assign area_documentados = area_documentados | plus: 1 %}
         {% endif %}
       {% endfor %}
-      {% assign area_pendientes = area_items.size | minus: area_certificaciones %}
+      {% assign area_verificar = area_items.size | minus: area_documentados %}
       {% assign area_pct = area_items.size | times: 100 | divided_by: total_estudiantes %}
-      {% assign area_cert_pct = area_certificaciones | times: 100 | divided_by: area_items.size %}
+      {% assign area_documentados_pct = area_documentados | times: 100 | divided_by: area_items.size %}
 
       <article class="mfct-chart-row">
         <div>
           <h3>{{ area_label }}</h3>
-          <p>{{ area_items.size }} estudiantes · {{ area_certificaciones }} certificaciones · {{ area_pendientes }} pendientes</p>
+          <p>{{ area_items.size }} estudiantes · {{ area_documentados }} documentados · {{ area_verificar }} por verificar</p>
         </div>
         <progress class="mfct-progress" value="{{ area_items.size }}" max="{{ total_estudiantes }}">
           {{ area_pct }}%
         </progress>
-        <span>{{ area_pct }}% del total · {{ area_cert_pct }}% documentado</span>
+        <span>{{ area_pct }}% del total · {{ area_documentados_pct }}% documentado</span>
       </article>
     {% endfor %}
   </div>
@@ -151,7 +155,7 @@ permalink: /mfct/
       <p class="section-kicker">Seguimiento</p>
       <h2 id="mfct-tabla-title">Estado por área</h2>
     </div>
-    <span>evidencia documental</span>
+    <span>cierre documental</span>
   </div>
 
   <div class="mfct-table-wrap">
@@ -160,30 +164,29 @@ permalink: /mfct/
         <tr>
           <th scope="col">Área técnica</th>
           <th scope="col">Estudiantes</th>
-          <th scope="col">Certificaciones</th>
-          <th scope="col">Pendientes</th>
-          <th scope="col">Documentado</th>
+          <th scope="col">Documentados</th>
+          <th scope="col">Por verificar</th>
+          <th scope="col">Avance documental</th>
         </tr>
       </thead>
       <tbody>
         {% for area_group in pasantes_data.areas %}
           {% assign area_items = area_group[1] %}
           {% assign area_label = area_items[0].area %}
-          {% assign area_certificaciones = 0 %}
+          {% assign area_documentados = 0 %}
           {% for pasante in area_items %}
-            {% assign cert_file = site.static_files | where: "path", pasante.certificacion | first %}
-            {% if cert_file %}
-              {% assign area_certificaciones = area_certificaciones | plus: 1 %}
+            {% if pasante.estado_mfct == "concluido_documentado" %}
+              {% assign area_documentados = area_documentados | plus: 1 %}
             {% endif %}
           {% endfor %}
-          {% assign area_pendientes = area_items.size | minus: area_certificaciones %}
-          {% assign area_cert_pct = area_certificaciones | times: 100 | divided_by: area_items.size %}
+          {% assign area_verificar = area_items.size | minus: area_documentados %}
+          {% assign area_documentados_pct = area_documentados | times: 100 | divided_by: area_items.size %}
           <tr>
             <th scope="row">{{ area_label }}</th>
             <td>{{ area_items.size }}</td>
-            <td>{{ area_certificaciones }}</td>
-            <td>{{ area_pendientes }}</td>
-            <td>{{ area_cert_pct }}%</td>
+            <td>{{ area_documentados }}</td>
+            <td>{{ area_verificar }}</td>
+            <td>{{ area_documentados_pct }}%</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -195,9 +198,9 @@ permalink: /mfct/
   <div class="pasantes-section-header">
     <div>
       <p class="section-kicker">Control documental</p>
-      <h2 id="mfct-pendientes-title">Certificaciones pendientes</h2>
+      <h2 id="mfct-pendientes-title">Casos por verificar</h2>
     </div>
-    <span>{{ pendientes_evidencia }} estudiantes</span>
+    <span>{{ por_verificar }} estudiantes</span>
   </div>
 
   <div class="mfct-pending-list">
@@ -208,8 +211,7 @@ permalink: /mfct/
         <summary>{{ area_label }}</summary>
         <ul>
           {% for pasante in area_items %}
-            {% assign cert_file = site.static_files | where: "path", pasante.certificacion | first %}
-            {% unless cert_file %}
+            {% unless pasante.estado_mfct == "concluido_documentado" %}
               <li>
                 <span>{{ pasante.nombre }}</span>
                 <small>{{ pasante.empresa }}</small>

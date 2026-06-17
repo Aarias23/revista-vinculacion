@@ -1607,6 +1607,17 @@ iframe {
   padding: clamp(1rem, 3vw, 1.25rem);
 }
 
+footer a {
+  color: #ffffff;
+  font-weight: 800;
+  text-underline-offset: 0.22rem;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: #dff2ff;
+}
+
 .gallery {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
@@ -1867,6 +1878,27 @@ iframe {
   line-height: 1.35;
 }
 
+.pasante-status {
+  display: inline-flex;
+  min-height: 1.8rem;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.pasante-status.is-complete {
+  background: #e6f5ec;
+  color: #17613a;
+}
+
+.pasante-status.is-pending {
+  background: #fff4da;
+  color: #6f4600;
+}
+
 .pasante-cert-link {
   display: inline-flex;
   min-height: 44px;
@@ -2064,6 +2096,17 @@ iframe {
   color: #273442;
 }
 
+.mfct-note-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-top: 0.9rem;
+  color: var(--color-primary-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 0.22rem;
+}
+
 .mfct-stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -2104,6 +2147,12 @@ iframe {
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.35;
+}
+
+.mfct-stat-card p {
+  margin: 0;
+  color: #273442;
+  line-height: 1.55;
 }
 
 .mfct-progress {
@@ -2256,6 +2305,21 @@ iframe {
   font-size: 0.78rem;
   font-weight: 800;
   line-height: 1.25;
+}
+
+.mfct-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: clamp(0.85rem, 2vw, 1rem);
+}
+
+.mfct-footnote {
+  max-width: 78ch;
+  margin: 1rem 0 0;
+  color: #52616f;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.55;
 }
 
 @media (max-width: 768px) {

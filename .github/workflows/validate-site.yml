@@ -21,7 +21,7 @@ jobs:
           bundler-cache: true
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        run: bundle exec ruby ./scripts/build-site.rb
 
       - name: Validate generated site
         shell: pwsh

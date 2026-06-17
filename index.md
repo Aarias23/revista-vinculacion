@@ -14,7 +14,7 @@ title: "Revista Digital"
     <p>Revista Digital · Unidad de Vinculación Sectorial</p>
     <div class="hero-actions">
       <a href="{{ '/galeria/' | relative_url }}" class="btn-primary">Explorar Galería</a>
-      <a href="{{ '/instituciones/' | relative_url }}" class="btn-glass">Instituciones</a>
+      <a href="{{ '/mfct/' | relative_url }}" class="btn-glass">Informe MFCT</a>
     </div>
   </div>
 </section>
@@ -32,15 +32,15 @@ title: "Revista Digital"
     </div>
     <div class="card">
       <i class="fa-solid fa-briefcase"></i>
-      <h3>Pasantías</h3>
-      <p>Integración de nuestros jóvenes en espacios laborales reales.</p>
-      <a href="{{ '/galeria/pasantia-2025-2026/' | relative_url }}" class="btn-link">Ver más</a>
+      <h3>Pasantes</h3>
+      <p>Directorio por área técnica, empresa anfitriona y estado documental.</p>
+      <a href="{{ '/pasantes/' | relative_url }}" class="btn-link">Ver más</a>
     </div>
     <div class="card">
-      <i class="fa-solid fa-university"></i>
-      <h3>Visitas Institucionales</h3>
-      <p>Universidades y organismos presentan sus proyectos y oportunidades.</p>
-      <a href="{{ '/instituciones/' | relative_url }}" class="btn-link">Ver más</a>
+      <i class="fa-solid fa-chart-column"></i>
+      <h3>Informe MFCT</h3>
+      <p>Indicadores para seguimiento, evidencias y rendición de informes.</p>
+      <a href="{{ '/mfct/' | relative_url }}" class="btn-link">Ver más</a>
     </div>
   </div>
 </section>
@@ -113,15 +113,15 @@ title: "Revista Digital"
     </article>
     <article class="activity-card">
       <i class="fa-solid fa-briefcase"></i>
-      <h3>Pasantía 2025–2026</h3>
-      <p>Integración de jóvenes en espacios laborales reales.</p>
-      <a href="{{ '/galeria/pasantia-2025-2026/' | relative_url }}" class="btn-secondary">Ver detalle</a>
+      <h3>Empresas colaboradoras</h3>
+      <p>Listado de centros de trabajo y estudiantes impactados.</p>
+      <a href="{{ '/empresas/' | relative_url }}" class="btn-secondary">Ver detalle</a>
     </article>
     <article class="activity-card">
-      <i class="fa-solid fa-university"></i>
-      <h3>UCSD 2026</h3>
-      <p>Presentación de oferta académica y becas.</p>
-      <a href="{{ '/instituciones/ucsd-2026/' | relative_url }}" class="btn-secondary">Ver detalle</a>
+      <i class="fa-solid fa-chart-column"></i>
+      <h3>Informe MFCT</h3>
+      <p>Resumen estadístico de estudiantes, áreas y documentación.</p>
+      <a href="{{ '/mfct/' | relative_url }}" class="btn-secondary">Ver detalle</a>
     </article>
   </div>
 </section>

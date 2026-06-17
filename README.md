@@ -18,7 +18,7 @@ bundle install
 ## Build local
 
 ```powershell
-bundle exec jekyll build
+bundle exec ruby .\scripts\build-site.rb
 ```
 
 El sitio generado se guarda en `_site/`. Esa carpeta es local y no debe agregarse

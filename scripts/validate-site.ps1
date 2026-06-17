@@ -68,7 +68,7 @@ foreach ($file in $sourceFiles) {
 
 # Generated internal links must resolve after the Jekyll build.
 if (-not (Test-Path $siteDir)) {
-  Add-ValidationError "No existe '_site/'. Ejecuta 'bundle exec jekyll build' primero."
+  Add-ValidationError "No existe '_site/'. Ejecuta 'bundle exec ruby .\scripts\build-site.rb' primero."
 }
 else {
   $config = Get-Content -Raw -Encoding UTF8 (Join-Path $root "_config.yml")

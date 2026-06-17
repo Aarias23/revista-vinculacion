@@ -91,6 +91,16 @@ permalink: /pasantes/
                 <dt>Año escolar</dt>
                 <dd>{{ pasante.ano_escolar }}</dd>
               </div>
+              <div>
+                <dt>Estado MFCT</dt>
+                <dd>
+                  {% if pasante.estado_mfct == "concluido_documentado" %}
+                    <span class="pasante-status is-complete">Concluido documentado</span>
+                  {% else %}
+                    <span class="pasante-status is-pending">Por verificar</span>
+                  {% endif %}
+                </dd>
+              </div>
             </dl>
             {% if cert_file %}
               <a class="pasante-cert-link" href="{{ pasante.certificacion | relative_url }}" target="_blank" rel="noopener">
