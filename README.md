@@ -27,11 +27,10 @@ al control de versiones.
 ## Servidor de desarrollo
 
 ```powershell
-bundle exec jekyll serve
+bundle exec ruby .\scripts\serve-site.rb
 ```
 
-En Windows, `wdm` permite detectar cambios sin recurrir al sondeo continuo del
-sistema de archivos.
+Luego abre `http://127.0.0.1:4000/revista-vinculacion/`.
 
 ## Validación
 
