@@ -26,9 +26,9 @@ title: "Portal de Vinculación Sectorial"
   <div class="cards">
     <div class="card">
       <i class="fa-solid fa-industry"></i>
-      <h3>Visitas Técnicas</h3>
-      <p>Experiencias en empresas e instituciones del sector productivo.</p>
-      <a href="{{ '/galeria/' | relative_url }}" class="btn-link">Ver más</a>
+      <h3>Experiencias Formativas</h3>
+      <p>Actividades con empresas, instituciones educativas y espacios de aprendizaje.</p>
+      <a href="{{ '/visitas/' | relative_url }}" class="btn-link">Ver más</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-briefcase"></i>
@@ -55,15 +55,21 @@ title: "Portal de Vinculación Sectorial"
     {% for item in site.data.recent %}
     <figure class="carousel-item{% if forloop.first %} active{% endif %}"
             data-link="{{ item.link | relative_url }}"
-            data-caption="{{ item.caption }}">
+            data-caption="{{ item.caption }}"
+            {% if item.fit %}data-fit="{{ item.fit }}"{% endif %}>
       {% assign webp_image = item.image
         | replace: ".jpeg", ".webp"
         | replace: ".jpg", ".webp"
         | replace: ".png", ".webp"
       %}
+      {% assign featured_image_file = site.static_files | where: "path", item.image | first %}
+      {% assign featured_webp_file = site.static_files | where: "path", webp_image | first %}
       {% assign image_meta = site.data.image_dimensions[item.image] %}
+      {% if featured_image_file %}
       <picture>
+        {% if featured_webp_file %}
         <source srcset="{{ webp_image | relative_url }}" type="image/webp">
+        {% endif %}
         <img src="{{ item.image | relative_url }}"
              alt="{{ item.alt }}"
              {% unless forloop.first %}loading="lazy"{% endunless %}
@@ -72,6 +78,12 @@ title: "Portal de Vinculación Sectorial"
              height="{{ image_meta.height }}"
              {% endif %}>
       </picture>
+      {% else %}
+      <div class="featured-placeholder" role="img" aria-label="{{ item.alt | escape }}">
+        <i class="fa-solid fa-image" aria-hidden="true"></i>
+        <span>Evidencia pendiente</span>
+      </div>
+      {% endif %}
     </figure>
     {% endfor %}
 
@@ -81,7 +93,6 @@ title: "Portal de Vinculación Sectorial"
 
   </div>
 
-  <!-- ✅ Caption y botón fuera de la imagen -->
   <div class="carousel-info">
     <div id="carouselCaption" class="featured-carousel-caption" aria-live="polite"></div>
     <div class="carousel-actions">
@@ -102,7 +113,7 @@ title: "Portal de Vinculación Sectorial"
     <article class="activity-card">
       <i class="fa-solid fa-industry"></i>
       <h3>Eaton Design Center</h3>
-      <p>Visita técnica de estudiantes IPSPBV.</p>
+      <p>Experiencia formativa de estudiantes IPSPBV.</p>
       <a href="{{ '/galeria/visita-2026-02-design/' | relative_url }}" class="btn-secondary">Ver detalle</a>
     </article>
     <article class="activity-card">

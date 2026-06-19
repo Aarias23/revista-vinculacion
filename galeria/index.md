@@ -6,19 +6,17 @@ permalink: /galeria/
 
 <h1><i class="fa-solid fa-camera"></i> Galería Fotográfica</h1>
 
-<!-- ÍNDICE -->
-
 <div class="index-actividades">
   <h2>Índice de Actividades</h2>
   <ul>
     <li>
       <a href="{{ '/galeria/visitas-tecnicas/' | relative_url }}">
-        Visitas Técnicas
+        Experiencias Formativas
       </a>
     </li>
     <li>
       <a href="{{ '/galeria/pasantia-2025-2026/' | relative_url }}">
-        Pasantía – Año Escolar 2025–2026
+        MFCT - Año Escolar 2025-2026
       </a>
     </li>
     <li>
@@ -30,31 +28,30 @@ permalink: /galeria/
 </div>
 
 <p class="intro-text">
-En esta sección se presentan las imágenes más representativas de las visitas técnicas y pasantías realizadas por nuestros estudiantes.  
+En esta sección se presentan las imágenes más representativas de las experiencias formativas y pasantías realizadas por nuestros estudiantes.
 Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados, las experiencias compartidas y los momentos significativos que fortalecen su formación académica y profesional.
 </p>
 
-## Visitas Técnicas
+## Experiencias Formativas
 
 <div class="gallery preview">
   {% for item in site.data.gallery_eaton_2026 limit:2 %}
-    {% include figure.html 
-      src=item.src 
-      alt=item.alt 
-      caption=item.caption 
-      event="preview-visitas"
-    %}
-  {% endfor %}
-
-{% for item in site.data.gallery_itabo_2026 limit:2 %}
-{% include figure.html
+    {% include figure.html
       src=item.src
       alt=item.alt
       caption=item.caption
-      event="preview-visitas"
+      event="preview-experiencias"
     %}
-{% endfor %}
+  {% endfor %}
 
+  {% for item in site.data.gallery_itabo_2026 limit:2 %}
+    {% include figure.html
+      src=item.src
+      alt=item.alt
+      caption=item.caption
+      event="preview-experiencias"
+    %}
+  {% endfor %}
 </div>
 
 <a href="{{ '/galeria/visitas-tecnicas/' | relative_url }}" class="btn-secondary">
@@ -63,31 +60,30 @@ Cada fotografía constituye un testimonio visual de los aprendizajes alcanzados,
 
 ---
 
-## Pasantías
+## MFCT
 
-### Pasantía – Año Escolar 2025–2026
+### MFCT - Año Escolar 2025-2026
 
 <div class="gallery preview">
   {% assign pasantia = site.data.pasantia_2025_2026 %}
 
-{% for item in pasantia.informatica limit:1 %}
-{% include figure.html
+  {% for item in pasantia.informatica limit:1 %}
+    {% include figure.html
       src=item.src
       alt=item.alt
       caption=item.caption
       event="preview-pasantias"
     %}
-{% endfor %}
+  {% endfor %}
 
-{% for item in pasantia.logistica limit:3 %}
-{% include figure.html
+  {% for item in pasantia.logistica limit:3 %}
+    {% include figure.html
       src=item.src
       alt=item.alt
       caption=item.caption
       event="preview-pasantias"
     %}
-{% endfor %}
-
+  {% endfor %}
 </div>
 
 <a href="{{ '/galeria/pasantia-2025-2026/' | relative_url }}" class="btn-secondary">

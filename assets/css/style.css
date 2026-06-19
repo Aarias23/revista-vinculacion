@@ -172,6 +172,33 @@ header h1,
   transform: scale(1.05);
 }
 
+.gallery-placeholder {
+  min-height: 100%;
+}
+
+.gallery-placeholder-media {
+  display: grid;
+  height: 220px;
+  place-items: center;
+  background: #eef6fa;
+  color: #004080;
+  font-size: 2rem;
+}
+
+.gallery-download.is-disabled {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  margin: auto 1rem 1rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: #edf2f7;
+  color: #5d7184;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
 .gallery-trigger {
   display: block;
   width: 100%;
@@ -703,6 +730,36 @@ header h1,
   object-position: center;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.featured-carousel figure[data-fit="contain"] {
+  background: #082f49;
+}
+
+.featured-carousel figure[data-fit="contain"] img {
+  object-fit: contain;
+}
+
+.featured-carousel figure[data-fit="eaton-featured"] img {
+  object-fit: cover;
+  object-position: left center;
+}
+
+.featured-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  gap: 0.75rem;
+  align-content: center;
+  background: #eef6fa;
+  color: #004080;
+  font-weight: 700;
+}
+
+.featured-placeholder i {
+  font-size: 3rem;
+  color: #0b5d8b;
 }
 
 /* =========================
