@@ -20,7 +20,7 @@ Como centro educativo, agradecemos a Junior Achievement por facilitar este valio
   {% include figure.html
     src="/assets/img/instituciones/jr-achievement/charla_carlos_gonzalez.jpeg"
     alt="Carlos González se dirige a los estudiantes durante la charla de Educación Financiera"
-    caption="Charla de Educación Financiera – Fundación Dominicana de Desarrollo"
+    caption="Charla de Educación Financiera - Fundación Dominicana de Desarrollo"
     event="Charla de Educación Financiera 2026"
   %}
 
@@ -46,7 +46,3 @@ Como centro educativo, agradecemos a Junior Achievement por facilitar este valio
   %}
 
 </div>
-
-<a href="{{ '/galeria/' | relative_url }}" class="btn-secondary">
-  ← Volver a la galería
-</a>

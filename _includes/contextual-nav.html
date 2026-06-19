@@ -4,10 +4,14 @@
   {% assign parent_label = "" %}
   {% assign related_links = "" %}
 
-  {% if current_url contains "/visitas/" %}
+  {% if current_url == "/galeria/charla-educacion-financiera-2026/" %}
+    {% assign parent_url = "/instituciones/" %}
+    {% assign parent_label = "Instituciones" %}
+    {% assign related_links = "/visitas/|Experiencias,/mfct/|Informe MFCT" %}
+  {% elsif current_url contains "/visitas/" %}
     {% unless current_url == "/visitas/" %}
       {% assign parent_url = "/visitas/" %}
-      {% assign parent_label = "Visitas Técnicas" %}
+      {% assign parent_label = "Experiencias" %}
       {% assign related_links = "/galeria/|Galería" %}
     {% endunless %}
   {% elsif current_url contains "/instituciones/" %}
@@ -18,15 +22,15 @@
     {% endunless %}
   {% elsif current_url contains "/pasantias/" %}
     {% unless current_url == "/pasantias/" %}
-      {% assign parent_url = "/pasantias/" %}
-      {% assign parent_label = "Pasantías" %}
+      {% assign parent_url = "/empresas/" %}
+      {% assign parent_label = "Empresas" %}
       {% assign related_links = "/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
     {% endunless %}
   {% elsif current_url contains "/galeria/" %}
     {% unless current_url == "/galeria/" %}
       {% assign parent_url = "/galeria/" %}
       {% assign parent_label = "Galería" %}
-      {% assign related_links = "/visitas/|Visitas Técnicas,/mfct/|Informe MFCT" %}
+      {% assign related_links = "/visitas/|Experiencias,/mfct/|Informe MFCT" %}
     {% endunless %}
   {% elsif current_url contains "/mfct/" %}
     {% unless current_url == "/mfct/" %}
@@ -45,9 +49,9 @@
   {% elsif current_url == "/visitas/" %}
     {% assign related_links = "/galeria/|Galería,/instituciones/|Instituciones" %}
   {% elsif current_url == "/galeria/" %}
-    {% assign related_links = "/visitas/|Visitas Técnicas,/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
+    {% assign related_links = "/visitas/|Experiencias,/pasantes/|Pasantes,/mfct/|Informe MFCT" %}
   {% elsif current_url == "/instituciones/" %}
-    {% assign related_links = "/visitas/|Visitas Técnicas,/galeria/|Galería" %}
+    {% assign related_links = "/visitas/|Experiencias,/galeria/|Galería" %}
   {% elsif current_url == "/pasantias/" %}
     {% assign related_links = "/pasantes/|Pasantes,/empresas/|Empresas,/mfct/|Informe MFCT" %}
   {% endif %}

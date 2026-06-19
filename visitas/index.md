@@ -1,14 +1,14 @@
 ---
 layout: default
-title: "Visitas Técnicas"
+title: "Experiencias Formativas"
 permalink: /visitas/
 ---
 
-# Visitas Técnicas
+# Experiencias Formativas
 
-Experiencias formativas que conectan a nuestros estudiantes con instituciones educativas y empresas del sector productivo.
+Actividades que conectan a nuestros estudiantes con instituciones educativas, empresas y espacios de aprendizaje.
 
-## Visitas recientes
+## Experiencias recientes
 
 <div class="visit-list">
 {% assign todas_visitas = site.pages | where_exp: "page", "page.permalink contains '/visitas/'" %}
@@ -24,7 +24,7 @@ Experiencias formativas que conectan a nuestros estudiantes con instituciones ed
       <h3>{{ visita.list_title | default: visita.title }}</h3>
       <p class="visit-card-excerpt">{{ visita.excerpt }}</p>
       <a href="{{ visita.url | relative_url }}" class="visit-card-link">
-        Ver visita
+        Ver experiencia
       </a>
     </div>
   </article>
